@@ -189,14 +189,31 @@
 						</div>
 
 						<div class="col-md-4">
-							<div class="video-inicio">
-								<iframe width="357" height="251" src="https://www.youtube.com/embed/5YxdWJnSbFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							</div>
+								<div class="video-inicio embed-responsive embed-responsive-16by9">
+										<div class="video-inicio">
+											<iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/5YxdWJnSbFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>
+									</div>
 					</div><br>
 
 <style>
 .video-inicio{
-    margin-top: 15px;
+	margin-top: 15px;
+	
+	
+}
+
+@media (min-width:901px) { 
+	.video-inicio{
+		height: 205px;
+}
+
+@media (min-width:1199px) { 
+	.video-inicio{
+		height: 251px;
+}
+
+
 }
 </style>
 
