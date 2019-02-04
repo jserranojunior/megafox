@@ -1,0 +1,675 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Rádio Mega Fox</title>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">		
+		<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link rel="icon" href="favicon.png">
+			<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<!-- jQuery library -->
+    <script src="../../bootstrap/js/jquery-1.12.3.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="../../bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<!-- SCRIPT PLAY -->
+    <!--<audio id="RadioEnVivo"><source src="http://stm6.xcast.com.br:11516/stream?type=.mp3" type="audio/mp3"></audio>-->
+    <!--<audio id="RadioEnVivo"><source src="http://stm6.xcast.com.br:11516/;" type="audio/mp3"></audio>-->
+    <audio id="RadioEnVivo"><source src="http://stm6.xcast.com.br:11516/;" type="audio/mp3"></audio>
+	<script>
+		function EvalSound(soundobj, button) {
+			var thissound = document.getElementById(soundobj);
+			if (thissound.paused) {
+			  thissound.play();
+			  $(button).find(".glyphicon").removeClass("glyphicon-play").addClass("glyphicon-pause");
+			} else {
+			  thissound.pause();
+			  $(button).find(".glyphicon").removeClass("glyphicon-pause").addClass("glyphicon-play");
+			}
+		  }
+    </script>
+	</head>
+	<body>
+	    		<!-- Wrapper -->
+		<section class="head" id="header">
+			<div class="wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<header class="header">
+								<div class="inner">
+									<!-- Logo -->
+									<a href="#menu"class="nav-bars">
+										<img src="images/nav_icon.svg" class="img-responsive" alt="Collapsable Navbar">
+									</a>
+									<a href="index.html" class="logo">
+										<span class="symbol"><img src="images/logo_mega_fox.png" alt="Rede Mega Fox" title="Rede Mega Fox" /></span>
+									</a>
+									<img src="images/anuncie.jpg" alt="" title="Anuncie aqui" style="width: 100%;" />
+								</div>
+							</header>
+							<!-- Menu -->
+							<nav id="menu">
+								<h2>Menu</h2>
+								<ul>
+									<li><a href="#">Aplicativo ios</a></li>
+									<li><a href="https://play.google.com/store/apps/details?id=com.shoutcast.stm.radioredmegafoxbolivia" target="_blank">Aplicativo Android</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main -->
+
+		<section class="main-body">
+			<div class="container">
+							<div class="tiles">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="a">
+							<button type="button" class="btn btn-lg btn-danger" onClick="EvalSound('RadioEnVivo', this)"><a href="#">
+              <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+									<img src="images/radio_vivo_megafox.jpg" class="img-responsive" alt="Responsive image">
+									<div class="img-hover glass">
+										<div class="c-table">
+											<div class="ct-cell">
+												<h3 class="img-title">Rádio ao vivo</h3>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							</button>
+							<!--<div id="test-popup-1" class="white-popup mfp-hide">
+							  	<div class="container-fluid">
+									<div class="row">
+										<div class="pop-up-color">
+											<div class="col-md-8 p-l-0 p-r-0">
+												<img src="images/radio_vivo_megafox.jpg" class="img-responsive" alt="Responsive image">
+											</div>
+											<div class="col-md-4">
+												<div>
+													<h2 class="popup-head">Glass</h2>
+												</div>
+												<div>
+													<p class="popup-parapraph">Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit a amet nisi is a euismod sed cursus arcu elementum and ipsum arcu vivamus is quis venenatis orci and nullam dolore. Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod still amet nisi aliqua.Eas Lorem ipsum dolor sit amet.</p>
+												</div>
+												<div class="pop-up-icon">
+													<div class="row">
+														<ul class="text-center popup-social-contact">
+															<li class="popup-social-icons">
+															<a href="#" class="icon pop-up fa-facebook"><span class="label">Facebook</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-twitter"><span class="label">Twitter</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-google-plus"><span class="label">GooglePlus</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-pinterest"><span class="label">pinterest</span></a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>-->
+						</div>
+						<div class="col-md-6">
+							<div class="a">
+								<a href="https://wa.me/5511998068930/?text=Hola!" target="_blank">
+									<img src="images/whatsapp.jpg" class="img-responsive" alt="Responsive image">
+									<div class="img-hover shoes-glass">
+										<div class="c-table">
+											<div class="ct-cell">
+												<h3 class="img-title">Whatsapp</h3>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<!--<div id="test-popup-2" class="white-popup mfp-hide">
+							  	<div class="container-fluid">
+									<div class="row">
+										<div class="pop-up-color">
+											<div class="col-md-8 p-l-0 p-r-0">
+												<img src="images/tv_online_megafox.jpg" class="img-responsive" alt="Responsive image">
+											</div>
+											<div class="col-md-4">
+												<div>
+													<h2 class="popup-head">SHOES & GLASS</h2>
+												</div>
+												<div>
+													<p class="popup-parapraph">Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit a amet nisi is a euismod sed cursus arcu elementum and ipsum arcu vivamus is quis venenatis orci and nullam dolore. Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod still amet nisi aliqua.Eas Lorem ipsum dolor sit amet.</p>
+												</div>
+												<div class="pop-up-icon">
+													<div class="row">
+														<ul class="text-center popup-social-contact">
+															<li class="popup-social-icons">
+															<a href="#" class="icon pop-up fa-facebook"><span class="label">Facebook</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-twitter"><span class="label">Twitter</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-google-plus"><span class="label">GooglePlus</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-pinterest"><span class="label">pinterest</span></a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>-->
+						</div>
+					</div><br>
+					<div class="row">
+					<div class="col-md-2">
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-md-4">
+							<div class="a">
+								<a href="https://play.google.com/store/apps/details?id=com.shoutcast.stm.radioredmegafoxbolivia" target="_blank" title="Aplicativo no ios">
+									<img src="images/apple_store.png" class="img-responsive" alt="Responsive image">
+								</a>
+							</div>
+					</div>
+					<div class="col-md-4">
+							<div class="a">
+								<a href="https://play.google.com/store/apps/details?id=com.shoutcast.stm.radioredmegafoxbolivia" target="_blank" title="Aplicativo Android">
+									<img src="images/google_play.png" class="img-responsive" alt="Responsive image">
+								</a>
+							</div>
+					</div>
+					</div><br>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="a">
+								<a href="#test-popup-3" class="open-popup-link">
+									<img src="images/virus_musical.jpg" class="img-responsive" alt="Responsive image">
+									<div class="img-hover hand-parts">
+										<div class="c-table">
+											<div class="ct-cell">
+												<h3 class="img-title">Vírus Musical</h3>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div id="test-popup-3" class="white-popup mfp-hide">
+							  	<div class="container-fluid">
+									<div class="row">
+										<div class="pop-up-color">
+											<div class="col-md-8 p-l-0 p-r-0">
+												<img src="images/virus_musical.jpg" class="img-responsive" alt="Responsive image">
+											</div>
+											<div class="col-md-4">
+												<div>
+													<h2 class="popup-head">Vírus Musical</h2>
+												</div>
+												<div>
+													<p class="popup-parapraph">Dê mais ritmo para o seu dia com as melhores músicas peruanas e os hits da velha guarda. De segunda à sexta-feita das 8h às 10h, no comando <b>Poncho Ponchito</b>.</p>
+												</div>
+												<div class="pop-up-icon">
+													<div class="row">
+														<ul class="text-center popup-social-contact">
+															<li class="popup-social-icons">
+															<a href="#" class="icon pop-up fa-facebook"><span class="label">Facebook</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-twitter"><span class="label">Twitter</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-google-plus"><span class="label">GooglePlus</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-pinterest"><span class="label">pinterest</span></a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="a">
+								<a href="#test-popup-4" class="open-popup-link">
+									<img src="images/la_voz.jpg" class="img-responsive" alt="Responsive image">
+									<div class="img-hover table-with-phone">
+										<div class="c-table">
+											<div class="ct-cell">
+												<h3 class="img-title">A voz da igualdade</h3>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div id="test-popup-4" class="white-popup mfp-hide">
+							  	<div class="container-fluid">
+									<div class="row">
+										<div class="pop-up-color">
+											<div class="col-md-8 p-l-0 p-r-0">
+												<img src="images/la_voz.jpg" class="img-responsive" alt="Responsive image">
+											</div>
+											<div class="col-md-4">
+												<div>
+													<h2 class="popup-head">A voz da igualdade</h2>
+												</div>
+												<div>
+													<p class="popup-parapraph">Notícias nacionais e internacionais sobre economia, política, segurança pública e saúde. De segunda à sexta-feira das 10h às 12h, com <b>Jaime Mamani Chuquimia</b>.</p>
+												</div>
+												<div class="pop-up-icon">
+													<div class="row">
+														<ul class="text-center popup-social-contact">
+															<li class="popup-social-icons">
+															<a href="#" class="icon pop-up fa-facebook"><span class="label">Facebook</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-twitter"><span class="label">Twitter</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-google-plus"><span class="label">GooglePlus</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-pinterest"><span class="label">pinterest</span></a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="a">
+								<a href="#test-popup-5" class="open-popup-link">
+									<img src="images/esporte_total.jpg" class="img-responsive" alt="Responsive image">
+									<div class="img-hover orange-shoe">
+										<div class="c-table">
+											<div class="ct-cell">
+												<h3 class="img-title">Esporte total</h3>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div id="test-popup-5" class="white-popup mfp-hide">
+							  	<div class="container-fluid">
+									<div class="row">
+										<div class="pop-up-color">
+											<div class="col-md-8 p-l-0 p-r-0">
+												<img src="images/esporte_total.jpg" class="img-responsive" alt="Responsive image">
+											</div>
+											<div class="col-md-4">
+												<div>
+													<h2 class="popup-head">Esporte total</h2>
+												</div>
+												<div>
+													<p class="popup-parapraph">O mundo dos esporte e notícias em primeira mão, de segunda à sexta-feira das 12h às 13h, com <b>Jorge Gutierrez</b>.</p>
+												</div>
+												<div class="pop-up-icon">
+													<div class="row">
+														<ul class="text-center popup-social-contact">
+															<li class="popup-social-icons">
+															<a href="#" class="icon pop-up fa-facebook"><span class="label">Facebook</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-twitter"><span class="label">Twitter</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-google-plus"><span class="label">GooglePlus</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-pinterest"><span class="label">pinterest</span></a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><br>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="a">
+								<a href="#test-popup-6" class="open-popup-link">
+									<img src="images/ponto_de_encontro.jpg" class="img-responsive" alt="Responsive image">
+									<div class="img-hover glass-shoes">
+										<div class="c-table">
+											<div class="ct-cell">
+												<h3 class="img-title">Ponto de encontro</h3>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div id="test-popup-6" class="white-popup mfp-hide">
+							  	<div class="container-fluid">
+									<div class="row">
+										<div class="pop-up-color">
+											<div class="col-md-8 p-l-0 p-r-0">
+												<img src="images/ponto_de_encontro.jpg" class="img-responsive" alt="Responsive image">
+											</div>
+											<div class="col-md-4">
+												<div>
+													<h2 class="popup-head">Ponto de encontro</h2>
+												</div>
+												<div>
+													<p class="popup-parapraph">Marque na sua agenda um encontro com bate-papo sobre as tendências da moda, saúde, cuidado pessoal e tudo para elas. De segunda à sexta-feira das 14h às 16h, com <b>Mariela Chuquimia</b>.</p>
+												</div>
+												<div class="pop-up-icon">
+													<div class="row">
+														<ul class="text-center popup-social-contact">
+															<li class="popup-social-icons">
+															<a href="#" class="icon pop-up fa-facebook"><span class="label">Facebook</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-twitter"><span class="label">Twitter</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-google-plus"><span class="label">GooglePlus</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-pinterest"><span class="label">pinterest</span></a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="a">
+								<a href="#test-popup-7" class="open-popup-link">
+									<img src="images/show_dos_loucos.jpg" class="img-responsive" alt="Responsive image">
+									<div class="img-hover girls-tops">
+										<div class="c-table">
+											<div class="ct-cell">
+												<h3 class="img-title">Show dos loucos</h3>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div id="test-popup-7" class="white-popup mfp-hide">
+							  	<div class="container-fluid">
+									<div class="row">
+										<div class="pop-up-color">
+											<div class="col-md-8 p-l-0 p-r-0">
+												<img src="images/show_dos_loucos.jpg" class="img-responsive" alt="Responsive image">
+											</div>
+											<div class="col-md-4">
+												<div>
+													<h2 class="popup-head">Show dos loucos</h2>
+												</div>
+												<div>
+													<p class="popup-parapraph">Uma boa combinação de música com humor para levantar seu astral na volta do trabalho. De segunda à sexta-feira das 18h às 20h.</p>
+												</div>
+												<div class="pop-up-icon">
+													<div class="row">
+														<ul class="text-center popup-social-contact">
+															<li class="popup-social-icons">
+															<a href="#" class="icon pop-up fa-facebook"><span class="label">Facebook</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-twitter"><span class="label">Twitter</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-google-plus"><span class="label">GooglePlus</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-pinterest"><span class="label">pinterest</span></a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="a">
+								<a href="#test-popup-8" class="open-popup-link">
+									<img src="images/zona_reservada.jpg" class="img-responsive" alt="Responsive image">
+									<div class="img-hover egg-arts">
+										<div class="c-table">
+											<div class="ct-cell">
+												<h3 class="img-title">Zona reservada</h3>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div id="test-popup-8" class="white-popup mfp-hide">
+							  	<div class="container-fluid">
+									<div class="row">
+										<div class="pop-up-color">
+											<div class="col-md-8 p-l-0 p-r-0">
+												<img src="images/zona_reservada.jpg" class="img-responsive" alt="Responsive image">
+											</div>
+											<div class="col-md-4">
+												<div>
+													<h2 class="popup-head">Zona reservada</h2>
+												</div>
+												<div>
+													<p class="popup-parapraph">Um bate-papo saudável sobre diversos assuntos cotidianos com as melhores companhias no seu dia. De segunda à sexta-feira das 20h às 22h, com <b>Karol Karolcita</b>.</p>
+												</div>
+												<div class="pop-up-icon">
+													<div class="row">
+														<ul class="text-center popup-social-contact">
+															<li class="popup-social-icons">
+															<a href="#" class="icon pop-up fa-facebook"><span class="label">Facebook</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-twitter"><span class="label">Twitter</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-google-plus"><span class="label">GooglePlus</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-pinterest"><span class="label">pinterest</span></a>
+															</li>
+														</ul>														
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="a">
+								<a href="#test-popup-9" class="open-popup-link">
+									<img src="images/conectados.jpg" class="img-responsive" alt="Responsive image">
+									<div class="img-hover egg-arts" style="background-color: #d50f16;">
+										<div class="c-table">
+											<div class="ct-cell">
+												<h3 class="img-title">Conectados</h3>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div id="test-popup-9" class="white-popup mfp-hide">
+							  	<div class="container-fluid">
+									<div class="row">
+										<div class="pop-up-color">
+											<div class="col-md-8 p-l-0 p-r-0">
+												<img src="images/conectados.jpg" class="img-responsive" alt="Responsive image">
+											</div>
+											<div class="col-md-4">
+												<div>
+													<h2 class="popup-head">Conectados</h2>
+												</div>
+												<div>
+													<p class="popup-parapraph">Todos que querem se dar bem no amor, conselhos, dicas e comportamento. Seja para conquistar ou superar um relacionamento. De segunda à sexta-feira das 22h às 23h30, com <b>Will Rios</b>.</p>
+												</div>
+												<div class="pop-up-icon">
+													<div class="row">
+														<ul class="text-center popup-social-contact">
+															<li class="popup-social-icons">
+															<a href="#" class="icon pop-up fa-facebook"><span class="label">Facebook</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-twitter"><span class="label">Twitter</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-google-plus"><span class="label">GooglePlus</span></a>
+															</li>
+															<li class="popup-social-icons">
+																<a href="#" class="icon pop-up fa-pinterest"><span class="label">pinterest</span></a>
+															</li>
+														</ul>														
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<h1>ENVIAR MENSAGEM</h1>
+							<form>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" class="form-control gt" name="name" id="name" placeholder="Nome"/>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="email" class="form-control gt" name="email" id="email" placeholder="E-mail" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="from-group">
+											<textarea class="form-control gt" rows="2" name="message" id="message" placeholder="Mensagem"></textarea>
+										</div>
+									</div>
+								</div>
+							</form>
+							<div class="form-group"  align="right">
+							    <div class="col-sm-offset-2 col-sm-10">
+							      <a href="#" type="submit" class="btn btn-tobais btn-send-2">ENVIAR</a>
+							    </div>
+							</div>
+						</div>
+					<div class="col-md-4">
+						<h1>CONTATO</h1>
+							
+							<p><Strong>Endereço: </Strong> Rua Doutor Costa Valente, 217 - Brás - São Paulo.</p>				
+							<p><Strong>Whatsapp: </Strong>11 9 9358-2829</p>						
+							<p><Strong>E-mail: </Strong>radiomegafox@radiomegafox.com.br</p>						
+					</div>
+				</div>				
+			</div>
+		</section>
+
+		<section class="social-contact-icon">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						<ul class="text-center social-contact">
+							<li class="social-icons">
+							<a href="https://www.facebook.com/MEGA-FOX-467646513596733/" target="_blank" class="icon style2 fa-facebook"><span class="label">Facebook</span></a>
+							</li>
+							<li class="social-icons">
+								<a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a>
+							</li>
+							<li class="social-icons">
+								<a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a>
+							</li>
+							<li class="social-icons">
+								<a href="#" class="icon style2 fa-youtube"><span class="label">YouTube</span></a>
+							</li>
+						</ul>							
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="footer">		
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 col-xs-9">
+							<p class="right-color">&copy; Copyright 2018. Direitos reservados para Rede Mega Fox.</p>
+						</div>
+						<div class="col-sm-4 col-xs-3" align="right">
+							<a href="#" id="back-to-top" class="top text-right" >TOP <i class="fa fa-angle-up" aria-hidden="true"></i> </a>
+						</div>
+					</div>
+				</div>											
+			</footer>
+		</section>
+
+	<!-- Scripts -->
+
+		<script src="assets/js/jquery-3.1.0.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+		<script src="assets/js/script.js"></script>
+
+		<!--  ===== Scroll to Top ====  -->
+	    <script>
+			if ($('#back-to-top').length) {
+			    $('#back-to-top').on('click', function (e) {
+			        e.preventDefault();
+			        $('html,body').animate({
+			            scrollTop: 0
+			        }, 700);
+			    });
+			}
+		</script>
+		
+	</body>
+</html>

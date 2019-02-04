@@ -1,0 +1,172 @@
+@import (http://fonts.googleapis.com/css?family=Sanchez:200,300,300italic,400,400italic,500,600,700,700italic&subset=all);
+@import (http://fonts.googleapis.com/css?family=PT Sans:200,300,300italic,400,400italic,500,600,700,700italic&subset=all);
+@import (http://fonts.googleapis.com/css?family=Open Sans:200,300,300italic,400,400italic,500,600,700,700italic&subset=all);
+@import (http://fonts.googleapis.com/css?family=Roboto:200,300,300italic,400,400italic,500,600,700,700italic&subset=all);
+@import (http://fonts.googleapis.com/css?family=Oswald:200,300,300italic,400,400italic,500,600,700,700italic&subset=all);
+@import (http://fonts.googleapis.com/css?family=Lato:200,300,300italic,400,400italic,500,600,700,700italic&subset=all);
+@import (http://fonts.googleapis.com/css?family=Droid Sans:200,300,300italic,400,400italic,500,600,700,700italic&subset=all);
+@import (http://fonts.googleapis.com/css?family=Ubuntu:200,300,300italic,400,400italic,500,600,700,700italic&subset=all);
+@import (http://fonts.googleapis.com/css?family=Montserrat:200,300,300italic,400,400italic,500,600,700,700italic&subset=all);
+@import (http://fonts.googleapis.com/css?family=Dosis:200,300,300italic,400,400italic,500,600,700,700italic&subset=all);
+@import (http://fonts.googleapis.com/css?family=Roboto Slab:200,300,300italic,400,400italic,500,600,700,700italic&subset=all);
+@import (http://fonts.googleapis.com/css?family=Josefin Sans:200,300,300italic,400,400italic,500,600,700,700italic&subset=all);
+
+#pbtheme_settings {
+	position:fixed;
+	top:150px;
+	width:165px;
+	padding:10px;
+	background:#fff;
+	color:#666;
+	left:-186px;
+	z-index:2;
+	border:1px solid #ccc;
+	border-left:0;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+}
+#pbtheme_settings * {
+	color:#fff;
+}
+#show_hide_settings {
+	position:absolute;
+	right:-41px;
+	top:-1px;
+	width:40px;
+	font-size:20px;
+	padding:10px 0;
+	background:#fff;
+	text-align:center;
+	border:1px solid #ccc;
+	border-left:0;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#show_hide_settings i {
+	color:#111;
+}
+#show_hide_settings:hover {
+	text-decoration:none !important;
+}
+#pbtheme_settings h4 {
+	font-size:12px;
+	color:#111;
+	margin:0;
+	padding:0;
+}
+.settings_element {
+	position:relative;
+	margin-bottom:6px;
+}
+.settings_element .settings_button {
+	float:left;
+	padding:2px 0;
+	color:#111;
+	text-align:center;
+	font-family:inherit !important;
+	font-size:12px;
+	background:#555;
+	margin-left:10px;
+}
+.settings_element .settings_button:hover {
+	background:#777;
+	cursor:pointer;
+}
+.settings_element .settings_button:first-child {
+	margin-left:0;
+}
+.settings_element .settings_button.the_full {
+	width:165px;
+	margin-left:0 !important;
+}
+.settings_element .settings_button.the_half {
+	width:77.5px;
+}
+.settings_element .settings_button.the_third {
+	width:47.5px;
+}
+.settings_element.pick_a_color {
+	margin-left:-10px;
+	margin-right:-10px;
+	padding:0 5px;
+	display:block;
+}
+.pick_a_color .color_pick {
+	float:left;
+	width:25px;
+	height:25px;
+	cursor:pointer;
+	margin:5px;
+}
+.pick_a_color .color_pick.activated {
+	outline:1px solid #ffffff;
+}
+.pick_a_color .color_pick.pbtheme_green_1 {
+	background:#82b440;
+}
+.pick_a_color .color_pick.pbtheme_magenta {
+	background:#eb005d;
+}
+.pick_a_color .color_pick.pbtheme_blue_1 {
+	background:#3f90bd;
+}
+.pick_a_color .color_pick.pbtheme_blue_2 {
+	background:#0aa5ff;
+}
+.pick_a_color .color_pick.pbtheme_orange_1 {
+	background:#ffa314;
+}
+.pick_a_color .color_pick.pbtheme_pale {
+	background:#748c96;
+}
+.pick_a_color .color_pick.pbtheme_pink {
+	background:#ef9abc;
+}
+.pick_a_color .color_pick.pbtheme_red {
+	background:#c0392b;
+}
+.pick_a_color .color_pick.pbtheme_orange {
+	background:#e67e22;
+}
+.pick_a_color .color_pick.pbtheme_yellow {
+	background:#dba92c;
+}
+.pick_a_color .color_pick.pbtheme_navy {
+	background:#2c3e50;
+}
+.pick_a_color .color_pick.pbtheme_purple {
+
+	background:#884a9d;
+}
+.pick_a_color .color_pick.pbtheme_blue {
+	background:#2ebdff;
+}
+.pick_a_color .color_pick.pbtheme_green {
+	background:#24ad5f;
+}
+.pick_a_color .color_pick.pbtheme_turquoise {
+	background:#13a085;
+}
+.settings_button a {
+	color:#fff; !important;
+}
+#pbtheme_settings select {
+	width:100%;
+	color:#555 !important;
+	background-image:url(images/arrow.png);
+	background-position: right center;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	padding:4px 2px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border:1px solid #ccc;
+}
+#pbtheme_settings select option {
+	color:inherit;
+}

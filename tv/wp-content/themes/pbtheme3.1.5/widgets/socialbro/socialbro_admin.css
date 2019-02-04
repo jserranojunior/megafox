@@ -1,0 +1,88 @@
+.sb_sortable_item {
+	position: relative;
+	margin: 0 0 10px 0 ;
+	background:#ffffff;
+}
+
+.sb_sortable_handle {
+	background: transparent url(images/dotted_pattern.png) repeat top left;
+	width: 8px;
+	position: absolute;
+	left:0;
+	height: 34px;
+}
+.sb_sortable_delete {
+	position: absolute;
+	right: 0;
+	text-align: center;
+	font-size: 14px;
+	line-height: 14px;
+	width: 14px;
+	padding: 9px;
+	cursor: pointer;
+	
+}
+
+.sb_icon_holder {
+	width: 32px;
+	height: 32px;
+	border: 1px solid #bbb;
+	background: #aaaaaa;
+	position: absolute;
+	left:18px;
+}
+
+.sb_icon_holder img {
+	width: 100%;
+	display: block;
+}
+.sb_sortable {
+	position: relative;
+}
+.sb_sortable_inputs {
+	margin-left: 54px;
+	margin-right: 30px;
+}
+.sb_sortable_input_holder {
+	width: 50%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-left: 10px solid transparent;
+	float: left;
+}
+.sb_sortable_inputs input {
+	width:100%;
+	height: 34px !important;
+	display: block;
+	margin: 0;
+}
+.sb_icon_picker {
+	background: #fff;
+	position: absolute;
+	top:0;
+	left: 18px;
+	padding: 10px;
+	border:1px solid #bbb;
+	z-index: 10;
+	display: none;
+}
+.sb_icons {
+	width: 294px;
+	height: 136px;
+	overflow-y: scroll;
+	display: none;
+	background: #aaaaaa;
+}
+
+.sb_icon_picker select {
+	width:100px;
+	margin: 0 0 10px 0;
+}
+
+.sb_icon_picker img {
+	height:46px;
+	display: block;
+	float: left;
+	cursor: pointer;
+}

@@ -1,0 +1,154 @@
+/*layout*/
+.pbtheme_container,
+.pbtheme_container_max > *,
+.pbtheme_boxed .top-separator,
+.header_wrapper nav li.menu-item.has_sidebar ul.navmenu_fullwidth li.sidebar_holder,
+.pbtheme_maxwidth {
+	width:100%;
+	max-width:@content_width;
+	margin:0 auto;
+	padding-left:@fb_hres_c;
+	padding-right:@fb_hres_c;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+body.pbtheme_boxed .pbtheme_container,
+body.pbtheme_boxed .pbtheme_container_max > *,
+body.pbtheme_boxed .pbtheme_boxed .top-separator,
+body.pbtheme_boxed .header_wrapper nav li.menu-item.has_sidebar ul.navmenu_fullwidth li.sidebar_holder,
+body.pbtheme_boxed .pbtheme_maxwidth {
+
+	padding-left:0;
+	padding-right:0;
+
+}
+body.pbtheme_boxed .layout-small-right .logo_sticky img {
+	left:0;
+}
+body.pbtheme_boxed .layout-small-left .logo_sticky img {
+	right:0;
+}
+.layout-small-right .logo_sticky img {
+	left:@fb_hres_c;
+}
+.layout-small-left .logo_sticky img {
+	right:@fb_hres_c;
+}
+
+
+	body,li.sidebar_holder{font-family:@font_face; font-style:@font_style; font-weight:@font_weight}
+	
+	#div_header_menu,#form-wrap >p:first-child,#sendpress_signup #thanks,.bbp-footer,.bbp-forum-title,.bbp-header,.bbp-pagination-count,.bbp-topic-permalink,.pbtheme_header_font,.footer_header .footer_counter,.menu-trigger-icon,.news_feed_tabs .tabsnav a,.shop_table.cart thead,.widget>ul>li,.woocommerce .summary .price,.woocommerce-tabs ul.tabs>li>a,.yop-poll-question,aside .product_list_widget a,aside.widget_display_stats,h1,h2,h3,h4,h5,h6,span.product_hover_text, .frb_scrl_count_digit_wrap, .frb_percentage_chart, p.logged-in-as, p.comment-notes,.kklike-box {font-family:@font_header_face; font-style:@font_header_style; font-weight:@font_header_weight;}
+
+
+
+@media (max-width: @content_width) {
+	.pbtheme_container,
+	.pbtheme_container_max > *,
+	.pbtheme_boxed .top-separator,
+	body.pbtheme_boxed #pbtheme_wrapper,
+	.header_wrapper nav li.menu-item.has_sidebar ul.navmenu_fullwidth li.sidebar_holder,
+	.pbtheme_maxwidth {
+		padding-left:@fb_mres_c;
+		padding-right:@fb_mres_c;
+	}
+	.layout-small-right .logo_sticky img {
+		left:@fb_mres_c;
+	}
+	.layout-small-left .logo_sticky img {
+		right:@fb_mres_c;
+	}
+}
+
+
+@media (max-width: @fb_mres_w) {
+
+	.pbtheme_container,
+	.pbtheme_container_max > *,
+	.pbtheme_boxed .top-separator,
+	body.pbtheme_boxed #pbtheme_wrapper,
+	.header_wrapper nav li.menu-item.has_sidebar ul.navmenu_fullwidth li.sidebar_holder,
+	.pbtheme_maxwidth {
+		padding-left:@fb_lres_c;
+		padding-right:@fb_lres_c;
+	}
+	.layout-small-right .logo_sticky img {
+		left:@fb_lres_c;
+	}
+	.layout-small-left .logo_sticky img {
+		right:@fb_lres_c;
+	}
+
+}
+@media (max-width: @fb_lres_w) {
+
+	.pbtheme_container,
+	.pbtheme_container_max > *,
+	.pbtheme_boxed .top-separator,
+	body.pbtheme_boxed #pbtheme_wrapper,
+	.header_wrapper nav li.menu-item.has_sidebar ul.navmenu_fullwidth li.sidebar_holder,
+	.pbtheme_maxwidth {
+
+	}
+
+	.div_breadcrumbs {display:none;}
+	.header_wrapper .header_holder {
+		display:block !important;
+		text-align:left;
+		padding-left:12px;
+		padding-right:12px;
+	}
+	.div_responsive_icons {
+		display:block;
+		float:right;
+	}
+	.header_holder .logo {
+		display:inline-block;
+		line-height:37px;
+	}
+	.pbtheme_top_left {
+		margin-bottom:12px;
+	}
+	.pbtheme_top_left, .pbtheme_top_right {
+		width:100%;
+		text-align:center;
+	}
+	.pbtheme_top_left .float_left, .pbtheme_top_right .float_right {
+		display: inline-block;
+		vertical-align: top;
+		float:none !important;
+		padding:0 6px !important;
+		line-height:25px;
+	}
+	.pbtheme_top_right .float_right {
+		border-right:0;
+		border-left:1px solid transparent;
+	}
+	.pbtheme_top_right .float_right:first-child {
+		border-left:0;
+	}
+	a.logo_sticky {
+		display:none !important;
+	}
+	#div_header_menu {
+		display:none;
+	}
+	.header_holder {
+		border:0;
+	}
+	.header_wrapper .pbtheme_top {
+		display:none;
+	}
+	.pbtheme_search {
+		position:relative;
+		display:block;
+		margin:18px auto 18px;
+	}
+	.pbtheme_search:after {
+		display:none;
+	}
+
+}

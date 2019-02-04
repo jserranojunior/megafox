@@ -1,0 +1,5162 @@
+/* ------------------------------------- */
+/* CONTENT INTERFACE */
+/* ------------------------------------- */
+@import url("buttons_styles.css");
+@import url("optin_styles.css");
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+a:focus {
+    outline: 0;
+}
+#wp-auth-check-wrap {
+    display: none !important;
+}
+#wpadminbar .pbuilder_edit_icon {
+    display: block;
+    height: 32px;
+    width: 16px;
+    padding: 0;
+    margin: 0;
+    background: url(../images/icon.png) no-repeat center center;
+}
+#pbuilder_body {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow:hidden;
+    left:0;
+    top:0;
+    border:0 solid transparent;
+    border-left:250px solid transparent;
+}
+#pbuilder_body_inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow:hidden;
+    left:0;
+    top:0;
+    border: 0;
+}
+#pbuilder_frame_cover {
+    position: absolute;
+    background: transparent;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+#pbuilder_body_frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow:auto;
+    left:0;
+    top:0;
+    border: 0;
+    margin: 0 auto;
+    display: block;
+    transition:transform 500ms, top 500ms, height 500ms;
+    -webkit-transition:-webkit-transform 500ms, top 500ms, height 500ms;
+}
+#pbuilder_body_frame.active {
+    position: static;
+    display: block;
+    width:960px;
+    margin:0 auto;
+}
+#pbuilder_wrapper {
+    min-height:50px;
+    height:auto;
+    padding:0;
+    margin:0;
+    border:0;
+    position: relative;
+}
+#pbuilder_wrapper.edit {
+    padding:0;
+}
+#pbuilder_wrapper.empty {
+    padding-top: 230px;
+    background: transparent url("../images/empty.png") no-repeat center top;
+    background-size: contain;
+}
+#pbuilder_content {
+    margin:0;
+    padding: 0;
+    width:100%;
+}
+#pbuilder_content_wrapper {
+    float: left;
+    width: 100%;
+}
+.pbuilder_controls {
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+.pbuilder_gradient,
+.pbuilder_gradient:active,
+a.pbuilder_gradient,
+a.pbuilder_gradient:active {
+    color:#ffffff;
+    background: #878586; /* Old browsers */
+    background: -moz-linear-gradient(top,  #878586 0%, #757575 2%, #666867 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#878586), color-stop(2%,#757575), color-stop(100%,#666867)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #878586 0%,#757575 2%,#666867 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #878586 0%,#757575 2%,#666867 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #878586 0%,#757575 2%,#666867 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #878586 0%,#757575 2%,#666867 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#878586', endColorstr='#666867',GradientType=0 ); /* IE6-9 */
+    border:1px solid #1e1e1e;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.pbuilder_gradient:hover,
+a.pbuilder_gradient:hover {
+    color: #ffffff;
+    background: #878586; /* Old browsers */
+    background: -moz-linear-gradient(top,  #878586 0%, #757575 48%, #666867 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#878586), color-stop(48%,#757575), color-stop(100%,#666867)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #878586 0%,#757575 48%,#666867 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #878586 0%,#757575 48%,#666867 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #878586 0%,#757575 48%,#666867 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #878586 0%,#757575 48%,#666867 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#878586', endColorstr='#666867',GradientType=0 ); /* IE6-9 */
+    transition: background-color 200ms;
+}
+.pbuilder_gradient_green,
+.pbuilder_gradient_green:active,
+a.pbuilder_gradient_green,
+a.pbuilder_gradient_green:active {
+    color:#ffffff;
+    background: #005600; /* Old browsers */
+    background: -moz-linear-gradient(top,  #005600 0%, #137f13 2%, #006900 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#005600), color-stop(2%,#137f13), color-stop(100%,#006900)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #005600 0%,#137f13 2%,#006900 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #005600 0%,#137f13 2%,#006900 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #005600 0%,#137f13 2%,#006900 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #005600 0%,#137f13 2%,#006900 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005600', endColorstr='#006900',GradientType=0 ); /* IE6-9 */
+    border:1px solid #1e1e1e;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.pbuilder_gradient_green:hover,
+a.pbuilder_gradient_green:hover {
+    color: #ffffff;
+    background: #005600; /* Old browsers */
+    background: -moz-linear-gradient(top,  #005600 0%, #137f13 48%, #006900 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#005600), color-stop(48%,#137f13), color-stop(100%,#006900)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #005600 0%,#137f13 48%,#006900 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #005600 0%,#137f13 48%,#006900 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #005600 0%,#137f13 48%,#006900 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #005600 0%,#137f13 48%,#006900 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005600', endColorstr='#006900',GradientType=0 ); /* IE6-9 */
+    transition: background-color 200ms;
+}
+/*
+.pbuilder_gradient_primary,
+.pbuilder_gradient_primary:active,
+a.pbuilder_gradient_primary,
+a.pbuilder_gradient_primary:active {
+        color:#ffffff;
+        background: #ab2712;
+        border:1px solid #1e1e1e;
+        text-decoration: none;
+}
+.pbuilder_gradient_primary:hover,
+a.pbuilder_gradient_primary:hover {
+        color: #ffffff;
+        background: #c32a12;
+        transition: background-color 200ms;
+}
+*/
+/* ------------- */
+/* pbuilder rows */
+/* ------------- */
+.pbuilder_wrapper_one-fourth-left-sidebar .pbuilder_sidebar.pbuilder_one-fourth-left-sidebar,
+.pbuilder_wrapper_one-third-left-sidebar .pbuilder_sidebar.pbuilder_one-third-left-sidebar {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.pbuilder_wrapper_one-fourth-right-sidebar .pbuilder_sidebar.pbuilder_one-fourth-right-sidebar,
+.pbuilder_wrapper_one-third-right-sidebar .pbuilder_sidebar.pbuilder_one-third-right-sidebar  {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.pbuilder_row_holder {
+    width:100%;
+    bottom:0;
+    left:0;
+    overflow: hidden;
+    height:42px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 3;
+}
+.pbuilder_new_row {
+    float: none;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width:100%;
+    height:auto;
+    padding:10px 0;
+    text-align: center;
+    font-size:16px;
+}
+.pbuilder_row_holder_inner {
+    padding:10px 0 0 0;
+    margin:0;
+}
+.pbuilder_row_button {
+    display: block;
+    float: left;
+    padding: 15px;
+    margin-right:10px;
+    margin-bottom: 10px;
+}
+.pbuilder_row_button img {
+    display: block;
+    opacity:0.9;
+    filter:alpha(opacity=90);
+}
+.pbuilder_row {
+    position: relative;
+    /*
+        Padding and margin removed by Asim Ashraf - DevBath
+        Reason: 3 Column layout divs overlaping because of these margin and padding. thats why hyperlink was not working in first 2 column.
+        Edit Date: 2-2-2015
+    */
+    padding: 0 1500px;
+    margin: 0 -1500px;
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+.pbuilder_row:before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    border-top:2px solid #e1e1e1;
+    border-bottom: 2px solid #e1e1e1;
+    top: -2px;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: opacity 300ms;
+}
+#pbuilder_wrapper.edit .pbuilder_row:hover:before,
+#pbuilder_wrapper.edit .pbuilder_row.child_selected:before {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#pbuilder_wrapper.edit .pbuilder_row.selected:before {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    border-color: #717171;
+}
+.pbuilder_row_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-position: center center;
+    overflow: hidden;
+}
+.pbuilder_row_back_image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.pbuilder_row_video {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.pbuilder_row_video > div {
+    position: absolute;
+    left:50%;
+    top:50%;
+    z-index: 0;
+}
+.pbuilder_row_video .mb_YTVPlayer {
+    background: transparent !important;
+}
+.pbuilder_row_video iframe ,
+.pbuilder_row_video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+    z-index: 0;
+    /*z-index: -99999;*/
+}
+.pbuilder_row_video.pbuilder_row_video_vimeo iframe{
+}
+.no-controls .pbuilder_row {
+    padding: 0;
+}
+.pbuilder_wrapper_one-third-left-sidebar #pbuilder_content_wrapper,
+.pbuilder_wrapper_one-third-right-sidebar #pbuilder_content_wrapper {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 66.66666%;
+}
+.pbuilder_wrapper_one-fourth-left-sidebar #pbuilder_content_wrapper,
+.pbuilder_wrapper_one-fourth-right-sidebar #pbuilder_content_wrapper {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 75%;
+}
+.pbuilder_wrapper_one-third-left-sidebar .pbuilder_row,
+.pbuilder_wrapper_one-third-right-sidebar .pbuilder_row,
+.pbuilder_wrapper_one-fourth-left-sidebar .pbuilder_row,
+.pbuilder_wrapper_one-fourth-right-sidebar .pbuilder_row {
+    margin: 0;
+    padding:0;
+}
+/* ---------------------- */
+/* pbuilder row controles */
+/* ---------------------- */
+.pbuilder_row_controls {
+    text-align: right;
+    z-index:1;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding:0;
+    position: absolute;
+    left: 0;
+    top: 65%;
+    width: 60px;
+    margin-top: -60px;
+    display: none;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: 300;
+    transition: all 300ms !important;
+    border-radius: 0 3px 3px 0 !important;
+    /*
+        left:1500px; removed by Asim Ashraf - DevBath
+        Reason: 3 Column layout divs overlaping because of these margin and padding. thats why hyperlink was not working in first 2 column.
+        Edit Date: 2-2-2015
+    */
+    left:1500px;
+}
+.pbuilder_sidebar .pbuilder_row_controls {
+    margin-left: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.pbuilder_row_controls:hover {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+#pbuilder_wrapper.edit .pbuilder_row_controls {
+    display: block;
+}
+#pbuilder_wrapper.edit .pbuilder_row.selected .pbuilder_row_controls {
+    display: block;
+}
+#pbuilder_wrapper.edit .pbuilder_row.selected:hover .pbuilder_row_controls {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+#pbuilder_wrapper.edit .pbuilder_row .pbuilder_row_controls.visible  {
+    display: block;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+.pbuilder_sidebar_label {
+    display: block;
+    height:23px;
+    padding-top: 6px;
+    margin:0;
+}
+.pbuilder_row_controls a {
+    display: block;
+    float: left;
+    width:24px;
+    height:24px;
+    padding: 2px;
+}
+.pbuilder_row_controls a:hover,
+.pbuilder_row_controls a.pbuilder_drag_handle:hover {
+    background-color:#323232;
+}
+.pbuilder_row.selected .pbuilder_row_controls a:hover,
+.pbuilder_row.selected .pbuilder_row_controls a.pbuilder_drag_handle:hover {
+    background-color:#323232;
+}
+.pbuilder_delete,.pbuilder_close {
+    background: url(../images/icons/delete.png) no-repeat center center;
+}
+.pbuilder_edit {
+    background: url(../images/icons/edit.png) no-repeat center center;
+}
+.pbuilder_clone {
+    background: url(../images/icons/clone.png) no-repeat center center;
+}
+.pbuilder_copy {
+    background: url(../images/icons/copy.png) no-repeat center center;
+}
+.pbuilder_paste {
+    background: url(../images/icons/paste.png) no-repeat center center;
+}
+a.pbuilder_drag_handle,
+a.pbuilder_drag {
+    background: url(../images/icons/drag.png) no-repeat center center;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    cursor: url(https://mail.google.com/mail/images/2/openhand.cur) 8 8;
+}
+a.pbuilder_drag_handle.drag,
+a.pbuilder_drag {
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+    cursor: url(https://mail.google.com/mail/images/2/closedhand.cur) 8 8;
+}
+/* ---------------- */
+/* pbuilder columns */
+/* ---------------- */
+#pbuilder_wrapper.edit .pbuilder_column {
+    min-height:30px;
+}
+.pbuilder_column {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    float: left;
+    display: block;
+    min-height:1px;
+    border:0;
+    padding:0;
+    margin: 0;
+    width:100%;
+    position: relative;
+}
+.pbuilder_column-1-2 .parent_overlay form .field input {
+    width: 93% !important;
+}
+.pbuilder_column-1-3 .parent_overlay form .field input {
+    width: 88%;
+}
+.pbuilder_column-1-1 .parent_overlay form .field input {
+    /*padding: 10px 40px 10px 23px !important;*/
+    padding: 10px 40px 10px 23px !important;
+}
+.pbuilder_column-1-2 .parent_overlay .lr_alignment form .field input {
+    width: 87.5% !important;
+}
+#colorbox .lr_alignment form .field input {
+    width: 93%;
+}
+.pbuilder_column-1-1 .parent_overlay .lr_alignment form .field input {
+    padding-right: 34px !important;
+    width: 91.3%;
+}
+.pbuilder_column-1-3 .parent_overlay .lr_alignment form .field input {
+    width: 82%;
+}
+.pbuilder_column-1-1 form.optinF .field{
+    width: 100% !important;
+}
+.pbuilder_column-1-2 form.optinF .field input {
+    padding: 10px 7.5% 10px 1% !important;
+    width: 91% !important;
+}/*.optin.optinF.optinfrb_optin_11262.optin_style_Vertical {
+    margin: 0 auto;
+    width: 96% !important;
+}*/
+/*
+Code added by Asim Ashraf - DevBatch
+DateTime: 27 Jan 2015
+Code Edit Start
+*/
+#colorbox form frb_fullwidth {
+    clear: both;
+    float: none !important;
+    margin: 0 auto 10px !important;
+    width: 99.6% !important;
+}
+#colorbox form .Hfield input{
+    font-size: 1.5vw !important;
+    padding: 15px 6px !important;
+}
+/*
+Code added by Asim Ashraf - DevBatch
+DateTime: 27 Jan 2015
+Code Edit End
+*/
+.pbuilder_column.pbuilder_column-1-1 {
+    width:100%;
+}
+.pbuilder_column.pbuilder_column-1-2 {
+    width:50%;
+}
+.pbuilder_sidebar.pbuilder_one-third-left-sidebar,
+.pbuilder_sidebar.pbuilder_one-third-right-sidebar,
+.pbuilder_column.pbuilder_column-1-3 {
+    width:33.33333%;
+}
+.pbuilder_column.pbuilder_column-2-3 {
+    width:66.66666%;
+}
+.pbuilder_sidebar.pbuilder_one-fourth-left-sidebar,
+.pbuilder_sidebar.pbuilder_one-fourth-right-sidebar,
+.pbuilder_column.pbuilder_column-1-4 {
+    width:25%;
+}
+.pbuilder_column.pbuilder_column-3-4 {
+    width:75%;
+}
+.pbuilder_column.pbuilder_column-1-5 {
+    width:20%
+}
+.pbuilder_column.pbuilder_column-2-5 {
+    width:40%
+}
+.pbuilder_column.pbuilder_column-3-5 {
+    width:60%
+}
+.pbuilder_column.pbuilder_column-4-5 {
+    width:80%
+}
+#pbuilder_wrapper.edit .pbuilder_droppable {
+    min-height:40px;
+    z-index:2;
+}
+.pbuilder_droppable {
+    position: relative;
+    /*z-index:2;*/
+}
+.pbuilder_drop_borders {
+    width:100%;
+    height:100%;
+    position: absolute;
+    margin:0;
+    padding:0;
+    top:-2px;
+    left:-2px;
+    border-radius: 3px;
+}
+/* --------------------- */
+/* pbuilder row selected */
+/* --------------------- */
+#pbuilder_wrapper.edit .pbuilder_row .empty .pbuilder_droppable {
+    height: 128px;
+    cursor: pointer;
+}
+#pbuilder_wrapper.edit .pbuilder_row .empty .pbuilder_droppable:after {
+    position: absolute;
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    padding:55px 10px;
+    text-align: center;
+    top:0;
+    left: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.pbuilder_empty_content {
+    display: none;
+}
+#pbuilder_wrapper.edit .pbuilder_row .empty .pbuilder_empty_content {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    text-align: center;
+}
+#pbuilder_wrapper.edit .pbuilder_row .empty .pbuilder_add_shortcode {
+    width: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin: 30px auto 10px;
+}
+#pbuilder_wrapper.edit .pbuilder_row.selected .pbuilder_drop_borders,
+#pbuilder_wrapper.edit .pbuilder_row:hover .pbuilder_drop_borders,
+#pbuilder_wrapper.edit .pbuilder_drop_borders:hover,
+#pbuilder_wrapper.edit .pbuilder_row .empty .pbuilder_drop_borders{
+    border:2px dashed #717171;
+}
+#pbuilder_wrapper.edit .pbuilder_row.selected .pbuilder_row_controls  {
+    display: block;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#pbuilder_wrapper.edit .pbuilder_row.selected .pbuilder_row_controls .pbuilder_edit {
+    background-color: #323232;
+}
+/* --------------- */
+/* pbuilder module */
+/* --------------- */
+#pbuilder_wrapper.edit .pbuilder_column .pbuilder_module {
+    min-height:30px;
+}
+.pbuilder_column .pbuilder_module {
+    width:100%;
+    position: relative;
+}
+/* ------------------------- */
+/* pbuilder module controles */
+/* ------------------------- */
+.pbuilder_module_name {
+    font-family: Arial;
+    padding: 5px 8px 0 8px;
+    margin: 0;
+    display: block;
+    float: left;
+    max-width: 50%;
+    height: 16px;
+    font-size: 14px;
+    line-height: 14px;
+    overflow: hidden;
+    text-align: left;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+.pbuilder_module {
+    position: relative;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+#pbuilder_wrapper.edit .pbuilder_module:before {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    border: 2px solid #717171;
+    left: -2px;
+    top: -2px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transition: opacity 300ms;
+    border-radius: 3px;
+}
+#pbuilder_wrapper.edit .pbuilder_module:hover:before {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#pbuilder_wrapper.edit .pbuilder_module.selected:before,
+#pbuilder_wrapper.edit .pbuilder_module.selected:hover:before{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    border: 2px solid #717171;
+}
+.frb_drag_placeholder_element {
+    height:auto !important;
+    width:200px !important;
+    font-size:14px !important;
+    line-height: 14px !important;
+    display: block;
+    padding:10px 10px 10px 20px;
+    position: absolute;
+    top:0;
+    left:0;
+    background: url('../images/icons/drag.png') no-repeat scroll center right #878586;
+    color:#fff;
+    z-index:200;
+}
+.ui-sortable-helper {
+    display: none !important;
+    z-index: 999 !important;
+    position: absolute !important;
+    height:20px !important;
+    width:100% !important;
+    background: #878586; /* Old browsers */
+    background: -moz-linear-gradient(top,  #878586 0%, #757575 2%, #666867 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#878586), color-stop(2%,#757575), color-stop(100%,#666867)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #878586 0%,#757575 2%,#666867 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #878586 0%,#757575 2%,#666867 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #878586 0%,#757575 2%,#666867 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #878586 0%,#757575 2%,#666867 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#878586', endColorstr='#666867',GradientType=0 ); /* IE6-9 */
+}
+.ui-sortable-helper  > * {
+    display: none !important;
+}
+.pbuilder_row.ui-sortable-helper {
+    margin:0 !important;
+    background: none !important;
+    border: 0 !important;
+    padding:0 !important;
+}
+#pbuilder_wrapper.edit .pbuilder_row.ui-sortable-helper.selected:before, #pbuilder_wrapper.edit .pbuilder_row.ui-sortable-helper .pbuilder_module.selected:before, #pbuilder_wrapper.edit .pbuilder_row.ui-sortable-helper .pbuilder_module.selected:hover:before {
+    border:0 !important;
+}
+.pbuilder_row.ui-sortable-helper:after {
+    content:"";
+    position: absolute;
+    top:100%;
+    left:50%;
+    width:160px;
+    height:30px;
+    margin-left:-80px;
+    border:1px solid #fff;
+    background: #878586; /* Old browsers */
+    background: -moz-linear-gradient(top,  #878586 0%, #757575 2%, #666867 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#878586), color-stop(2%,#757575), color-stop(100%,#666867)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #878586 0%,#757575 2%,#666867 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #878586 0%,#757575 2%,#666867 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #878586 0%,#757575 2%,#666867 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #878586 0%,#757575 2%,#666867 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#878586', endColorstr='#666867',GradientType=0 ); /* IE6-9 */
+}
+.ui-sortable-placeholder {
+    background: #323232;
+    height:40px !important;
+    opacity:0.2;
+    width:100% !important;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    visibility: visible !important;
+}
+.pbuilder_control_content .pbuilder_sortable_item.ui-sortable-placeholder {
+    height:30px !important;
+    margin-bottom:10px;
+    border-radius: 3px;
+    border: 1px solid #1E1E1E;
+    background: #878586; /* Old browsers */
+    background: -moz-linear-gradient(top,  #878586 0%, #757575 2%, #666867 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#878586), color-stop(2%,#757575), color-stop(100%,#666867)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #878586 0%,#757575 2%,#666867 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #878586 0%,#757575 2%,#666867 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #878586 0%,#757575 2%,#666867 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #878586 0%,#757575 2%,#666867 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#878586', endColorstr='#666867',GradientType=0 ); /* IE6-9 */
+    opacity:0.4;
+}
+.pbuilder_module_controls {
+    display: none;
+    position: absolute;
+    left: 50%;
+    /*
+         * Code Edit By Asim Ashraf - DevBatch
+         * Issue: remove Left right margin issue.
+         * comment: top
+         * Date: 2015-02-20
+         */
+/*    top:-15px;*/
+    margin:0 0 0 -56px;
+    text-align: right;
+    height: 30px;
+    z-index:300;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius:0;
+    padding: 0;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    cursor: url(https://mail.google.com/mail/images/2/openhand.cur) 8 8;
+    z-index: 3;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: top 200ms, opacity 300ms;
+    border-radius: 3px;
+}
+.pbuilder_column-1-4 .pbuilder_module_controls,
+.pbuilder_column-1-5 .pbuilder_module_controls{
+    height: 65px;
+    width: 78px;
+    left: auto;
+    right: 10%;
+}
+.pbuilder_column-1-4 .pbuilder_module_controls a,
+.pbuilder_column-1-5 .pbuilder_module_controls a{
+    margin-left: -4px;
+}
+#pbuilder_wrapper.edit .pbuilder_module_controls {
+    display: block;
+}
+#pbuilder_wrapper.edit .pbuilder_module:hover .pbuilder_module_controls {
+    opacity: 100;
+    filter: alpha(opacity=100);
+}
+.pbuilder_module_loader {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    display: block;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -21px 0 0 -21px;
+    padding: 0;
+    display: none;
+    z-index: 2;
+}
+.pbuilder_module_controls.drag {
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+    cursor: url(https://mail.google.com/mail/images/2/closedhand.cur) 8 8;
+}
+.pbuilder_module_controls a {
+    display: inline-block;
+    width:24px;
+    height:24px;
+    border-radius:0;
+    margin:0;
+    padding: 2px;
+}
+.pbuilder_module_controls a:hover,
+.pbuilder_module_controls a.pbuilder_drag_handle:hover,
+#pbuilder_wrapper.edit .pbuilder_module.selected .pbuilder_edit {
+    background-color:#323232;
+    line-height: 33px;
+}
+.pbuilder_module_controls.pbuilder_gradient_primary a:hover,
+.pbuilder_module_controls.pbuilder_gradient_primary a.pbuilder_drag_handle:hover {
+    background-color:#323232;
+}
+.pbuilder_module_controls a.pbuilder_drag_handle
+{
+    margin: 0;
+    float: left;
+    background: url(../images/move2.png) no-repeat center center;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    cursor: url(https://mail.google.com/mail/images/2/openhand.cur) 8 8;
+}
+.pbuilder_module_controls a.pbuilder_drag_handle.drag {
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+    cursor: url(https://mail.google.com/mail/images/2/closedhand.cur) 8 8;
+}
+#pbuilder_wrapper.edit .pbuilder_module_content {
+    min-height:30px;
+}
+.pbuilder_module_content {
+    position: relative;
+    z-index: 1;
+}
+/* -------------- */
+/* pbuilder popup */
+/* -------------- */
+.pbuilder_popup {
+    position: fixed;
+    top:50%;
+    left: 50%;
+    height: 110px;
+    width: 557px;
+    margin: -55px 0 0 -250px;
+    z-index: 1002;
+    background:#323232;
+    font-family: Arial;
+    font-size: 14px;
+    color: #fff;
+}
+.pbuilder_popup.pbuilder_popup_load {
+    height: 162px;
+    margin-top: -81px;
+}
+.pbuilder_popup table {
+    width: 550px;
+}
+.pbuilder_popup a {
+    text-decoration: none;
+}
+.pbuilder_popup ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.pbuilder_popup_content {
+    padding: 0 10px 10px 10px
+}
+.pbuilder_popup td:first-child {
+    width: 245px;
+    padding: 8px 0 0 0;
+}
+.pbuilder_popup.pbuilder_popup_template td:first-child {
+    width: 35%;
+}
+.pbuilder_popup .pbuilder_control{
+    margin-bottom: 8px;
+}
+.pbuilder_popup .pbuilder_module_controls {
+    cursor: default;
+}
+.pbuilder_popup_loader {
+    margin: 77px 0 0 140px;
+}
+.pbuilder_popup_button_loader {
+    float: right;
+    margin: 20px 0 0 -16px;
+    z-index: 2;
+    position: relative;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.pbuilder_popup_shadow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1001;
+    background: #000000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.pbuilder_popup_tabs > ul {
+    width: 100%;
+    border-bottom: 1px solid #666666;
+    padding: 12px 0 0 0;
+}
+.pbuilder_popup_tabs > ul li {
+    display: inline-block;
+    margin: 0px 0px -1px 5px;
+    padding: 0px;
+}
+.pbuilder_popup_tabs > ul a {
+    display: inline-block;
+    padding: 11px 11px 10px 11px;
+    background: #323232;
+    margin: 0px;
+    border: 0;
+    border-bottom:1px solid #666666;
+    color:#909090;
+}
+.pbuilder_popup_tabs > ul a::-moz-focus-inner {
+    border: 0;
+}
+.pbuilder_popup_tabs > ul a:focus {
+    outline:none;
+}
+.pbuilder_popup_tabs > ul a.active {
+    padding: 10px;
+    border: 1px solid #666666;
+    border-bottom:1px solid #323232;
+    color:#ffffff;
+}
+.pbuilder_popup_tabs > ul a:hover {
+    color:#ffffff;
+}
+.pbuilder_popup#pbuilder_add_row_popup {
+    display: none;
+    height: 260px;
+    padding:20px 0 20px 20px;
+    width: 630px;
+    margin: -130px 0 0 -315px;
+}
+.pbuilder_popup#pbuilder_add_row_popup .frb_headline {
+    display: block;
+    margin-bottom:10px;
+}
+.pbuilder_popup#pbuilder_add_row_popup .pbuilder_button {
+    float: none;
+    position: absolute;
+    bottom:15px;
+    right:15px;
+}
+/* ---------------- */
+/* pbuilder tinyMCE */
+/* ---------------- */
+#pbuilder_editor_popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -228px 0 0 -360px;
+    z-index: 1002;
+    background:#191718;
+    border: 1px solid #191718;
+    font-family: Arial;
+    font-size: 14px;
+    color: #fff;
+}
+#pbuilder_editor_popup_shadow {
+    display: none;
+    background: #000;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    z-index: 510;
+}
+#pbuilder_editor_popup a {
+    text-decoration: none;
+}
+#pbuilder_editor_popup ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#pbuilder_editor_popup_inner {
+    width: 700px;
+    padding: 10px;
+    border: 0;
+    margin: 0;
+    background: #ffffff;
+}
+.pbuilder_editor_popup_buttons {
+    padding: 2px 9px 5px;
+}
+#pbuilder_editor_resize {
+    display: none;
+}
+#pbuilder_editor_ifr {
+    height: 220px !important;
+}
+/* ---------------------------- */
+/* pbuilder add shortcode popup */
+/* ---------------------------- */
+#pbuilder_add_shortcode_popup {
+    display: none;
+    width: 900px;
+    height: 400px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -200px 0 0 -450px;
+    background: #323232;
+    z-index: 1002;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 10px;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 12px;
+    color:#ffffff;
+}
+.pbuilder_add_shortcode_popup_controls {
+    width:330px;
+}
+#pbuilder_add_shortcode_popup .pbuilder_shortcode_group:first-child {
+    display: block;
+}
+#pbuilder_add_shortcode_popup .pbuilder_shortcode_groups {
+    margin-top: 5px;
+    position: relative;
+    width: 880px;
+    height:305px;
+    top: auto;
+    left: auto;
+}
+#pbuilder_add_shortcode_popup .pbuilder_shortcode_group {
+    position: relative;
+    width: 890px;
+    height:305px;
+    overflow: hidden;
+    border-bottom: 0;
+}
+#pbuilder_add_shortcode_popup .pbuilder_shortcode_block {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 12.5%;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    height: 100px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+#pbuilder_add_shortcode_popup .pbuilder_shortcode_block:before {
+    content: "";
+    background: #626262; /* Old browsers */
+    background: -moz-linear-gradient(top,  #626262 0%, #444444 3%, #484848 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#626262), color-stop(3%,#444444), color-stop(100%,#484848)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #626262 0%,#444444 3%,#484848 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #626262 0%,#444444 3%,#484848 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #626262 0%,#444444 3%,#484848 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #626262 0%,#444444 3%,#484848 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#626262', endColorstr='#484848',GradientType=0 ); /* IE6-9 */
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #1E1E1E;
+    border-radius: 5px;
+}
+#pbuilder_add_shortcode_popup .pbuilder_shortcode_block:hover:before {
+    background: #727272; /* Old browsers */
+    background: -moz-linear-gradient(top,  #727272 0%, #545454 3%, #585858 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#727272), color-stop(3%,#545454), color-stop(100%,#585858)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #727272 0%,#545454 3%,#585858 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #727272 0%,#545454 3%,#585858 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #727272 0%,#545454 3%,#585858 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #727272 0%,#545454 3%,#585858 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#727272', endColorstr='#585858',GradientType=0 ); /* IE6-9 */
+}
+#pbuilder_add_shortcode_popup .pbuilder_shortcode_block .shortcode_icon {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: 15px auto 0;
+    position: relative;
+    z-index: 1;
+}
+#pbuilder_add_shortcode_popup .pbuilder_shortcode_block .shortcode_icon img {
+    display: block;
+}
+#pbuilder_add_shortcode_popup .pbuilder_shortcode_block .shortcode_name {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+}
+/* ------------------------------------- */
+/* MENU INTERFACE */
+/* ------------------------------------- */
+.pbuilder_header .pbuilder_toggle_zoom_trigger > i, .pbuilder_toggle_zoom_trigger > span {
+    display: inline-block;
+}
+.pbuilder_header .pbuilder_toggle_zoom_trigger.active > span {
+    color: #048AC3;
+}
+.pbuilder_header .pbuilder_permalink_preview_trigger > i, .pbuilder_permalink_preview_trigger > span {
+    display: inline-block;
+}
+.pbuilder_toggle_wrapper {
+    position: fixed;
+    padding: 14px 10px 10px 10px;
+    left:50%;
+    bottom: 0;
+    background:#535353;
+    border-radius: 5px 5px 0 0;
+    margin: 0 0 -1px -177px;
+    z-index: 1;
+    width: 334px;
+    font-family:Arial;
+    font-size: 14px;
+}
+.pbuilder_toggle_wrapper:before,
+.pbuilder_toggle_wrapper:after {
+    content: "";
+    width: 26px;
+    height: 2px;
+    position: absolute;
+    top:5px;
+    left:50%;
+    margin: 0 0 0 -13px;
+    padding: 0;
+    background: black;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+.pbuilder_toggle_wrapper:after {
+    top:8px;
+}
+.pbuilder_toggle_wrapper .pbuilder_toggle {
+    float: left;
+    margin:0;
+    padding: 13px 10px 13px 10px;
+    width: 96px;
+    white-space: nowrap;
+    text-align: center;
+}
+.pbuilder_toggle_wrapper .pbuilder_toggle_screen {
+    float: left;
+    margin:0 2px 0 0;
+    padding: 13px 15px 13px 15px;
+    width: 20px;
+    text-align: center;
+}
+.pbuilder_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 100%;
+    background: #363636;
+    border-top:1px solid #3d3d3d;
+    border-bottom:1px solid #3d3d3d;
+    z-index: 1000;
+}
+.pbuilder_header .pbuilder_disabled {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    cursor: default;
+}
+.pbuilder_header a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    height: 21px;
+    line-height: 21px;
+    font-size: 12px;
+    float: left;
+    padding: 0 10px 0 0;
+    margin:7px 0px 7px 0;
+    position: relative;
+}
+.pbuilder_header a.active {
+    color: #048AC3;
+}
+.pbuilder_header a i {
+    padding: 2px 0 0 10px;
+    font-size: 16px;
+    display: block;
+    width: 21px;
+    height: 21px;
+    text-align: center;
+}
+.pbuilder_header a:after {
+    content: "";
+    position: absolute;
+    right: -1px;
+    height: 100%;
+    width: 1px;
+    background: #202425;
+    border-right: 1px solid #747577;
+    top:0;
+}
+.pbuilder_header a img {
+    display: block;
+    float: left;
+    height: 21px;
+    margin-left: 10px;
+}
+.pbuilder_header a img.save_loader {
+    display: none;
+}
+.pbuilder_header a span {
+    margin-left: 10px;
+    font-size: 11px;
+}
+.pbuilder_header .pbuilder_add_row_popup_trigger i {
+    float: left;
+    color: #fff;
+    padding-left:0px;
+}
+#pbuilder_main_menu,
+.pbuilder_shortcode_menu {
+    position: fixed;
+    left:0;
+    top:0;
+    z-index:1;
+    height:100%;
+    background:#535353;
+    width: 260px;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 13px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-top: 37px solid transparent;
+}
+.pbuilder_shortcode_menu_toggle {
+    z-index:1001;
+    position: absolute;
+    top:8px;
+    right: -47px;
+    padding:5px;
+    width:35px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom:0;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#pbuilder_main_menu {
+    width: 42px;
+}
+#pbuilder_main_menu.pbuilder_main_menu_hidden {
+    left:-250px;
+}
+#pbuilder_main_menu .mCSB_scrollTools {
+    left:0;
+}
+#pbuilder_main_menu .mCSB_container {
+    margin-left:20px;
+    margin-right: 0;
+}
+#pbuilder_main_menu .mCSB_container.mCS_no_scrollbar {
+    margin-left: 0;
+}
+#pbuilder_main_menu h3,
+.pbuilder_shortcode_menu h3 {
+    margin: 10px 0 20px 0;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 100;
+}
+#pbuilder_main_menu h3 i,
+.pbuilder_shortcode_menu h3 i {
+    font-size: 14px;
+}
+#pbuilder_main_menu a,
+.pbuilder_shortcode_menu a {
+    text-decoration: none;
+}
+#pbuilder_main_menu ul,
+.pbuilder_shortcode_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.pbuilder_shortcode_menu {
+    width: 260px ;
+}
+#pbuilder_main_menu > .mCustomScrollBox > .mCS_no_scrollbar,
+.pbuilder_shortcode_menu > .mCustomScrollBox > .mCS_no_scrollbar {
+    min-height:100%;
+}
+#pbuilder_main_menu .pbuilder_menu_inner {
+    width:100%;
+    padding: 0;
+}
+.pbuilder_menu_inner {
+    padding:10px 10px 145px 10px;
+    margin-right: -10px;
+}
+.pbuilder_control {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-bottom:8px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.pbuilder_control.pbuilder_half_control {
+    width:50%;
+}
+.pbuilder_control_hidden:after {
+    content: "";
+    background:#535353;
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+.pbuilder_label {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 50%;
+    float: left;
+    position: relative;
+    padding:6px 0 6px 0;
+    border-right: 10px solid transparent;
+}
+#pbuilder_main_menu label,
+.pbuilder_shortcode_menu label {
+    font-size:12px;
+    line-height:14px;
+    margin: 0;
+    padding: 0;
+    color:#ffffff;
+    display: block;
+}
+#pbuilder_main_menu span.pbuilder_desc,
+.pbuilder_shortcode_menu span.pbuilder_desc {
+    font-size:11px;
+    line-height:13px;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    color: #fff;
+    padding: 10px;
+    z-index:100;
+    width: 150px;
+    margin-bottom: 10px;
+    opacity: 0;
+    display: none;
+}
+.pbuilder_control_content {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 50%;
+    float: left;
+    border-right: 10px solid transparent;
+}
+.pbuilder_button {
+    display: block;
+    padding:6px 8px;
+    float: left;
+    margin:5px 5px 0 0;
+    cursor: pointer;
+}
+.pbuilder_button.right {
+    float: right;
+    margin:5px 0 0 5px;
+}
+/* --------------- */
+/* pbuilder_select */
+/* --------------- */
+.pbuilder_select {
+    position: relative;
+    cursor: pointer;
+}
+.pbuilder_select span {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: block;
+    font-size:12px;
+    padding:6px 8px;
+    line-height:12px;
+    float: left;
+    height:24px;
+    width: 100%;
+    border-right:24px solid transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.pbuilder_select:hover span,
+.pbuilder_select.active span {
+}
+.pbuilder_select .drop_button {
+    position: absolute;
+    width:24px;
+    height:24px;
+    top:0;
+    right:0;
+    background: url(../images/icons/arrows.png) no-repeat center center;
+}
+.pbuilder_select:hover .drop_button,
+.pbuilder_select.active .drop_button{
+    transition: opacity 200ms;
+}
+.pbuilder_select_search {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius:0;
+    border:0px solid #1e242a;
+    border-bottom:1px solid #1e242a;
+    background:#3c3c3c;
+    padding:8px;
+    font-size: 12px;
+    line-height: 14px;
+    margin:0;
+    color:#909090;
+    width: 100%;
+    height:30px;
+    position: absolute;
+    top:24px;
+    left:0;
+    z-index:8;
+}
+.pbuilder_select_search:focus {
+    color:#ffffff;
+}
+.pbuilder_select ul {
+    position: absolute;
+    border:1px solid #1e1e1e;
+    background:#3c3c3c;
+    top:24px;
+    left:-1px;
+    z-index:5;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height:230px;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+}
+.pbuilder_select.pbuilder_select_with_search ul{
+    padding-top: 31px;
+    max-height: 170px;
+}
+.pbuilder_select ul a {
+    display: block;
+    color:#ffffff;
+    padding:6px 8px;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration:none;
+}
+.pbuilder_select ul .mCS_no_scrollbar a {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.pbuilder_select ul a:hover,
+.pbuilder_select ul a.selected,
+.pbuilder_select ul:hover a:hover,
+.pbuilder_select ul:hover a.selected:hover,
+.pbuilder_select.pbuilder_select_multi ul:hover a.selected{
+    color:#048AC3;
+}
+.pbuilder_select ul:hover a.selected  {
+    color:#ffffff;
+}
+.pbuilder_select span,
+.pbuilder_select ul,
+.pbuilder_select li,
+.pbuilder_select a {
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+/* ------------------ */
+/* pbuilder_draggable */
+/* ------------------ */
+.pbuilder_shortcode_tab_select {
+    padding:6px;
+    position: absolute;
+    z-index: 999;
+    top:0;
+    background: #535353;
+}
+.pbuilder_shortcode_tab_select img {
+    position: relative;
+    display: block;
+}
+.pbuilder_shortcode_tab_select:before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: 3px solid transparent;
+    border-right: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    z-index: 1000;
+}
+.pbuilder_shortcode_tab_select.active {
+    background: #323232;
+}
+.pbuilder_shortcode_tab_select.active:after {
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    bottom: -2px;
+    left:0;
+    width: 100%;
+    height: 1px;
+    background: #1f2326;
+    border-bottom: 1px solid #767676;
+}
+.pbuilder_shortcode_tabs {
+    height: 42px;
+    position: absolute;
+    left: 42px;
+    top:0;
+    display: none;
+}
+.pbuilder_shortcode_tab {
+    padding:6px;
+    position: absolute;
+    z-index: 999;
+    top:0;
+    background: #535353;
+    cursor: pointer;
+}
+.pbuilder_shortcode_tab:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: #767676;
+    border-left: 1px solid #1F2326;
+    left:-1px;
+    top:0;
+}
+.pbuilder_shortcode_tab.active {
+    display: none;
+}
+.pbuilder_shortcode_tab.after {
+    margin-left:-42px;
+}
+.pbuilder_shortcode_tab:hover {
+    background : #323232;
+}
+.pbuilder_shortcode_tab img {
+    display: block;
+}
+.pbuilder_shortcode_groups {
+    top: 42px;
+    left:0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+}
+.pbuilder_shortcode_group {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: 42px solid transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.pbuilder_shortcode_group.active {
+    display: block;
+}
+.pbuilder_shortcode_group .mCSB_container {
+    overflow: visible !important;
+    margin-left: 0 !important;
+}
+.pbuilder_shortcode_group .mCustomScrollBox {
+    overflow: visible !important;
+}
+.pbuilder_shortcode_group .mCSB_scrollTools {
+    left: -7px !important;
+}
+.pbuilder_shortcode_group .mCSB_dragger_bar {
+    z-index: 1000;
+}
+.pbuilder_draggable {
+    position: relative;
+    cursor: pointer;
+    margin:10;
+    z-index:4;
+    width:42px;
+    height:42px;
+    color: #757474;
+}
+.pbuilder_shortcode_name,
+.pbuilder_shortcode_tab_select_name {
+    display: none;
+    position: absolute;
+    left: 60px;
+    top:8px;
+    white-space: nowrap;
+    background: #323232;
+    padding: 6px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 0 3px 3px 0;
+    border-right: 5px solid #048AC3;
+}
+.pbuilder_shortcode_name:before,
+.pbuilder_shortcode_tab_select_name:before {
+    content: "";
+    position: absolute;
+    left: -13px;
+    top:0;
+    border: 13px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 13px solid #323232;
+}
+.pbuilder_shortcode_tab_select_name {
+    background: #048AC3;
+}
+.pbuilder_shortcode_tab_select_name:before {
+    border-right: 13px solid #048AC3;
+}
+.pbuilder_draggable.ui-draggable-dragging {
+    background: #323232;
+}
+.pbuilder_draggable .shortcode_icon {
+    display: block;
+    padding: 6px;
+}
+.pbuilder_draggable .shortcode_icon img {
+    display: block;
+}
+.pbuilder_draggable.ui-draggable-dragging {
+}
+.pbuilder_draggable:hover {
+    background: #323232;
+}
+.pbuilder_shortcode_group_select:hover .pbuilder_shortcode_name,
+.pbuilder_shortcode_group_select:hover .pbuilder_shortcode_tab_select_name{
+    display: block;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+}
+.pbuilder_shortcode_group_select:hover .pbuilder_shortcode_tab_select_name,
+.pbuilder_shortcode_group:hover .pbuilder_draggable:hover .pbuilder_shortcode_name,
+.pbuilder_draggable:hover .pbuilder_shortcode_name,
+.pbuilder_draggable.ui-draggable-dragging .pbuilder_shortcode_name  {
+    display: block;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+/* ------------------------- */
+/* pbuilder_number_slide_bar */
+/* ------------------------- */
+.pbuilder_shortcode_menu .pbuilder_number_bar_wrapper {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 230px;
+    position: absolute;
+    left: 0;
+    top:30px;
+    border: 1px solid #1e1e1e;
+    background:#323232;
+    padding: 20px 10px;
+    z-index: 1;
+    border-radius: 3px;
+    display: none;
+    -webkit-box-shadow: inset 1px 1px 2px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 1px 1px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 1px 1px 2px 0px rgba(0,0,0,0.2);
+}
+.pbuilder_shortcode_menu .ui-slider-horizontal {
+    height:7px;
+    width:205px;
+    border-radius:5px;
+    background:#5d5d5d;
+    border:1px solid #1e1e1e;
+    position: relative;
+    float: left;
+    -webkit-box-shadow: inset 1px 1px 2px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 1px 1px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 1px 1px 2px 0px rgba(0,0,0,0.2);
+}
+.pbuilder_shortcode_menu .pbuilder_number_bar .ui-slider-handle {
+    height:24px;
+    width:24px;
+    margin-left:-12px;
+    background:url(../images/slider-handle.png) no-repeat center center;
+    position: absolute;
+    cursor: pointer;
+    border: 0;
+    margin-top: -9px;
+    top:0;
+    outline: none;
+    -moz-outline-style: none;
+}
+.pbuilder_shortcode_menu .pbuilder_number_bar .ui-slider-range {
+    height:7px;
+    margin-top:-1px;
+    margin-left:-1px;
+    border:1px solid #1e1e1e;
+    border-radius:5px;
+    background: #5a92cd; /* Old browsers */
+    background: -moz-linear-gradient(top,  #5a92cd 0%, #4c80ba 14%, #275d8c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5a92cd), color-stop(14%,#4c80ba), color-stop(100%,#275d8c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #5a92cd 0%,#4c80ba 14%,#275d8c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #5a92cd 0%,#4c80ba 14%,#275d8c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #5a92cd 0%,#4c80ba 14%,#275d8c 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #5a92cd 0%,#4c80ba 14%,#275d8c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a92cd', endColorstr='#275d8c',GradientType=0 ); /* IE6-9 */
+}
+.pbuilder_input.pbuilder_number_amount {
+    width: 100%;
+    float: left;
+    border-radius: 3px 0 0 3px;
+    border-right: 18px solid transparent;
+}
+.pbuilder_number_button {
+    width: 16px;
+    height: 22px;
+    border-radius: 0 3px 3px 0;
+    margin: 0 0 0 -1px;
+    position: absolute;
+    right: 10px;
+}
+.pbuilder_number_button:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: transparent url(../images/icons/arrows.png) center center;
+}
+/* ---------------------------------- */
+/* pbuilder_input / pbuilder_textarea */
+/* ---------------------------------- */
+.pbuilder_input {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius:3px;
+    border:1px solid #1e1e1e;
+    background:#323232;
+    padding:3px 5px;
+    margin:0;
+    color:#909090;
+    width:100%;
+    font-size: 11px;
+    line-height: 12px;
+    height: 24px;
+    position: relative;
+    -webkit-box-shadow: inset 1px 1px 2px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 1px 1px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 1px 1px 2px 0px rgba(0,0,0,0.2);
+}
+.pbuilder_textarea {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius:3px;
+    border:1px solid #1e1e1e !important;
+    background:#323232;
+    padding:6px;
+    margin:0;
+    color:#909090;
+    width:100%;
+/*    font-size: 11px;*/
+/*    line-height: 12px;*/
+    position: relative;
+    resize: vertical;
+    height:200px;
+}
+.pbuilder_wp_editor_button {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    margin: -4px 0 0 0;
+    border-radius: 0 0 3px 3px !important;
+    position: relative;
+}
+.pbuilder_input:focus,
+.pbuilder_textarea:focus {
+    color:#ffffff;
+    transition: color 200ms;
+}
+.pbuilder_checkbox {
+    height:22px;
+    width:20px;
+    background:transparent url(../images/checkbox.png) no-repeat center center;
+    cursor: pointer;
+    float: left;
+    margin:-2px 5px 0 0;
+    padding:0;
+}
+.pbuilder_checkbox:hover {
+    border-color:#ab2712;
+    transition:border-color 300ms;
+}
+.pbuilder_checkbox.active {
+    background:transparent url(../images/checkboxa.png) no-repeat center center;
+    border-color:#ab2712;
+    transition: background-color 300ms, border-color 300ms;
+}
+.pbuilder_checkbox_label {
+    margin-left:20px;
+    padding: 2px;
+    display: block;
+}
+/* ------------------------------ */
+/* pbuilder_icon / pbuilder_image */
+/* ------------------------------ */
+.pbuilder_icon_holder{
+    padding:5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #323232;
+    border:1px solid #1e1e1e;
+    border-radius: 3px 0 0 3px;
+    width:45px;
+    height:30px;
+    text-align: center;
+    font-size:17px;
+    line-height:20px;
+    color:#ffffff;
+    float: left;
+}
+.pbuilder_icon_left,
+.pbuilder_icon_right {
+    float: left;
+    margin: 5px 5px 5px 0;
+    display: block;
+}
+.pbuilder_icon_left span,
+.pbuilder_icon_right span {
+    display: block;
+    height:30px;
+    width:30px;
+}
+.pbuilder_icon_left span {
+    background:url(../images/prev.png) no-repeat 10px center;
+}
+.pbuilder_icon_right span {
+    background:url(../images/next.png) no-repeat 12px center;
+}
+.pbuilder_gradient.pbuilder_icon_pick {
+    float: left;
+    padding:8px;
+    height:12px;
+    margin: 0 0 0 -1px;
+    line-height: 12px;
+    border-radius: 0 3px 3px 0;
+}
+.pbuilder_icon_drop_arrow {
+    display: none;
+}
+.pbuilder_icon_drop_arrow:before {
+    display: block;
+    position: absolute;
+    top:32px;
+    right:26px;
+    border-top:0px;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-bottom:8px solid #1e1e1e;
+    content:"";
+    z-index:11;
+}
+.pbuilder_icon_drop_arrow:after {
+    display: block;
+    position: absolute;
+    top:33px;
+    right:27px;
+    border-top:0px;
+    border-left:7px solid transparent;
+    border-right:7px solid transparent;
+    border-bottom:7px solid #3c3c3c;
+    content:"";
+    z-index:11;
+}
+.pbuilder_icon_dropdown {
+    margin:5px 0 0 0;
+    padding:5px;
+    border:1px solid #1e1e1e;
+    background:#3c3c3c;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width:100%;
+    height:220px;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    top:34px;
+    left:0;
+    z-index:10;
+    border-radius: 3px;
+}
+.pbuilder_icon_dropdown_scroll {
+    margin:7px 0 0 0;
+    clear: both;
+    height: 175px;
+    overflow: hidden;
+    width: 100%;
+}
+.pbuilder_icon_dropdown_tabs {
+    margin: -6px -6px 0px -5px;
+    height: 31px;
+}
+.pbuilder_icon_noicon {
+    width: 12px;
+    text-align: center;
+}
+.pbuilder_icon_tab,
+.pbuilder_icon_noicon {
+    border:1px solid #1e1e1e;
+    display: block;
+    padding: 9px 7px;
+    font-size:12px;
+    line-height: 12px;
+    float: left;
+    margin: 0 0 0 -1px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.pbuilder_icon_tab.active,
+.pbuilder_icon_noicon.active {
+    color: #048ac3;
+}
+.pbuilder_icon_dropdown a {
+    float: left;
+    display: block;
+    padding:6px;
+    cursor: pointer;
+    font-size:21px;
+    line-height:21px;
+    width:21px;
+    height:21px;
+    text-align: center;
+    color: #909090;
+}
+.pbuilder_icon_dropdown a .no-icon {
+    border:1px dashed #909090;
+    width:16px;
+    height:16px;
+    display: block;
+}
+.pbuilder_icon_dropdown a:hover .no-icon {
+    border:1px dashed #ffffff;
+}
+.pbuilder_icon_dropdown a:hover {
+    color:#ffffff;
+}
+.pbuilder_icon_dropdown_content {
+    display: none;
+}
+.pbuilder_icon_dropdown_content.active {
+    display: block;
+}
+.pbuilder_shortcode_menu .frb_icon.no-icon:before {content :"-"; fon-family:Arial;}
+.pbuilder_image_input {
+    position: relative;
+    margin-right: 57px;
+    border-radius: 3px 0 0 3px;
+    overflow: hidden;
+}
+.pbuilder_image_input span {
+    color:#909090;
+    font-size:11px;
+    position: absolute;
+    z-index:2;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding:6px 8px;
+    margin:0;
+    width:100%;
+    top:0;
+    left:0;
+}
+.pbuilder_button.pbuilder_image_button {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: block;
+    margin:0 0 0 -59px;
+    padding: 4px 8px;
+    height: 24px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    float: right;
+}
+/* ------------------- */
+/* pbuilder_media_select */
+/* ------------------- */
+.pbuilder_button.pbuilder_media_select_button {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: block;
+    margin:0;
+    padding: 4px 8px;
+    height: 24px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    width:50%;
+    float:right;
+    text-align:center;
+}
+.pbuilder_media_select_input {
+    display:block;
+    width:50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    float:right;
+}
+.pbuilder_media_select_input input {
+    border-radius: 3px 0 0 3px;
+}
+/* ------------------- */
+/* pbuilder_collapsible */
+/* ------------------- */
+.pbuilder_collapsible_big {
+    padding:6px 20px 6px 10px;
+    margin: 0 -20px 0 -10px;
+    position: relative;
+    border-bottom: 1px solid #767676;
+}
+.pbuilder_collapsible_big:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom:0;
+    left: 0;
+    background: #222325
+}
+.pbuilder_collapsible_big > .pbuilder_collapsible_header {
+    padding: 6px 0 6px 30px;
+    margin:0;
+}
+.pbuilder_collapsible_big > .pbuilder_collapsible_header > .pbuilder_collapse_trigger {
+    right: auto;
+    left: 0;
+    top:3px;
+    width: 15px;
+    height: 15px;
+    font-size:14px;
+    line-height:14px;
+    padding:1px;
+}
+.pbuilder_collapsible_big > .pbuilder_collapsible_content {
+    border-bottom: 0;
+    margin:0;
+    padding: 10px 0 4px;
+}
+.pbuilder_collapsible_header {
+    padding:6px 8px;
+    position: relative;
+    margin:0 0 10px 0;
+}
+.pbuilder_collapse_trigger {
+    position: absolute;
+    right:0;
+    top:0;
+    font-size:16px;
+    line-height:25px;
+    width:25px;
+    display: block;
+    text-align: center;
+    padding:0;
+    cursor: pointer;
+}
+.pbuilder_collapsible_content {
+    display: none;
+    margin:0 0 10px 10px;
+}
+.pbuilder_sortable_delete {
+    font-style: italic;
+    cursor: pointer;
+}
+.pbuilder_sortable_delete:hover {
+    text-decoration: underline;
+}
+.pbuilder_sortable_clone {
+    font-style: italic;
+    cursor: pointer;
+}
+.pbuilder_sortable_clone:hover {
+    text-decoration: underline;
+}
+/* ------------------- */
+/* pbuilder_color */
+/* ------------------- */
+.pbuilder_color_wrapper {
+    position: relative;
+}
+.pbuilder_shortcode_menu .pbuilder_colorpicker {
+    margin-top:10px;
+    display: none;
+}
+.pbuilder_shortcode_menu .fbiris-border {
+    border-radius:0;
+    border:1px solid #1e1e1e;
+    background:#2c3033;
+}
+.pbuilder_color.pbuilder_input {
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 12px;
+}
+.pbuilder_color_display {
+    position: absolute;
+    right:0px;
+    top:0px;
+    width:22px;
+    height:22px;
+    border:1px solid #1e1e1e;
+    border-radius: 0 3px 3px 0;
+}
+.pbuilder_color_display span {
+    width:18px;
+    height: 18px;
+    margin: 2px;
+    display: block;
+    border-radius: 0 3px 3px 0;
+    position: relative;
+}
+.pbuilder_color_display span:after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 0;
+    border:3px solid transparent;
+    border-right: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+}
+.fbiris-palette {
+    border-radius:0 !important;
+    box-shadow: none !important;
+}
+.fbiris-palette:first-child {
+    background: url(../images/x.png) no-repeat center center;
+}
+.fbiris-strip,
+.fbiris-square-vert {
+    border-radius: 0 !important;
+}
+.pbuilder_colorpicker .fbiris-slider-offset {
+    width: 25px;
+}
+.pbuilder_colorpicker .fbiris-slider-offset .ui-slider-handle {
+    top:auto;
+    margin-left:0;
+}
+.pbuilder_colorpicker .ui-widget-content {
+    border:0;
+    height: auto;
+    background: transparent;
+}
+.customfieldremove,
+.hiddenfieldremove{
+    font-size: 8px !important;
+    margin: 0;
+    padding: 0 2px;
+    display: inline-block;
+    float: left;
+}
+.pbuilder_fieldset {
+    border: none;
+    float: left;
+    margin-bottom: 8px;
+    margin-left: -4px;
+    padding-left: 5px;
+    position: relative;
+    width: 97%;
+}
+.pbuilder_fieldset legend {
+    color: white;
+}
+.pbuilder_fieldset legend span{
+    display: inline-block;
+    float: left;
+    margin-right: 2px;
+}
+.pbuilder_fieldset .pbuilder_control {
+    margin-bottom: 4px;
+}
+.pbuilder_control_desc {
+    color: white;
+    display: block;
+    font-size: 10px;
+    line-height: 12px;
+    margin: 2px 0;
+}
+.pb_exit_redirect_popup {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    top: 34%;
+    left: 50%;
+    z-index: 9999999;
+    margin-left: -350px;
+    padding: 1.5em 2em 3em;
+    width: 700px;
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+    border: 1px solid #000;
+    border-top: 5px solid #f00;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+.pbuilder_row_stick_top {
+    top: 0;
+    display: block;
+    position: fixed;
+    z-index: 100000;
+    left:0;
+    right:0;
+}
+.pbuilder_row_stick_bottom {
+    bottom: 0;
+    left:0;
+    right:0;
+    display: block;
+    position: fixed;
+    z-index: 100000;
+}
+.pbuilder_row_stick_top.pbuilder_row_full_width,
+.pbuilder_row_stick_bottom.pbuilder_row_full_width{
+    width: 100%;
+}
+.timed_row{
+    display: none;
+}
+.pbuilder_image_preview_div{
+    padding: 0;
+    width: 230px;
+    margin-bottom: 8px;
+}
+.pbuilder_image_preview_img{
+    width: 230px;
+}
+.pbuilder_droppable .selected .pbuilder_module_content .parent_overlay { display:block !important }
+.pbuilder_droppable .pbuilder_module_content .parent_overlay { display:none !important }
+.frb_button.frb_center.frb_fullwidth.width331 {width: 331px !important;}
+.frb_button.frb_center.frb_fullwidth.width521 {width: 521px !important;}
+/*********Start wishlist**************/
+.frb_menu_horizontal-rounded ul
+{
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    cursor: default !important;
+}
+.frb_menu_horizontal-rounded ul li {
+    display: inline-block !important;
+    position: relative !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.frb_menu_horizontal-rounded ul li a {
+    display: block !important;
+    padding: 10px !important;
+    font-size: 16px !important;
+    line-height: 16px !important;
+    color: rgb(255, 255, 255) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.frb_menu_horizontal-rounded ul li a:hover {
+    color: rgb(184, 3, 3) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+/**************end wishlist**********************/
+.div_responsive #div_header_menu, .div_responsive #div_header_menu > ul > li, .pbtheme_pale_border, .posts_meta > div, body.archive .a.kklike-box {
+    border-color: #ffffff;
+    color: inherit !important;
+}
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {
+ rules only apply in saf3+, chrome1+
+.pbuilder_column.pbuilder_column-1-2 .frb_post a.frb_button
+{
+        max-width:97.4% !important;
+}
+.pbuilder_column.pbuilder_column-1-1 .frb_post a.frb_button
+{
+        max-width:98.7% !important;
+}
+}
+@-moz-document url-prefix() {*/
+.pbuilder_column.pbuilder_column-1-2 .frb_post a.frb_button {
+    /*max-width:97.4% !important;*/
+    padding: 10px 0 !important;
+    /*text-align: center;*/
+}
+.pbuilder_column.pbuilder_column-1-2 .hfield2{
+    margin-right:5px !important;
+}
+.pbuilder_column.pbuilder_column-1-2 .hfield22 input{
+    font-size:12px !important;
+}
+.pbuilder_column.pbuilder_column-1-1 .hfield1{
+}
+.pbuilder_column.pbuilder_column-1-1 .frb_post a.frb_button
+{
+    padding: 10px 0 !important;
+    /* text-align: center;*/
+    /*max-width:98.7% !important;*/
+}
+.pbuilder_column-1-1 form.optinF .field input, .pbuilder_column-1-1 .parent_overlay form .field input {
+    /*
+Code added by Asim Ashraf - DevBatch
+DateTime: 27 Jan 2015
+Code Edit Start
+    */
+    border-radius: 5px;
+    /*
+Code added by Asim Ashraf - DevBatch
+DateTime: 27 Jan 2015
+Code Edit End
+    */
+    width: 93% !important;
+    padding:10px 5.7% 10px 1% !important;
+}
+.field input{
+    border-radius: 5px;
+}
+.pbuilder_column-1-2 .parent_overlay form .field input {
+    padding: 10px 8.5% 10px 1% !important;
+    width: 90% !important;
+}
+.pbuilder_column-1-3 form.optinF .field input, .pbuilder_column-1-3 .parent_overlay form .field input {
+/*    background-size: 9% auto !important;*/
+    padding: 10px 12.3% 10px 1% !important;
+    width: 86% !important;
+    font-size: 12px !important;
+}
+/*
+Code added by Asim Ashraf - DevBatch
+DateTime: 27 Jan 2015
+Code Edit Start
+*/
+.pbuilder_column-1-3 .frb_button{font-size: 18px; line-height: 20px;}
+.pbuilder_column-1-3 .Hfield{
+  /*  margin-left: 2.2% !important;*/
+}
+.pbuilder_column-1-3 .formOverlaydiv{
+    font-size: 26px !important;
+}
+/*
+Code added by Asim Ashraf - DevBatch
+DateTime: 27 Jan 2015
+Code Edit END
+*/
+.pbuilder_column-1-3 .formError {
+    /*left: 34px !important;*/
+    line-height: 1.5;
+}
+.pbuilder_column-1-3 .formError .formErrorContent {
+    width: 84% !important;
+}
+.formError {
+    left:30px !important;
+}
+.pbuilder_column-2-3 form.optinF .field input, .pbuilder_column-2-3 .parent_overlay form .field input {
+    padding: 10px 12.3% 10px 1% !important;
+    width: 86% !important;
+}
+.pbuilder_column-2-3 .content .field{
+    width: 100%;
+}
+.frb_post.frb_post_squared .frb_button, .frb_post.frb_post_rounded .frb_button
+{
+    margin-left: 0 !important;
+}
+.Hfield
+{
+    float:left !important;
+}
+/*.hRfield1{float:right !important;}*/
+.pbuilder_module_content .frb_video_wrapper div iframe
+{
+    width: 100% !important;
+    max-width: 100% !important;
+}
+/*
+Code added by Asim Ashraf - DevBatch
+DateTime: 27 Jan 2015
+Code Edit Start
+Old css .pbuilder_column-1-2 form.optinF .fbr_buttonHori, .pbuilder_column-1-2 .parent_overlay form .fbr_buttonHori{ padding: 1px 20px !important; font-size: 11px !important; }
+*/
+.fbr_buttonHori{ width:29% !important; float:right !important; padding: 13px; word-wrap: break-word;}
+
+.optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3{  width:29% !important; float:right !important;}
+.optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a{  width:100% !important;}
+.optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span{  width:100% !important; word-wrap: break-word;}
+.pbuilder_column-1-2 form.optinF .fbr_buttonHori{
+	/******Commented by Abid 2015-02-16*******/
+   /* font-size: 14px !important;
+    margin: 0 0 0 5px !important;
+	padding: 5px !important; */
+}
+.pbuilder_column-1-2 .parent_overlay form .fbr_buttonHori{
+	/******Commented by Abid 2015-02-16*******/
+    /*font-size: 14px !important;
+    margin: 0 0 0 5px !important;
+    padding: 3px !important;*/
+}
+/*
+Code added by Asim Ashraf - DevBatch
+DateTime: 27 Jan 2015
+Code Edit END
+*/
+//.pbuilder_column-1-1 form.optinF .fbr_buttonHori, .pbuilder_column-1-1 .parent_overlay form .fbr_buttonHori{ padding: 7px 20px !important; font-size: 25px !important; }
+.pbuilder_column-1-2 form.optinF .hfield22, .pbuilder_column-1-2 .parent_overlay form .hfield22{ margin-left: 2px !important;
+                                                                                                 margin-right: 7px !important; }
+.pbuilder_column-1-2 form.optinF .hfield22 input, .pbuilder_column-1-2 .parent_overlay form .hfield22 input{ font-size:10px !important; }
+/*.pbuilder_column-1-1 form.optinF .hfield22 input, .pbuilder_column-1-1 .parent_overlay form .hfield22 input{ font-size:10px !important; }
+*/
+/*
+Code added by Asim Ashraf - DevBatch
+DateTime: 27 Jan 2015
+Code Edit Start
+*/
+.pbuilder_column-1-2 .field input, .pbuilder_column-1-3 .field input {
+/*    font-size: 9px !important;*/
+    width: 100% !important;
+}
+.pbuilder_column-1-2 .parent_overlay .optin_style_Horizontal .field input, .pbuilder_column-1-3 .parent_overlay .optin_style_Horizontal .field input {
+    font-size: 9px !important;
+}
+/*
+Code added by Asim Ashraf - DevBatch
+DateTime: 27 Jan 2015
+Code Edit END
+*/
+.pbuilder_column-1-1 form.optinF .hRfield1, .pbuilder_column-1-1 .parent_overlay form .hRfield1{ margin-left: 5px; margin-right: 5px; }
+.pbuilder_column-1-1 form.optinF .hRfield2, .pbuilder_column-1-2 .parent_overlay form .hRfield2{ margin-left: 5px; margin-right: 5px; }
+	/*******added by Abid 2015-02-06*********/
+.pbuilder_column-1-5 .frb_button{/*font-size: 14px !important; line-height: 20px !important;*/}
+.pbuilder_column-2-3 .fbr_buttonHori{font-size:18px !important;}
+/*.pbuilder_column-1-1 .Hfield{margin-left: 1.1% !important;}*/
+/*.pbuilder_column-1-2 .field.Hfield input, .pbuilder_column-1-3 .field.Hfield input {
+	font-size: 12px !important;
+ }*/
+ .pbuilder_column-4-5 form.optinF .fbr_buttonHori, .pbuilder_column-4-5 .parent_overlay form .fbr_buttonHori
+ {
+	font-size:20px !important;
+ }
+.pbuilder_column-1-2 .field.Hfield input{
+	font-size: 12px !important;
+ }
+/*
+Code added by Asim Ashraf - DevBatch
+DateTime: 27 Jan 2015
+Code Edit Start
+*/
+	#colorbox .optin_style_Horizontal.overlayForm .field.Hfield{
+	width: 31.5% !important;
+ }
+.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical .frb_button,
+.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical .frb_button
+{
+	font-size: 20px; !important;
+}
+/*********Contact us form PBTheme************/
+.comment_form input.input_field[type="text"], #respond input.input_field[type="text"] {min-width:100% !important;}
+/*******************************************/
+
+@media screen and (max-width: 1200px) {
+    //   .pbuilder_column-1-1 .parent_overlay form .fbr_buttonHori{ font-size: 15px !important; line-height:22px !important;  }
+    //    .pbuilder_column-1-2 .parent_overlay form .fbr_buttonHori{ font-size: 12px !important; line-height:15px !important;  }
+    //.pbuilder_column-1-2 .parent_overlay form .fbr_buttonHori{ font-size: 12px !important; line-height:15px !important;  }
+
+    .clearBoth{clear:both !important;}
+
+    #colorbox form .fbr_buttonHori {
+        clear: none;
+        font-size: 2vw !important;
+
+        line-height: 30px !important;
+
+        width: 30% !important;
+        [;font-size: 20px !important;];
+        [;line-height: 36px !important;];
+    }
+.pbuilder_column-1-2 .field.Hfield input, .pbuilder_column-1-3 .field.Hfield input {
+	font-size: 12px !important;
+ }
+.pbuilder_column-1-4 .optin_style_Vertical .clearBoth.frb_button.frb_round.frb_center.frb_fullwidth,
+.pbuilder_column-1-4 .overlayForm.optin_style_Vertical .clearBoth.frb_button.frb_round.frb_center.frb_fullwidth
+{
+	font-size: 20px; !important;
+}
+}
+/*
+@media screen and (max-width: 960px) {
+    .pbuilder_column-1-1 form.optinF .fbr_buttonHori, .pbuilder_column-1-1 .parent_overlay form .fbr_buttonHori{ font-size: 15px !important; line-height:28px !important;  }
+    .pbuilder_column-1-2 form.optinF .fbr_buttonHori, .pbuilder_column-1-2 .parent_overlay form .fbr_buttonHori{ font-size: 11px !important; line-height:36px !important;  }
+    .pbuilder_column-1-1 form.optinF .Hfield input, .pbuilder_column-1-1 .parent_overlay form .Hfield input{ font-size: 14px !important; }
+    .pbuilder_column-1-2 form.optinF .Hfield input, .pbuilder_column-1-2 .parent_overlay form .Hfield input{ font-size: 12px !important; }
+    .pbuilder_column-1-1 form.optinF .Hfield, .pbuilder_column-1-1 .parent_overlay form .Hfield{width:30% !important; margin-left: 2px !important; margin-right: 5px !important;}
+    .clearBoth{clear:both !important;}
+}
+@media screen and (max-width: 768px) {
+    .pbuilder_column-1-1 form.optinF .fbr_buttonHori, .pbuilder_column-1-1 .parent_overlay form .fbr_buttonHori{ font-size: 12px !important; line-height:22px !important;  }
+    .pbuilder_column-1-2 form.optinF .fbr_buttonHori, .pbuilder_column-1-2 .parent_overlay form .fbr_buttonHori{ font-size: 15px !important; line-height:36px !important;  }
+    .pbuilder_column-1-1 form.optinF .Hfield input, .pbuilder_column-1-1 .parent_overlay form .Hfield input{ font-size: 10px !important; }
+    .pbuilder_column-1-2 form.optinF .Hfield input, .pbuilder_column-1-2 .parent_overlay form .Hfield input{ font-size: 10px !important; }
+    .pbuilder_column-1-1 form.optinF .Hfield, .pbuilder_column-1-1 .parent_overlay form .Hfield{width:30% !important; margin-left: 2px !important; margin-right: 5px !important;}
+    .clearBoth{clear:both !important;}
+}
+@media screen and (max-width: 767px) {
+    .pbuilder_column-1-1 form.optinF .fbr_buttonHori, .pbuilder_column-1-1 .parent_overlay form .fbr_buttonHori{ font-size: 12px !important; }
+    .pbuilder_column-1-1 form.optinF .Hfield, .pbuilder_column-1-1 .parent_overlay form .Hfield{width:30% !important; margin-left: 2px !important; margin-right: 5px !important;}
+    .clearBoth{clear:both !important;}
+}
+@media screen and (max-width: 340px) {
+    .pbuilder_column-1-1 form.optinF .fbr_buttonHori, .pbuilder_column-1-1 .parent_overlay form .fbr_buttonHori{ font-size: 4px !important; line-height:15px !important; }
+    .pbuilder_column-1-1 form.optinF .Hfield input, .pbuilder_column-1-1 .parent_overlay form .field input{ font-size: 5px !important; }
+//    .pbuilder_column-1-2 form.optinF .fbr_buttonHori{ font-size: 5px !important; line-height:28px !important; }
+    .pbuilder_column-1-2 .parent_overlay form .fbr_buttonHori{ font-size: 5px !important; line-height:12px !important; }
+    .pbuilder_column-1-2 form.optinF .Hfield input, .pbuilder_column-1-2 .parent_overlay form .field input{ font-size: 5px !important; }
+    .pbuilder_column-1-1 form.optinF .Hfield, .pbuilder_column-1-1 .parent_overlay form .Hfield{width:30% !important; margin-left: 2px !important; margin-right: 5px !important;}
+    .clearBoth{clear:both !important;}
+-978
+-960
+-768
+-340
+}*/
+.pbuilder_column-1-1 .fbr_buttonHori{
+	/*commented by Abid 2015-02-06*/
+	/* font-size: 2.4vw !important;*/
+	/*Added by Abid 2015-02-06*/
+	/*font-size: 25px !important;*/
+	[;font-size: 22px !important;];
+}
+#colorbox form .fbr_buttonHori {
+        clear: none;
+   /* font-size: 20px !important;
+    line-height: 33px !important;*/
+    width: 30% !important;
+
+    }
+    .pbuilder_column-1-3 .fbr_buttonHori{
+		/***commented by Abid 2015-02-06***/
+        /*font-size: 8px !important;*/
+		/***Added by Abid 2015-02-06***/
+       /* font-size: 8px !important;
+        line-height: 16px !important;*/
+      /*  margin: 0 0 0 5px !important;
+        padding: 4px;
+        width: 27% !important;*/
+    }
+/*.pbuilder_column-1-4 .optinF .fbr_buttonHori,
+.pbuilder_column-1-4 .overlayForm .fbr_buttonHori
+{
+	font-size: 20px; !important;
+}*/
+/*
+Commented By Abid 2015-02-16
+.pbuilder_column-1-4 .optin_style_Vertical .clearBoth.frb_button.frb_round.frb_center.frb_fullwidth,
+.pbuilder_column-1-4 .overlayForm.optin_style_Vertical .clearBoth.frb_button.frb_round.frb_center.frb_fullwidth
+{
+	font-size: 16px !important;
+padding: 3px !important;
+}*/
+    .pbuilder_column-1-4 .frb_button{
+        font-size: 20px !important;
+    }
+   /* .pbuilder_column-1-4 .fbr_buttonHori{
+        font-size: 6px !important;
+        line-height: 11px !important;
+    }*/
+ /*   .pbuilder_column-3-4 .fbr_buttonHori,
+	 .pbuilder_column-3-5 .fbr_buttonHori
+	 {
+        font-size: 16px !important;
+    }*/
+	/*.pbuilder_column-2-5 .fbr_buttonHori
+	 {
+        font-size: 12px !important;
+		line-height:20px !important;
+     }*/
+	/*.pbuilder_column-2-5 .overlayForm .fbr_buttonHori
+	 {
+        font-size: 10px !important;
+		line-height:20px !important;
+     }
+	.pbuilder_column-2-5 .Hfield.field input
+	 {
+        font-size: 12px !important;
+     }*/
+	/*.pbuilder_column-1-4 form.overlayForm .field input,
+	.pbuilder_column-1-4 form.overlayForm .field input,
+	.pbuilder_column-1-4 form.optinF .field input,
+	.pbuilder_column-1-4 form.parent_overlay .field input
+	{
+		font-size:6px !important;
+	}*/
+	.pbuilder_column-3-4 form.overlayForm .field input
+	{
+		font-size:20px !important;
+	}
+    .pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield input{
+		/***Added by Abid***/
+        font-size: 10px !important;
+    }
+    .pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+    .pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+	    margin-left: 1% !important;
+    }
+/*    .pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield
+	{
+	    margin-left: 1.1% !important;
+	}
+    .pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield
+	{
+	    margin-left: 1.3% !important;
+	}*/
+ 	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+		margin-left: 1.3% !important;
+	}
+
+        .pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield{
+            margin-left: 1.7% !important;
+        }
+	/*.pbuilder_column-1-3 .Hfield
+	{
+		margin-left:1%;
+	}*/
+
+	/*******Start css3 for button Vertical******************/
+     /*******popup button*************/
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal a span.text,
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Vertical a span.text
+	{
+		line-height:30px !important;
+	}
+
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal a span.text
+	{
+		font-size:10px !important;
+	}
+
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical a span.text
+	{
+		line-height:30px;
+	}
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical a span.text
+	{
+		line-height:24px;
+	}
+	/*******End css3 for button Vertical******************/
+
+	/*******Added By Abid 2015-02-16 Vertical******************/
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		/*font-size: 25px !important;*/
+		line-height:20px;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Vertical .field input
+	{
+		font-size:20px !important;
+		background-size: 2% !important;
+		background-position: 99.5% !important;
+		padding: 6px 3% 6px 1% !important;
+    	width: 95.7% !important;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		/*font-size: 22px !important;*/
+   		line-height: 20px;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Vertical .field input
+	{
+		padding: 8px 7% 8px 1% !important;
+		font-size:16px !important;
+		width:91.5% !important;
+
+		background-size: 3.8% !important;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:16px !important;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		/*font-size: 18px !important;*/
+   		line-height: 16px;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical .field input
+	{
+		background-size: 6% !important;
+		background-position: 98% !important;
+		padding: 8px 10.5% 8px 1% !important;
+		font-size:14px !important;
+		width:87.5% !important;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:14px !important;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		/*font-size: 14px !important;*/
+   		line-height: 8px;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical .field input
+	{
+		background-size: 7% !important;
+		background-position: 98% !important;
+		padding: 6px 10.3% 6px 1% !important;
+		font-size:13px !important;
+		width:87.5% !important;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:14px !important;
+	}
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		/*font-size: 13px !important;*/
+   		line-height: 7px;
+	}
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical .field input
+	{
+		background-size: 7% !important;
+		background-position: 98% !important;
+		padding: 5px 10.3% 5px 1% !important;
+		font-size:10px !important;
+		width:87% !important;
+	}
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:10px !important;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		/*font-size: 22px !important;*/
+   		line-height: 20px;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Vertical .field input
+	{
+		background-size: 3% !important;
+		background-position: 99% !important;
+		padding: 8px 5.4% 8px 1% !important;
+		font-size:18px !important;
+		width:93% !important;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:18px !important;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		/*font-size: 22px !important;*/
+   		line-height: 16px;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical .field input
+	{
+		/*background-size: 2.7% !important;*/
+		background-position: 99% !important;
+		padding: 6px 5% 6px 1% !important;
+		font-size:18px !important;
+		width:93.7% !important;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical .field,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical .field
+	{
+		width:100% !important
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:18px !important;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		/*font-size: 22px !important;*/
+   		line-height: 18px;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical .field input
+	{
+		background-size: 3.4% !important;
+		background-position: 99% !important;
+		padding: 6px 5.8% 6px 1% !important;
+		font-size:18px !important;
+		width:92.7% !important;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:18px !important;
+	}
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		/*font-size: 22px !important;*/
+   		line-height: 20px;
+	}
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical .field input
+	{
+		/*background-size: 2.5% !important;*/
+		background-position: 98% !important;
+		padding: 6px 4.8% 6px 1% !important;
+		font-size:18px !important;
+		width:93.7% !important;
+	}
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical .field,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical .field
+	{
+		width:100% !important;
+	}
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:18px !important;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical .field input
+	{
+		font-size:14px !important;
+		background-size: 4.8% !important;
+		background-position: 99% !important;
+		padding: 6px 8% 6px 1% !important;
+    	width: 90.5% !important;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		/*font-size: 20px !important;*/
+   		line-height: 18px;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:14px !important;
+	}
+	/*******End 2015-02-16 Vertical******************/
+
+	/*******Added By Abid 2015-02-17 Horizontal******************/
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		/*font-size: 20px !important;*/
+		line-height:22px;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span
+	{
+		line-height:30px;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:18px !important;
+		background-size: 6% !important;
+		/*background-position: 99.5% !important;*/
+		padding: 8px 11% 8px 1% !important;
+    	width: 90% !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+    	margin-left:1.2% !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .content .privacy
+	{
+		font-size:14px !important;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		/*font-size: 14px !important;*/
+   		line-height: 12px;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span
+	{
+   		line-height: 28px;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		padding: 6px 7% 6px 1% !important;
+		font-size:14px !important;
+		width:92% !important;
+		background-size: 9% auto !important;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+		margin-left:1.7% !important;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:14px !important;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .content .privacy
+	{
+		font-size:10px !important;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		/*font-size: 8px !important;*/
+   		line-height: 3px;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span
+	{
+   		line-height: 20px;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		background-size: 10% auto !important;
+		background-position: 98% !important;
+		padding: 4px 15.5% 4px 1% !important;
+		font-size:10px !important;
+		width:83.5% !important;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:10px !important;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .content .privacy
+	{
+		font-size:8px !important;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		/*font-size: 7px !important;*/
+   		line-height: 0px;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		background-size: 11% auto !important;
+		background-position: 97% center !important;
+		padding: 4px 17% 4px 1% !important;
+		font-size:8px !important;
+		width:81% !important;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+		margin-left:1.7% !important;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:7px !important;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .content .privacy
+	{
+		font-size:6px !important;
+	}
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		/*font-size: 13px !important;*/
+   		line-height: 7px;
+	}
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		background-size: 7% !important;
+		background-position: 98% !important;
+		padding: 5px 10.3% 5px 1% !important;
+		font-size:10px !important;
+		width:87% !important;
+	}
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:10px !important;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		/*font-size: 16px !important;*/
+   		line-height: 12px;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span
+	{
+   		line-height: 28px;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		background-size: 7% auto !important;
+		background-position: 98% !important;
+		padding: 6px 12% 6px 1% !important;
+		font-size:14px !important;
+		width:88% !important;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+		margin-left:1.7% !important;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:18px !important;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .content .privacy
+	{
+		font-size:14px !important;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		/*font-size: 18px !important;*/
+   		line-height: 12px;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span
+	{
+   		line-height: 28px;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		background-size: 7% auto !important;
+		background-position: 98% !important;
+		padding: 6px 12% 6px 1% !important;
+		font-size:14px !important;
+		width:89% !important;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+		margin-left:1.5% !important;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:18px !important;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .content .privacy
+	{
+		font-size:14px !important;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		/*font-size: 16px !important;*/
+   		line-height: 12px;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span
+	{
+   		line-height: 28px;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		background-size: 8% auto !important;
+		background-position: 97.5% center !important;
+		padding: 6px 13% 6px 1% !important;
+		font-size:14px !important;
+		width:86% !important;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+		margin-left:1.7% !important;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:18px !important;
+	}
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		/*font-size: 18px !important;*/
+   		line-height: 16px;
+	}
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span
+	{
+   		line-height: 30px;
+	}
+
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		background-size: 6.5% auto !important;
+		background-position: 97.5% center !important;
+		padding: 6px 11.5% 6px 1% !important;
+		font-size:16px !important;
+		width:89.5% !important;
+	}
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+		margin-left:1.2% !important;
+	}
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:18px !important;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:10px !important;
+		background-size: 10% auto !important;
+		background-position: 96.5% center !important;
+		padding: 5px 16% 5px 1% !important;
+    	width: 82% !important;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		/*font-size: 10px !important;*/
+   		line-height: 5px;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span
+	{
+		line-height: 22px;
+	}
+
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:12px !important;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .content .privacy
+	{
+		font-size:10px !important;
+	}
+	/*******End 2015-02-17 Horizontal******************/
+	/*******Added By Abid 2015-02-17 popup Vertical******************/
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Vertical .field input
+	{
+		font-size:14px !important;
+		background-size: 3.2% auto !important;
+		background-position: 99% !important;
+		padding: 8px 5.7% 8px 1% !important;
+    	width: 93% !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Vertical .frb_button
+	{
+		font-size: 22px !important;
+   		line-height: 20px !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Vertical .content:first-child
+	{
+		font-size:18px !important;
+	}
+	/*******End 2015-02-17 Popup Vertical******************/
+	/*******Added By Abid 2015-02-17 Popup Horizontal******************/
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .field.Hfield
+	{
+		margin:0 auto !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .field.Hfield
+	{
+		margin-left:1.4% !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:16px !important;
+		background-size:8% auto !important;
+		padding: 6px 16% 6px 1% !important;
+		background-position:98% !important;
+    	width: 83% !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		/*font-size:16px !important;*/
+		line-height:14px;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .content:first-child
+	{
+		font-size:16px !important;
+	}
+	/*******End 2015-02-17 popup Horizontal******************/
+
+
+/********Added by Abid 2015-02-06**********/
+@media screen and (max-width: 960px) {
+	/*.pbuilder_column-1-1 .Hfield { margin-left: 1.1% !important;}*/
+	.pbuilder_column-1-1 .fbr_buttonHori{font-size:22px !important;}
+	.pbuilder_column-1-3 .fbr_buttonHori{font-size:8px !important;}
+	.pbuilder_column-1-5 .frb_button{font-size:10px !important;}
+	.pbuilder_column-2-5 .frb_button{font-size:10px !important; line-height: 20px !important;}
+	.pbuilder_column-2-3 .fbr_buttonHori{font-size:17px !important;}
+	.pbuilder_column-1-2 .field.Hfield input, .pbuilder_column-1-3 .field.Hfield input,
+	.pbuilder_column-2-5 .field.Hfield input, .pbuilder_column-1-3 .field.Hfield input
+	 {
+		font-size: 12px !important;
+	 }
+    .pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+	    margin-left: 1.3% !important;
+	}
+	/*******Added By Abid 2015-02-16 Vertical******************/
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		font-size: 30px !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Vertical .field input
+	{
+		font-size:20px !important;
+		background-size: 3% !important;
+		background-position: 99% !important;
+		padding: 10px 4.7% 10px 1% !important;
+    	width: 94% !important;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		font-size: 22px !important;
+   		line-height: 20px !important;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Vertical .field input
+	{
+		padding: 8px 9% 8px 1% !important;
+		font-size:18px !important;
+		width:89.5% !important;
+		background-size:5% !important;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		font-size: 22px !important;
+   		line-height: 20px !important;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical .field input
+	{
+		background-size: 8% !important;
+		background-position: 99% !important;
+		padding: 6px 11.3% 6px 1% !important;
+		font-size:18px !important;
+		width:87% !important;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:15px !important;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		font-size: 14px !important;
+   		line-height: 8px !important;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical .field input
+	{
+		background-size: 9% !important;
+		background-position: 99% !important;
+		padding: 4px 11.3% 4px 1% !important;
+		font-size:12px !important;
+		width:87% !important;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:12px !important;
+	}
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		font-size: 13px !important;
+   		line-height: 7px !important;
+	}
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical .field input
+	{
+		background-size: 10% !important;
+		background-position: 98% !important;
+		padding: 5px 14.3% 5px 1% !important;
+		font-size:10px !important;
+		width:83% !important;
+	}
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:10px !important;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		font-size: 22px !important;
+   		line-height: 16px !important;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Vertical .field input
+	{
+		background-size: 4% !important;
+		background-position: 99% !important;
+		padding: 6px 6% 6px 1% !important;
+		font-size:18px !important;
+		width:92.5% !important;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		font-size: 22px !important;
+   		line-height: 20px !important;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical .field input
+	{
+		background-size: 3.5% !important;
+		background-position: 99% !important;
+		padding: 8px 9.5% 8px 1% !important;
+		font-size:18px !important;
+		width:92.5% !important;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		font-size: 22px !important;
+   		line-height: 20px !important;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical .field input
+	{
+		background-size: 4% !important;
+		background-position: 99% !important;
+		padding: 8px 6% 8px 1% !important;
+		font-size:16px !important;
+		width:92.5% !important;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:16px !important;
+	}
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		font-size: 22px !important;
+   		line-height: 20px !important;
+	}
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical .field input
+	{
+		background-size: 3.3% !important;
+		background-position: 99% !important;
+		padding: 8px 5.5% 8px 1% !important;
+		font-size:18px !important;
+		width:93% !important;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical .field input
+	{
+		font-size:14px !important;
+		background-size: 6% !important;
+		background-position: 99% !important;
+		padding: 6px 8% 6px 1% !important;
+    	width: 90% !important;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		font-size: 18px !important;
+   		line-height: 12px !important;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:14px !important;
+	}
+	/*******End 2015-02-16 Vertical******************/
+	/*******Added By Abid 2015-02-17 Horizontal******************/
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size: 20px !important;
+		line-height:16px !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:16px !important;
+		background-size:7% !important;
+		padding: 6px 11% 6px 1% !important;
+    	width: 89% !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+    	margin-left:1.1% !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:18px !important;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size: 12px !important;
+   		line-height: 8px !important;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		padding: 5px 13% 5px 1% !important;
+		font-size:12px !important;
+		width:85.5% !important;
+		background-size:9% auto !important;
+		background-position:97% !important;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+    	margin-left:1.5% !important;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:12px !important;
+	}
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .privacy,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .privacy
+	{
+		font-size:12px !important;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size: 7px !important;
+   		line-height: 0px !important;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		background-size: 9% !important;
+		background-position: 97% !important;
+		padding: 3px 14% 3px 1% !important;
+		font-size:8px !important;
+		width:83% !important;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+    	margin-left:1.7% !important;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:8px !important;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .privacy,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .privacy
+	{
+		font-size:8px !important;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size: 6px !important;
+   		line-height: 0px !important;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		background-size: 10% !important;
+		background-position: 96% !important;
+		padding: 4px 14.5% 4px 1% !important;
+		font-size:6px !important;
+		width:82% !important;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:6px !important;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+    	margin-left:1.7% !important;
+	}
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .privacy,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .privacy
+	{
+		font-size:6px !important;
+	}
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size: 13px !important;
+   		line-height: 7px !important;
+	}
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		background-size: 10% !important;
+		background-position: 98% !important;
+		padding: 5px 14.3% 5px 1% !important;
+		font-size:10px !important;
+		width:83% !important;
+	}
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:10px !important;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size: 14px !important;
+   		line-height: 12px !important;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		background-size: 8% !important;
+		background-position: 97% !important;
+		padding:5px 12% 5px 1% !important;
+		font-size:14px !important;
+		width:88% !important;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:14px !important;
+	}
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+    	margin-left:1.7% !important;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size: 16px !important;
+   		line-height: 12px !important;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		background-size: 8% auto !important;
+		background-position: 97% !important;
+		padding: 6px 12.5% 6px 1% !important;
+		font-size:14px !important;
+		width:88.5% !important;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:15px !important;
+	}
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+    	margin-left:1.7% !important;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size: 12px !important;
+   		line-height: 8px !important;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		background-size: 8% auto !important;
+		background-position: 97% !important;
+		padding: 6px 11% 6px 1% !important;
+		font-size:12px !important;
+		width:88% !important;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:15px !important;
+	}
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+    	margin-left:1.7% !important;
+	}
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size: 14px !important;
+   		line-height: 12px !important;
+	}
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		background-size: 7% auto !important;
+		background-position: 97% !important;
+		padding: 6px 10% 6px 1% !important;
+		font-size:14px !important;
+		width:92% !important;
+	}
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:16px !important;
+	}
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+    	margin-left:1.2% !important;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:8px !important;
+		background-size: 10% auto !important;
+		background-position: 97% !important;
+		padding: 4px 14% 4px 1% !important;
+    	width: 85% !important;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size: 8px !important;
+   		line-height: 2px !important;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:10px !important;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .privacy,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .privacy
+	{
+		font-size:10px !important;
+	}
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+    	margin-left:1.7% !important;
+	}
+	/*******End 2015-02-16 Horizontal******************/
+	/**Start css3 for button**/
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span
+	{
+   		line-height: 24px;
+	}
+	/**End css3 for button**/
+	/*******Added By Abid 2015-02-17 popup Vertical******************/
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Vertical .field input
+	{
+		font-size:14px !important;
+		background-size: 3.2% auto !important;
+		background-position: 99% !important;
+		padding: 8px 5.7% 8px 1% !important;
+    	width: 93% !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Vertical .frb_button
+	{
+		font-size: 22px !important;
+   		line-height: 20px !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Vertical .content:first-child
+	{
+		font-size:18px !important;
+	}
+	/*******End 2015-02-17 Popup Vertical******************/
+	/*******Added By Abid 2015-02-17 Popup Horizontal******************/
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .field.Hfield
+	{
+		margin:0 auto !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .field.Hfield
+	{
+		margin-left:1.3% !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:14px !important;
+		background-size: 7% auto !important;
+		padding: 5px 11% 5px 1% !important;
+		background-position:96% !important;
+    	width: 89% !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size:14px !important;
+		line-height:10px !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .content:first-child
+	{
+		font-size:16px !important;
+	}
+	/*******End 2015-02-17 popup Horizontal******************/
+}
+@media screen and (max-width: 800px) {
+.pbuilder_column-1-5 form.overlayForm .formOverlaydiv {
+    font-size: 14px !important;
+}
+
+    /*.pbuilder_column-1-1 form.overlayForm .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-2 form.overlayForm .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-3 form.overlayForm .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-4 form.overlayForm .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-5 form.overlayForm .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-2-3 form.overlayForm .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-3-5 form.overlayForm .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-4-5 form.overlayForm .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-2-5 form.overlayForm .fbr_buttonHoriCss3 a span,
+    .pbuilder_column-1-1 form.optinF .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-2 form.optinF .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-3 form.optinF .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-4 form.optinF .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-5 form.optinF .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-2-3 form.optinF .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-3-5 form.optinF .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-4-5 form.optinF .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-2-5 form.optinF .fbr_buttonHoriCss3 a span
+	{
+		line-height::28px;
+	}*/
+
+    .pbuilder_column-1-1 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-1-2 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-1-3 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-1-4 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-1-5 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-2-3 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-3-5 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-4-5 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-2-5 form.overlayForm .fbr_buttonHori,
+    .pbuilder_column-1-1 form.optinF .fbr_buttonHori,
+	.pbuilder_column-1-2 form.optinF .fbr_buttonHori,
+	.pbuilder_column-1-3 form.optinF .fbr_buttonHori,
+	.pbuilder_column-1-4 form.optinF .fbr_buttonHori,
+	.pbuilder_column-1-5 form.optinF .fbr_buttonHori,
+	.pbuilder_column-2-3 form.optinF .fbr_buttonHori,
+	.pbuilder_column-3-5 form.optinF .fbr_buttonHori,
+	.pbuilder_column-4-5 form.optinF .fbr_buttonHori,
+	.pbuilder_column-2-5 form.optinF .fbr_buttonHori
+	{
+		font-size:16px !important;
+	}
+	.pbuilder_column-1-1 form.optinF .fbr_buttonHori,
+	.pbuilder_column-1-1 form.overlayForm .fbr_buttonHori
+	{
+		line-height: 24px !important;
+		[;line-height: 27px !important;];
+	}
+	.pbuilder_column-1-2 form.optinF .fbr_buttonHori
+	{
+		line-height: 32px !important;
+		[;line-height: 35px !important;];
+	}
+	.pbuilder_column-1-2 form.overlayForm .fbr_buttonHori
+	{
+		line-height: 35px !important;
+	}
+	.pbuilder_column-1-3 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-1-4 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-3-4 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-1-3 form.optinF .fbr_buttonHori,
+	.pbuilder_column-1-4 form.optinF .fbr_buttonHori,
+	.pbuilder_column-3-4 form.optinF .fbr_buttonHori
+	{
+		line-height: 22px !important;
+		[;line-height: 25px !important;];
+	}
+	.pbuilder_column-2-3 form.optinF .Hfield,
+	.pbuilder_column-3-4 form.optinF .Hfield
+	{
+		font-size:14px !important;
+	}
+	.pbuilder_column-1-3 .fbr_buttonHori{font-size:12px !important;}
+		/****Added by Abid 2015-02-06****/
+	.pbuilder_column-1-1 .Hfield,
+	.pbuilder_column-1-3 .Hfield
+	{ margin-left: 1.35% !important;}
+	.pbuilder_column-1-4 .frb_button,
+	.pbuilder_column-1-5 .frb_button{font-size:20px !important;}
+    .pbuilder_column-1-4 .fbr_buttonHori{
+		/****Added by Abid 2015-02-06****/
+		font-size:20px !important;
+		line-height: 20px !important;
+		[;line-height: 27px !important;];
+	}
+    .pbuilder_column-2-3 .overlayForm .fbr_buttonHori,
+    .pbuilder_column-2-5 .overlayForm .fbr_buttonHori,
+	.pbuilder_column-3-5 .overlayForm .fbr_buttonHori,
+	.pbuilder_column-4-5 .overlayForm .fbr_buttonHori,
+
+	.pbuilder_column-2-3 .fbr_buttonHori,
+    .pbuilder_column-2-5 .fbr_buttonHori,
+	.pbuilder_column-3-5 .fbr_buttonHori,
+	.pbuilder_column-4-5 .fbr_buttonHori{
+		line-height: 22px !important;
+		[;line-height: 25px !important;];
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .parent_overlay form .field.Hfield input,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .parent_overlay form .field.Hfield input,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		font-size: 14px !important;
+	}
+   /* .pbuilder_column-1-3 .fbr_buttonHori{
+        font-size: 19px !important;
+        line-height: 32px !important;
+        margin: 0 0 0 5px !important;
+        padding: 4px;
+        width: 27% !important;
+    }*/
+    .pbuilder_column-1-4 .fbr_buttonHori{
+		/****Added by Abid 2015-02-06****/
+		font-size:20px !important;
+		line-height: 20px !important;
+		[;line-height: 27px !important;];
+	}
+	.pbuilder_column-2-5 .fbr_buttonHori{
+        font-size: 20px !important;
+    }
+
+    .pbuilder_column-1-1 form.optinF .field input,
+	.pbuilder_column-1-1 .parent_overlay form .field input
+	{
+        font-size: 2vw !important;
+    }
+    #colorbox #cboxLoadedContent form .fbr_buttonHori {
+        line-height: 27px !important;
+        [;line-height: 36px !important;];
+    }
+/*****Added by Abid 2015-02-06*********/
+	 .pbuilder_column-1-1 .optin_style_Vertical .frb_button{
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+		 .pbuilder_column-3-4 .optin_style_Vertical .frb_button{
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+		 .pbuilder_column-3-5 .optin_style_Vertical .frb_button{
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+		 .pbuilder_column-4-5 .optin_style_Vertical .frb_button{
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+.pbuilder_column-2-3 .frb_button.fbr_buttonHori{font-size:15px !important;}
+.pbuilder_column-2-3 .frb_button{font-size:15px !important;}
+.pbuilder_column-1-2 .field.Hfield input, .pbuilder_column-1-3 .field.Hfield input {
+	font-size: 12px !important;
+ }
+	 .pbuilder_column-1-2 .optin_style_Vertical .frb_button{
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:15px !important;
+	}
+
+		/*
+	 Commented By Abid 2015-02-16
+	 */
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:8px !important;
+	}
+
+	/*******Added By Abid 2015-02-16 Vertical******************/
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical .field input
+	{
+		font-size:14px !important;
+		background-size: 3.2% auto !important;
+		background-position: 99% !important;
+		padding: 8px 5.7% 8px 1% !important;
+    	width: 93% !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		font-size: 22px !important;
+   		line-height: 20px !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:18px !important;
+	}
+	/*******End 2015-02-16 Vertical******************/
+	/*******Added By Abid 2015-02-16 Horizontal******************/
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+		margin:0 auto !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+		margin-left:1.5% !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:14px !important;
+		background-size: 8% !important;
+		padding: 6px 11.5% 6px 1% !important;
+		background-position:98% !important;
+    	width: 88% !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size:14px !important;
+		line-height:12px !important;
+	}
+
+	/********for Css3 button start*********/
+	/*******Horizontal********/
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span
+	{
+		font-size:14px !important;
+		line-height:28px !important;
+	}
+
+	/*********vertical**************/
+	    /******Vertical*******/
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical a span.text
+	{
+		font-size:20px !important;
+		line-height:30px !important;
+	}
+
+
+	/********for Css3 button end***********/
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:18px !important;
+	}
+	/*******End 2015-02-16 Horizontal******************/
+	/*******Added By Abid 2015-02-17 popup Vertical******************/
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Vertical .field input
+	{
+		font-size:14px !important;
+		background-size: 2.99% auto !important;
+		background-position: 98% !important;
+		padding: 8px 5.7% 8px 1% !important;
+    	width: 93% !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Vertical .frb_button
+	{
+		font-size: 22px !important;
+   		line-height: 20px !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Vertical .content:first-child
+	{
+		font-size:18px !important;
+	}
+	/*******End 2015-02-17 Popup Vertical******************/
+	/*******Added By Abid 2015-02-17 Popup Horizontal******************/
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .field.Hfield
+	{
+		margin:0 auto !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .field.Hfield
+	{
+		margin-left:1.5% !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:14px !important;
+		background-size: 8% !important;
+		padding: 6px 11.5% 6px 1% !important;
+		background-position:98% !important;
+    	width: 88% !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size:14px !important;
+		line-height:10px !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .content:first-child
+	{
+		font-size:15px !important;
+	}
+	/*******End 2015-02-17 popup Horizontal******************/
+.formOverlaydiv {
+    font-size: 20px !important;
+}
+}
+@media screen and (max-width: 340px) {
+		/****Added by Abid 2015-02-06****/
+	 /*.pbuilder_column-1-5 .optinF .frb_button,
+	 .pbuilder_column-3-4 .optinF .fbr_button,
+	 .pbuilder_column-3-5 .optinF .fbr_button,
+	 .pbuilder_column-4-5 .optinF .fbr_button{ font-size:20px !important;}*/
+	/*
+	 Commented By Abid 2015-02-16
+	 */
+   /* .pbuilder_column-1-1 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-1-2 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-1-3 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-1-4 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-1-5 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-2-3 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-3-5 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-4-5 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-2-5 form.overlayForm .fbr_buttonHori,
+    .pbuilder_column-1-1 form.optinF .fbr_buttonHori,
+	.pbuilder_column-1-2 form.optinF .fbr_buttonHori,
+	.pbuilder_column-1-3 form.optinF .fbr_buttonHori,
+	.pbuilder_column-1-4 form.optinF .fbr_buttonHori,
+	.pbuilder_column-1-5 form.optinF .fbr_buttonHori,
+	.pbuilder_column-2-3 form.optinF .fbr_buttonHori,
+	.pbuilder_column-3-5 form.optinF .fbr_buttonHori,
+	.pbuilder_column-4-5 form.optinF .fbr_buttonHori,
+	.pbuilder_column-2-5 form.optinF .fbr_buttonHori
+	{
+		font-size:8px !important;
+	}
+	.pbuilder_column-1-1 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-1-1 form.optinF .fbr_buttonHori
+	{
+		line-height:30px !important;
+                width: 26% !important;
+	}
+	.pbuilder_column-1-3 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-1-3 form.optinF .fbr_buttonHori
+	{
+		line-height:34px !important;
+	}
+	.pbuilder_column-3-4 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-3-4 form.optinF .fbr_buttonHori
+	{
+		font-size:8px !important;
+		line-height:15px !important;
+	}
+	.pbuilder_column-3-5 form.overlayForm .fbr_buttonHori,
+	.pbuilder_column-3-5 form.optinF .fbr_buttonHori
+	{
+		line-height:13px !important;
+	} */
+	/*.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:8px !important;
+	}*/
+
+	/*******Added By Abid 2015-02-16 Vertical******************/
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical .field input,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical .field input,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical .field input
+	{
+		font-size:14px !important;
+		background-size: 7% !important;
+		padding: 6px 8.3% 6px 1% !important;
+    	width: 90% !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical .frb_button,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical .frb_button
+	{
+		font-size:18px !important;
+		line-height:12px !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical .content:first-child,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical .content:first-child
+	{
+		font-size:14px !important;
+	}
+	/*******End 2015-02-16 Vertical******************/
+	/*******Added By Abid 2015-02-16 Horizontal******************/
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+		margin:0 auto !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+		margin-left:1.5% !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:8px !important;
+		background-size: 10% !important;
+		padding: 6px 15.5% 6px 1% !important;
+    	width: 82% !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size:8px !important;
+		line-height:6px !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .content:first-child,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .content:first-child
+	{
+		font-size:9px !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .content .privacy,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .content .privacy
+	{
+		font-size:8px !important;
+	}
+	/*******End 2015-02-16 Horizontal******************/
+	/********for Css3 button start*********/
+    /******Vertical*******/
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Vertical a span.text,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Vertical a span.text,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Vertical a span.text
+	{
+		font-size:16px !important;
+		line-height:30px !important;
+	}
+	/******Horizontal*********/
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a
+	{
+		line-height:15px !important;
+		padding:0px 5px !important;
+	}
+	.pbuilder_column-1-1 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-1 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-1-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHoriCss3 a span
+	{
+		font-size:7px !important;
+		line-height:20px !important;
+	}
+    /*****Popup*******/
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal a span.text
+	{
+		font-size:5px !important;
+		line-height:18px !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal a
+	{
+		padding:0px 5px !important;
+	}
+
+	/********for Css3 button end***********/
+
+	/*******Added By Abid 2015-02-17 Popup Vertical******************/
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Vertical .field input
+	{
+		font-size:14px !important;
+		background-size: 7% !important;
+		padding: 6px 8.3% 6px 1% !important;
+    	width: 90% !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Vertical .frb_button
+	{
+		font-size:18px !important;
+		line-height:12px !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Vertical .content:first-child
+	{
+		font-size:14px !important;
+	}
+	/*******End 2015-02-17 Popup Vertical******************/
+	/*******Added By Abid 2015-02-17 popup Horizontal******************/
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .field.Hfield
+	{
+		margin:0 auto !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .field.Hfield
+	{
+		margin-left:1.5% !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:8px !important;
+		background-size: 12% !important;
+		background-position:96% !important;
+		padding: 4px 15.5% 4px 1% !important;
+    	width: 82% !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .frb_button.fbr_buttonHori
+	{
+		font-size:8px !important;
+		line-height:1px !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .content:first-child
+	{
+		font-size:8px !important;
+	}
+	#colorbox #cboxLoadedContent .optin.overlayForm.optin_style_Horizontal .content .privacy
+	{
+		font-size:8px !important;
+	}
+	/*******End 2015-02-17 popup Horizontal******************/
+	/*
+	 Commented By Abid 2015-02-16
+	 */
+/*	.pbuilder_column-1-2 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-3 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-2 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-3 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-2-5 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+		margin-left:1.99% !important;
+	}
+	.pbuilder_column-1-1 form.overlayForm .fbr_buttonHori
+	{
+		line-height: 30px !important;
+	}
+	.pbuilder_column-2-5 form.optinF .fbr_buttonHori,
+	.pbuilder_column-2-5 form.overlayForm .fbr_buttonHori
+	{
+		line-height: 15px !important;
+	}
+	.pbuilder_column-1-4 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHori,
+	.pbuilder_column-3-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHori,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .fbr_buttonHori,
+	.pbuilder_column-1-4 .optin.optinF.optin_style_Horizontal .fbr_buttonHori,
+	.pbuilder_column-3-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHori,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .fbr_buttonHori
+	{
+		line-height:14px !important;
+	}
+*/
+	/*.pbuilder_column-1-3 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:12px !important;
+	}*/
+	/*.pbuilder_column-3-4 .fbr_buttonHori.frb_button,
+	.pbuilder_column-3-5 .fbr_buttonHori.frb_button,
+	.pbuilder_column-1-4 .fbr_buttonHori.frb_button,
+	.pbuilder_column-1-5 .fbr_buttonHori.frb_button
+	{
+		font-size:8px !important;
+		line-height:20px !important;
+	}
+	.pbuilder_column-4-5 form.optinF .fbr_buttonHori,
+	.pbuilder_column-4-5 .parent_overlay form .fbr_buttonHori
+	{
+		font-size: 8px !important;
+		line-height: 20px !important;
+	}*/
+	/*
+	Commented By Abid 2015-02-16
+
+	.pbuilder_column-4-5 form.optinF .field.Hfield,
+	.pbuilder_column-4-5 form.parent_overlay .field.Hfield
+	{
+		font-size: 8px !important;
+		line-height: 20px !important;
+	}
+
+	.pbuilder_column-3-4 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.overlayForm.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield
+	{
+		margin-left:1.99% !important;
+	}*/
+	/*.pbuilder_column-3-4 .optin.optinF.optin_style_Horizontal .field.Hfield input,
+	.pbuilder_column-4-5 .optin.optinF.optin_style_Horizontal .field.Hfield input
+	{
+		font-size:14px !important;
+	}
+	 .pbuilder_column-1-5 .optin_style_Vertical .frb_button{
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+	.pbuilder_column-3-4 .optin_style_Vertical .frb_button{
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+	 .pbuilder_column-3-5 .optin_style_Vertical .frb_button{
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+	 .pbuilder_column-4-5 .optin_style_Vertical .frb_button{
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+	.pbuilder_column-1-1 .Hfield, .pbuilder_column-1-3 .Hfield, .pbuilder_column-1-2 .Hfield { margin-left: 1.9% !important;}
+	.pbuilder_column-1-2 .field.Hfield input, .pbuilder_column-1-3 .field.Hfield input {
+    	font-size: 10px !important;
+	 }*/
+    #colorbox form .Hfield input{
+        width: 80%;
+    }
+    /* .pbuilder_column-1-1 .fbr_buttonHori{
+        font-size: 3vw !important;
+        [;font-size: 9px !important;];
+        line-height: 30px !important;
+        [;line-height: 37px !important;];
+        padding: 1px !important;
+    }
+    .pbuilder_column-1-1 .field input, .pbuilder_column-1-3 .field input {
+        font-size: 14px !important;
+        width: 100% !important;
+    }
+    .pbuilder_column-1-2 form.optinF .fbr_buttonHori{
+        font-size: 10px !important;
+        margin: 0 0 0 5px !important;
+        padding: 0 !important;
+        width: 28% !important; }
+    .pbuilder_column-1-3 .fbr_buttonHori{ font-size: 9px !important;
+                                          line-height: 38px !important;
+                                          margin: 0 0 0 5px !important;
+                                          padding: 0 !important;
+                                          width: 28% !important; }
+    .pbuilder_column-1-3 .overlayForm .fbr_buttonHori{ font-size: 9px !important;
+                                          line-height: 35px !important;
+                                          margin: 0 0 0 5px !important;
+                                          padding: 0 !important;
+                                          width: 28% !important; }
+    .pbuilder_column-1-2 .optin_style_Vertical .frb_fullwidth{
+        font-size: 22px !important;
+        line-height: 21px !important;
+    }
+    #leadin, #leadin2step{
+        font-size: 14px;
+    }
+   .fbr_buttonHori {
+        width: 28% !important;
+    }
+    .pbuilder_column-1-2 .parent_overlay form .fbr_buttonHori {
+        font-size: 9px !important;
+        line-height: 30px !important;
+        margin: 0 0 0 5px !important;
+        padding: 3px !important;
+    }*/
+    ul.errorlist {
+        font-size: 9px !important;
+        line-height: 10px;
+    }
+    .formOverlaydiv {
+        font-size: 25px !important;
+        padding: 10px !important;
+    }
+   /* .pbuilder_column-1-1 .optin_style_Vertical .frb_fullwidth{
+        font-size: 21px !important;
+        line-height: 15px !important;
+    }*/
+    .pbuilder_column-1-1 .optin_style_Horizontal .Hfrom{
+        /*margin-left: 20px !important;*/
+    }
+    #cboxLoadedContent .Hfrom{
+        margin-left: 0px !important;
+    }
+   /* #colorbox #cboxLoadedContent form .fbr_buttonHori {
+        line-height: 10px !important;
+    }*/
+    #colorbox #cboxLoadedContent .optin_style_Vertical input {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        font-size: 15px !important;
+    }
+    #colorbox #cboxLoadedContent .optin_style_Vertical .frb_fullwidth {
+        font-size: 21px !important;
+        line-height: 20px !important;
+       /* width: 96% !important;*/
+    }
+
+    .pbuilder_column-1-2 #colorbox #cboxLoadedContent form .fbr_buttonHori{
+        font-size: 2vw !important;
+    }
+    #colorbox #cboxLoadedContent form .fbr_buttonHori {
+       font-size: 2vw !important;
+    line-height: 20px !important;
+    [;font-size: 8px !important;];
+[;line-height: 36px !important;];
+    }
+   /* #colorbox #cboxLoadedContent #leadin {
+        font-size: 16px;
+    }*/
+    #cboxLoadedContent .Hfield{
+    margin-left: 0px !important;
+}
+	/*******added by Abid 2015-02-06*********/
+/*.pbuilder_column-2-3 .fbr_buttonHori{font-size:7px !important;}*/
+/***********Horizontal - Added by Abid***********************/
+/*******css for button******/
+/*.pbuilder_column-2-3 .optin_style_Horizontal .fbr_buttonHori.frb_button
+{
+	font-size: 8px !important;
+	line-height:13px !important;
+}*/
+/*******css for input fields******/
+/*.pbuilder_column-2-3 .optin_style_Horizontal .field.Hfield input
+{
+	font-size: 8px !important;
+}*/
+/**********Color box popup Added by Abid 2015-02-17 Horizontal*****************/
+#colorbox form .Hfield input
+{
+}
+.formOverlaydiv {
+    font-size: 20px !important;
+}
+
+/*********pbtheme contactus form***********/
+	.contact_form.comment_form .input_wrapper_select,
+	.contact_form.comment_form .input_wrapper
+	{
+		width: 100% !important;
+		padding: 0px !important;
+	}
+	.contact_form.comment_form .input_wrapper_select
+	{
+		height:auto !important;
+
+	}
+
+
+}
+ul.errorlist {
+    color: red;
+    text-align: left;
+    font-size: 12px;
+    list-style: outside none none;
+    margin: 0;
+    padding-left: 5px;
+    width: 100%;
+line-height: 14px;
+}
+.pbuilder_column-1-1 .optin_style_Horizontal .Hfrom{
+  /*  margin-left: 50px;*/
+}
+#cboxLoadedContent .Hfield{
+    /*margin-right: 6px;*/
+	/******Added by Abid******/
+	margin-right: 1.5%;
+}
+/*#cboxLoadedContent .Hfrom{
+    margin-left: 50px;
+}*/
+.error input{
+    border-color: red !important;
+}
+/*
+Code added by Asim Ashraf - DevBatch
+DateTime: 27 Jan 2015
+Code Edit End
+*/
+/*******Start css for Page Back ground image*********/
+#pbtheme_page_bg {width:100% !important; padding:0 !important; margin:0 !important;}
+#pbtheme_page_bg img{width:100% !important; margin-left:0 !important; margin-top:0 !important; height:100% !important;}
+/*******End css for Page Back ground image*********/
+.pbuilder_column-1-4 form.optinF .field input, .pbuilder_column-1-4 .parent_overlay form .field input {
+/*    background-size: 9% auto !important;
+    padding: 10px 12.3% 10px 1% !important;
+    width: 86% !important;*/
+    /*font-size: 12px !important;*/
+}
+/*.pbuilder_column-1-4 .frb_button{font-size: 15px !important; line-height: 20px !important;}*/
+.Hfield{
+   /* margin-left: 5px;*/
+}
+.pbuilder_column-1-4 .formOverlaydiv{
+    /*font-size: 15px !important;*/
+}
+.pbuilder_column-1-5 form.optinF .field input, .pbuilder_column-1-5 .parent_overlay form .field input {
+/*    background-size: 9% auto !important;
+    padding: 10px 12.3% 10px 1% !important;
+    width: 86% !important;
+    font-size: 12px !important;
+*/
+}
+.Hfield{
+  /*  margin-left: 5px;*/
+}
+.pbuilder_column-1-5 .formOverlaydiv{
+    /*font-size: 15px !important;*/
+}
+.pbuilder_column-4-5 form.optinF .field input, .pbuilder_column-4-5 .parent_overlay form .field input {
+    /*padding: 10px 12.3% 10px 1% !important;
+    width: 86% !important;*/
+}
+.pbuilder_column-4-5 .content .field{
+   /* width: 100%;*/
+}
+.pbuilder_column-4-5 form.optinF .fbr_buttonHori, .pbuilder_column-4-5 .parent_overlay form .fbr_buttonHori {
+	/*font-size:15px !important;*/
+  /*  margin-left: 1% !important;*/
+}
+.pbuilder_column-3-4 form.optinF .field input, .pbuilder_column-3-4 .parent_overlay form .field input {
+   /* padding: 10px 12.3% 10px 1% !important;
+    width: 86% !important;*/
+}
+.pbuilder_column-3-4 .content .field{
+   /* width: 100%;*/
+}
+.pbuilder_column-3-5 form.optinF .field input, .pbuilder_column-3-5 .parent_overlay form .field input {
+  /*  padding: 10px 12.3% 10px 1% !important;
+    width: 86% !important;*/
+}
+.pbuilder_column-3-5 .content .field{
+ /*   width: 100%;*/
+}
+.pbuilder_column-2-5 form.optinF .field input, .pbuilder_column-2-5 .parent_overlay form .field input {
+   /* padding: 10px 12.3% 10px 1% !important;
+    width: 86% !important;*/
+}
+.pbuilder_column-2-5 .content .field{
+   /* width: 100%;*/
+}
+/*.pbuilder_column-1-2 .Hfield {
+    margin-left: 1.3% !important;
+}*/
+.fbr_buttonHori
+{
+float:right !important;
+}
+/*
+	Commented By Abid 2015-02-16
+.pbuilder_column-1-4 .optin.optinF.optin_style_Vertical .frb_button,
+.pbuilder_column-1-4 .optin.overlayForm.optin_style_Vertical .frb_button
+{
+	font-size: 16px !important;
+padding: 3px !important;
+}*/
+
+#pbtheme_wrapper{
+    z-index: inherit !important;
+/*    overflow: visible !important;*/
+/*    margin-top: 10px;*/
+}
+/********* Start Background videos display issue************/
+#pbtheme_wrapper #pbtheme_page_bg iframe, #pbtheme_wrapper #pbtheme_page_bg video{margin: 0 auto !important;}
+/********* End Background videos display issue************/
+.pbuilder_popup.pbuilder_popup_load_html{
+    height: auto !important;
+    width: auto !important;
+}
+.pbuilder_popup.pbuilder_popup_load_html td{
+/*    padding-bottom: 10px;
+    padding-top: 20px;*/
+}
+.pbuilder_popup_load_html table {
+    width: 440px;
+}
+.pbuilder_popup_load_html .pbuilder_popup_loader{
+    margin: 55px 0 0 145px !important;
+
+}
+
+.evp-bar-inner .evp-bar-row a{margin-bottom:5px !important;}
+
+
+/*********Start WP She's Viral subscription form added many <br> issue**********/
+.wsv-force-form br {
+    display: none;
+}
+/*********End WP She's Viral subscription form added many <br> issue**********/
+
+/*********Start Social Icon shown in popup window at bottom of the image when select image type  " Lightbox Image "**********/
+.pp_social{ display:none;}
+/*********Start Social Icon shown in popup window at bottom of the image when select image type  " Lightbox Image " **********/
+.frb_toggle_content_right {overflow-x: visible !important; height:auto !important;}

@@ -1,0 +1,19 @@
+ul.social-Bro {list-style: none; margin: 0 !important; padding: 0 !important;}
+ul.social-Bro li {display: block; position: relative; padding: 0; float: left;}
+ul.social-Bro li a {display: block; width: 36px; height: 36px;}
+ul.social-Bro li a img {display: block; width: 100%; transition: opacity 200ms;}
+
+ul.social-Bro li:hover .social-Bro-tooltip {opacity: 1; z-index: 3;}
+
+.social-Bro-tooltip {position: absolute; top: -110%; left: 50%; width: auto; white-space: nowrap; padding: 8px 12px; opacity: 0; z-index: -1; transition: opacity 0.3s;}
+.social-Bro-triangle {position: absolute; top: 100%; left: 50%; border-top: 6px solid transparent; border-left: 6px solid transparent; border-right: 6px solid transparent; margin-left:-6px;}
+.social-Bro-tooltip-text { font-size: 12px; line-height: 12px; color: #fff;}
+
+.social-Bro-inner {margin-top:-8px; margin-right: -8px;}
+ul.social-Bro li {margin-top: 8px; margin-right: 8px;}
+.social-Bro-triangle {border-top-color: #111;}
+.social-Bro-tooltip {background: #111;}
+
+
+
+.clear {clear: both;}

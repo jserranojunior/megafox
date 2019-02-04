@@ -1,0 +1,21 @@
+.field-custom.sidebar {
+	display:none;
+}
+.field-custom.fullwidth_checkbox {
+	display:none;
+}
+.field-custom.columns_number {
+	display:none;
+}
+.menu-item-depth-0 .field-custom.sidebar {
+	display:block;
+}
+.menu-item-depth-0 .field-custom.fullwidth_checkbox {
+	display:block;
+}
+.menu-item-depth-0 .field-custom.columns_number {
+	display:block;
+}
+select.widefat {
+	width:97.5%;
+}

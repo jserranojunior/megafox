@@ -1,0 +1,3781 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PBTheme Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-08 18:15+0100\n"
+"PO-Revision-Date: 2014-07-08 18:15+0100\n"
+"Last-Translator: nenad mihajlovic <dzeriho@gmail.com>\n"
+"Language-Team:  <dzeriho@gmail.com>\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ./\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:57 ../search.php:99
+msgid "No posts found / Showing random posts"
+msgstr ""
+
+#: ../archive.php:60 ../archive.php:62 ../archive.php:64 ../archive.php:66
+#: ../archive.php:68 ../search.php:59
+msgid " posts found"
+msgstr ""
+
+#: ../archive.php:70 ../functions.php:2400
+msgid "Archives"
+msgstr ""
+
+#: ../archive.php:70
+msgid " post/s found"
+msgstr ""
+
+#: ../archive.php:83 ../index.php:68 ../search.php:71 ../shortcodes.php:4544
+msgid "Load more posts"
+msgstr ""
+
+#: ../archive.php:110 ../bbpress.php:64 ../index.php:95 ../single.php:200
+msgid "No posts"
+msgstr ""
+
+#: ../comments.php:14
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: ../comments.php:20
+msgid "Comments"
+msgstr ""
+
+#: ../comments.php:29
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:32
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:43
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:53 ../admin/classes/class.options_machine.php:1197
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:55 ../admin/classes/class.options_machine.php:1217
+msgid "Email"
+msgstr ""
+
+#: ../comments.php:57
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:59
+msgid "Your message goes here (max 300 chars)"
+msgstr ""
+
+#: ../comments.php:59 ../pbtheme_content.php:79 ../pbtheme_small.php:35
+#: ../functions.php:1246 ../shortcodes.php:3911 ../single.php:120
+msgid "Leave a comment"
+msgstr ""
+
+#: ../comments.php:59
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: ../comments.php:59
+msgid "Send comment"
+msgstr ""
+
+#: ../pbtheme_blocks.php:51 ../pbtheme_content.php:90
+#: ../pbtheme_content.php:94 ../pbtheme_small.php:46 ../functions.php:1221
+#: ../functions.php:1257 ../functions.php:1737 ../shortcodes.php:3886
+#: ../shortcodes.php:3922 ../shortcodes.php:4534 ../single.php:130
+msgid "in"
+msgstr ""
+
+#: ../pbtheme_content.php:81 ../pbtheme_small.php:37 ../functions.php:1248
+#: ../shortcodes.php:3913 ../single.php:122
+msgid " Comments"
+msgstr ""
+
+#: ../pbtheme_content.php:83 ../pbtheme_small.php:39 ../functions.php:1250
+#: ../shortcodes.php:3915 ../single.php:124
+msgid "1 Comment"
+msgstr ""
+
+#: ../pbtheme_content.php:87 ../pbtheme_small.php:43 ../functions.php:1254
+#: ../shortcodes.php:3919 ../single.php:128
+msgid "Comments are off for this post."
+msgstr ""
+
+#: ../pbtheme_content.php:90 ../pbtheme_small.php:46 ../functions.php:1257
+#: ../shortcodes.php:3922 ../single.php:130
+msgid "by"
+msgstr ""
+
+#: ../pbtheme_content.php:104 ../pbtheme_small.php:53 ../functions.php:1228
+#: ../functions.php:1264 ../shortcodes.php:3892 ../shortcodes.php:3929
+msgid "Read more"
+msgstr ""
+
+#: ../functions.php:101
+msgid "Primary Header Menu"
+msgstr ""
+
+#: ../functions.php:227
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:164
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../functions.php:228
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:165
+msgid "Install Plugins"
+msgstr ""
+
+#: ../functions.php:229
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:166
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../functions.php:230
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../functions.php:241
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:178
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:490
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../functions.php:242
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:179
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1846
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../functions.php:243
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../functions.php:297
+msgid "Invalid options."
+msgstr ""
+
+#: ../functions.php:302
+msgid "VIEW DETAILS"
+msgstr ""
+
+#: ../functions.php:573
+msgid "Blog Archives Sidebar"
+msgstr ""
+
+#: ../functions.php:579
+msgid "This sidebar appears on Blog Archive pages."
+msgstr ""
+
+#: ../functions.php:583 ../admin/functions/functions.options.php:639
+msgid "Single Posts Sidebar"
+msgstr ""
+
+#: ../functions.php:589
+msgid "This sidebar appears on Single Posts."
+msgstr ""
+
+#: ../functions.php:594
+msgid "Woocommerce Archive Sidebar"
+msgstr ""
+
+#: ../functions.php:600
+msgid "This sidebar appears on Woocommerce archive and shop pages."
+msgstr ""
+
+#: ../functions.php:604
+msgid "Woocommerce Posts Sidebar"
+msgstr ""
+
+#: ../functions.php:610
+msgid "This sidebar appears on Woocommerce single posts."
+msgstr ""
+
+#: ../functions.php:616 ../admin/functions/functions.options.php:862
+msgid "bbPress Forum Sidebar"
+msgstr ""
+
+#: ../functions.php:622
+msgid "This sidebar appears on Forum pages."
+msgstr ""
+
+#: ../functions.php:627
+msgid "Footer 1"
+msgstr ""
+
+#: ../functions.php:636
+msgid "Footer 2"
+msgstr ""
+
+#: ../functions.php:645
+msgid "Footer 3"
+msgstr ""
+
+#: ../functions.php:654
+msgid "Footer 4"
+msgstr ""
+
+#: ../functions.php:679
+msgid "Top Header Widgets "
+msgstr ""
+
+#: ../functions.php:693
+msgid "Blog Archives Widgets Before "
+msgstr ""
+
+#: ../functions.php:707
+msgid "Blog Archives Widgets After "
+msgstr ""
+
+#: ../functions.php:721
+msgid "Single Posts Widgets Before "
+msgstr ""
+
+#: ../functions.php:735
+msgid "Single Posts Widgets After "
+msgstr ""
+
+#: ../functions.php:750
+msgid "Shop Archives Widgets Before "
+msgstr ""
+
+#: ../functions.php:764
+msgid "Shop Archives Widgets After "
+msgstr ""
+
+#: ../functions.php:778
+msgid "Single Products Widgets Before "
+msgstr ""
+
+#: ../functions.php:792
+msgid "Single Products Widgets After "
+msgstr ""
+
+#: ../functions.php:808
+msgid "bbPress Forum Widgets Before "
+msgstr ""
+
+#: ../functions.php:822
+msgid "bbPress Forum Widgets After "
+msgstr ""
+
+#: ../functions.php:843
+msgid "Read More"
+msgstr ""
+
+#: ../functions.php:885
+msgid "View First Page"
+msgstr ""
+
+#: ../functions.php:885
+msgid "First"
+msgstr ""
+
+#: ../functions.php:887 ../functions.php:946 ../functions.php:949
+#: ../functions.php:1002 ../functions.php:1005 ../functions.php:1042
+#: ../functions.php:1045
+msgid "View newer posts"
+msgstr ""
+
+#: ../functions.php:887 ../shortcodes.php:2231
+msgid "Previous"
+msgstr ""
+
+#: ../functions.php:891
+msgid "View page number"
+msgstr ""
+
+#: ../functions.php:901 ../functions.php:954 ../functions.php:956
+#: ../functions.php:1010 ../functions.php:1012 ../functions.php:1050
+#: ../functions.php:1052
+msgid "View earlier posts"
+msgstr ""
+
+#: ../functions.php:901 ../shortcodes.php:2238
+msgid "Next"
+msgstr ""
+
+#: ../functions.php:902
+msgid "View Last Page"
+msgstr ""
+
+#: ../functions.php:902
+msgid "Last"
+msgstr ""
+
+#: ../functions.php:1086
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions.php:1094 ../admin/classes/class.options_machine.php:1087
+#: ../admin/classes/class.options_machine.php:1141
+#: ../admin/classes/class.options_machine.php:1193
+#: ../admin/classes/class.options_machine.php:1297
+msgid "Edit"
+msgstr ""
+
+#: ../functions.php:1106 ../functions.php:1118
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions.php:1108 ../functions.php:1120
+msgid "(Edit)"
+msgstr ""
+
+#: ../functions.php:1480 ../functions.php:1486 ../functions.php:1590
+#: ../functions.php:1596 ../shortcodes.php:17 ../shortcodes.php:5726
+#: ../shortcodes.php:5733 ../shortcodes.php:5881 ../shortcodes.php:5888
+msgid "All"
+msgstr ""
+
+#: ../functions.php:1764
+msgid "Show your twitter feeds"
+msgstr ""
+
+#: ../functions.php:1800 ../functions.php:2003 ../functions.php:2009
+#: ../functions.php:2105 ../functions.php:2116 ../shortcodes.php:411
+#: ../shortcodes.php:638 ../shortcodes.php:646
+#: ../admin/classes/class.options_machine.php:1018
+#: ../admin/classes/class.options_machine.php:1097
+#: ../admin/classes/class.options_machine.php:1145
+msgid "Title"
+msgstr ""
+
+#: ../functions.php:1802
+msgid "User"
+msgstr ""
+
+#: ../functions.php:1804
+msgid "Count"
+msgstr ""
+
+#: ../functions.php:1816
+msgid "Social subscribers"
+msgstr ""
+
+#: ../functions.php:1842
+msgid "FANS"
+msgstr ""
+
+#: ../functions.php:1864
+msgid "FOLLOWERS"
+msgstr ""
+
+#: ../functions.php:1885
+msgid "SUBSCRIBERS"
+msgstr ""
+
+#: ../functions.php:1916 ../shortcodes.php:209 ../shortcodes.php:307
+#: ../shortcodes.php:501 ../shortcodes.php:563 ../shortcodes.php:651
+#: ../shortcodes.php:735 ../shortcodes.php:964 ../shortcodes.php:3040
+#: ../shortcodes.php:3186
+msgid "Title:"
+msgstr ""
+
+#: ../functions.php:1918
+msgid "Facebook Page ID"
+msgstr ""
+
+#: ../functions.php:1920
+msgid "Twitter ID"
+msgstr ""
+
+#: ../functions.php:1922
+msgid "SendPress list ID"
+msgstr ""
+
+#: ../functions.php:1934
+msgid "Show category posts"
+msgstr ""
+
+#: ../functions.php:2004 ../functions.php:2111
+msgid "Order"
+msgstr ""
+
+#: ../functions.php:2005 ../functions.php:2112
+msgid "Recent"
+msgstr ""
+
+#: ../functions.php:2006 ../functions.php:2113
+msgid "Popular"
+msgstr ""
+
+#: ../functions.php:2007 ../functions.php:2114 ../shortcodes.php:772
+#: ../shortcodes.php:897 ../shortcodes.php:1058 ../shortcodes.php:1172
+#: ../shortcodes.php:1310 ../shortcodes.php:1428 ../shortcodes.php:1533
+#: ../shortcodes.php:1634 ../shortcodes.php:1730 ../shortcodes.php:1814
+#: ../shortcodes.php:1902 ../shortcodes.php:1988 ../shortcodes.php:2073
+#: ../shortcodes.php:2159 ../shortcodes.php:2629 ../shortcodes.php:2714
+#: ../shortcodes.php:2799 ../shortcodes.php:2884 ../shortcodes.php:2973
+#: ../shortcodes.php:3075 ../shortcodes.php:3170
+msgid "Random"
+msgstr ""
+
+#: ../functions.php:2008 ../functions.php:2115
+msgid "Author"
+msgstr ""
+
+#: ../functions.php:2011 ../functions.php:2118
+msgid "Category"
+msgstr ""
+
+#: ../functions.php:2012 ../functions.php:2106
+msgid "Number of posts to display"
+msgstr ""
+
+#: ../functions.php:2023
+msgid "Show category posts in tabs"
+msgstr ""
+
+#: ../functions.php:2041 ../shortcodes.php:3362 ../shortcodes.php:3366
+msgid "All Categories"
+msgstr ""
+
+#: ../functions.php:2110
+msgid "Tab"
+msgstr ""
+
+#: ../functions.php:2174
+msgid "Visit us on twitter.com"
+msgstr ""
+
+#: ../functions.php:2188
+msgid "Twitter unaviable"
+msgstr ""
+
+#: ../functions.php:2205
+msgid "Please enter your name"
+msgstr ""
+
+#: ../functions.php:2211
+msgid "Please enter your email address"
+msgstr ""
+
+#: ../functions.php:2214
+msgid "You entered an invalid email address"
+msgstr ""
+
+#: ../functions.php:2223
+msgid "Please enter a message"
+msgstr ""
+
+#: ../functions.php:2250
+msgid "Thanks, your email was sent successfully!"
+msgstr ""
+
+#: ../functions.php:2261
+msgid "Sorry, an error occured"
+msgstr ""
+
+#: ../functions.php:2282
+msgid "EMAIL ADDRESS"
+msgstr ""
+
+#: ../functions.php:2292
+msgid "NAME"
+msgstr ""
+
+#: ../functions.php:2302
+msgid "WEBSITE"
+msgstr ""
+
+#: ../functions.php:2307
+msgid "MESSAGE GOES HERE (MAX 300 CHARS)"
+msgstr ""
+
+#: ../functions.php:2312
+msgid "Send Email"
+msgstr ""
+
+#: ../functions.php:2332
+msgid "Home"
+msgstr ""
+
+#: ../functions.php:2340
+msgid "Article"
+msgstr ""
+
+#: ../functions.php:2347
+msgid "\\"
+msgstr ""
+
+#: ../functions.php:2347
+msgid "/"
+msgstr ""
+
+#: ../functions.php:2365 ../functions.php:3481 ../functions.php:3578
+msgid "Shop"
+msgstr ""
+
+#: ../functions.php:2403
+msgid "Month"
+msgstr ""
+
+#: ../functions.php:2406
+msgid "Year"
+msgstr ""
+
+#: ../functions.php:2409
+msgid "Day"
+msgstr ""
+
+#: ../functions.php:2414 ../searchform.php:12
+msgid "Search"
+msgstr ""
+
+#: ../functions.php:2414
+msgid "posts found"
+msgstr ""
+
+#: ../functions.php:2437
+msgid "404 Page"
+msgstr ""
+
+#: ../functions.php:2493
+msgid "PBTheme Post Type Settings"
+msgstr ""
+
+#: ../functions.php:2505
+msgid "Video"
+msgstr ""
+
+#: ../functions.php:2506
+msgid "Set featured area video embed (MP4)"
+msgstr ""
+
+#: ../functions.php:2511
+msgid "Set featured area video embed (OGG)"
+msgstr ""
+
+#: ../functions.php:2516
+msgid "Set featured area video embed from site"
+msgstr ""
+
+#: ../functions.php:2521
+msgid "Audio"
+msgstr ""
+
+#: ../functions.php:2522
+msgid "Set featured area audio embed"
+msgstr ""
+
+#: ../functions.php:2527
+msgid "Set featured area audio embed (ogg)"
+msgstr ""
+
+#: ../functions.php:2532
+msgid "Set featured area audio embed from site"
+msgstr ""
+
+#: ../functions.php:2537 ../admin/functions/functions.mediauploader.php:210
+msgid "Gallery"
+msgstr ""
+
+#: ../functions.php:2538
+msgid "Override default post gallery"
+msgstr ""
+
+#: ../functions.php:2543
+msgid "Link"
+msgstr ""
+
+#: ../functions.php:2544
+msgid "Set featured area link"
+msgstr ""
+
+#: ../functions.php:2579
+msgid ""
+"Select Revolution Slider template to use one this page. This slider will be "
+"shown just bellow main navigation in full width."
+msgstr ""
+
+#: ../functions.php:2593
+msgid "Remove page padding"
+msgstr ""
+
+#: ../functions.php:2596 ../functions.php:2717
+msgid "Hide breadcrumbs"
+msgstr ""
+
+#: ../functions.php:2600
+msgid "Override default page background"
+msgstr ""
+
+#: ../functions.php:2603
+msgid "Select background type"
+msgstr ""
+
+#: ../functions.php:2606 ../shortcodes.php:68 ../shortcodes.php:2482
+msgid "None"
+msgstr ""
+
+#: ../functions.php:2607
+msgid "Video Embed"
+msgstr ""
+
+#: ../functions.php:2608
+msgid "HTML5 Video"
+msgstr ""
+
+#: ../functions.php:2621
+msgid "Enter video URL (MP4)."
+msgstr ""
+
+#: ../functions.php:2626
+msgid "Enter video URL (OGV)."
+msgstr ""
+
+#: ../functions.php:2631
+msgid "Enter Youtube Video ID."
+msgstr ""
+
+#: ../functions.php:2639
+msgid "Mute Youtube Video"
+msgstr ""
+
+#: ../functions.php:2645
+msgid "Loop Youtube Video"
+msgstr ""
+
+#: ../functions.php:2651
+msgid "HD Youtube Video"
+msgstr ""
+
+#: ../functions.php:2669
+msgid "Hide featured area"
+msgstr ""
+
+#: ../functions.php:2676
+msgid "Hide title"
+msgstr ""
+
+#: ../functions.php:2683
+msgid "Hide postmeta"
+msgstr ""
+
+#: ../functions.php:2690
+msgid "Hide tags"
+msgstr ""
+
+#: ../functions.php:2697
+msgid "Hide author"
+msgstr ""
+
+#: ../functions.php:2704
+msgid "Hide social share"
+msgstr ""
+
+#: ../functions.php:2711
+msgid "Hide post navigation"
+msgstr ""
+
+#: ../functions.php:2714
+msgid "Remove page top padding"
+msgstr ""
+
+#: ../functions.php:2720
+msgid "Hide default single post sidebar"
+msgstr ""
+
+#: ../functions.php:2863
+msgid "Link Lists Elements"
+msgstr ""
+
+#: ../functions.php:2871
+msgid "PBTheme WooCommerce"
+msgstr ""
+
+#: ../functions.php:3130
+#, php-format
+msgid "%s (Invalid)"
+msgstr ""
+
+#: ../functions.php:3134
+#, php-format
+msgid "%s (Pending)"
+msgstr ""
+
+#: ../functions.php:3147
+msgid "sub item"
+msgstr ""
+
+#: ../functions.php:3179
+msgid "Edit Menu Item"
+msgstr ""
+
+#: ../functions.php:3188 ../admin/classes/class.options_machine.php:1094
+msgid "URL"
+msgstr ""
+
+#: ../functions.php:3195
+msgid "Navigation Label"
+msgstr ""
+
+#: ../functions.php:3201
+msgid "Title Attribute"
+msgstr ""
+
+#: ../functions.php:3208
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: ../functions.php:3213
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: ../functions.php:3219
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: ../functions.php:3225 ../shortcodes.php:971
+msgid "Description"
+msgstr ""
+
+#: ../functions.php:3227
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: ../functions.php:3235
+msgid "Full width menu container"
+msgstr ""
+
+#: ../functions.php:3235
+msgid "Makes a menu full-width."
+msgstr ""
+
+#: ../functions.php:3241 ../shortcodes.php:742
+msgid "Columns"
+msgstr ""
+
+#: ../functions.php:3254 ../admin/classes/class.options_machine.php:1136
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:3279
+msgid "Move"
+msgstr ""
+
+#: ../functions.php:3280
+msgid "Up one"
+msgstr ""
+
+#: ../functions.php:3281
+msgid "Down one"
+msgstr ""
+
+#: ../functions.php:3284
+msgid "To the top"
+msgstr ""
+
+#: ../functions.php:3291
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: ../functions.php:3304 ../admin/classes/class.options_machine.php:1027
+#: ../admin/classes/class.options_machine.php:1206
+msgid "Remove"
+msgstr ""
+
+#: ../functions.php:3305
+msgid "Cancel"
+msgstr ""
+
+#: ../functions.php:3348
+msgid "Login"
+msgstr ""
+
+#: ../functions.php:3371
+msgid "UP!"
+msgstr ""
+
+#: ../functions.php:3396
+msgid "My Account"
+msgstr ""
+
+#: ../functions.php:3399
+msgid "Log in"
+msgstr ""
+
+#: ../functions.php:3406 ../functions.php:3499
+msgid "View your shopping cart"
+msgstr ""
+
+#: ../functions.php:3418 ../functions.php:3515 ../woocommerce/cart/cart.php:47
+msgid "Remove this item"
+msgstr ""
+
+#: ../functions.php:3445 ../functions.php:3542 ../woocommerce/cart/cart.php:74
+msgid "Available on backorder"
+msgstr ""
+
+#: ../functions.php:3462 ../functions.php:3559 ../woocommerce/cart/cart.php:29
+msgid "Quantity"
+msgstr ""
+
+#: ../functions.php:3473 ../functions.php:3570
+msgid "View cart"
+msgstr ""
+
+#: ../functions.php:3474 ../functions.php:3571
+msgid "Checkout"
+msgstr ""
+
+#: ../functions.php:3480 ../functions.php:3577
+msgid "Your shopping cart is empty"
+msgstr ""
+
+#: ../functions.php:3481 ../functions.php:3578
+msgid "Why not add some items in our"
+msgstr ""
+
+#: ../functions.php:3613
+msgid "Your browser does not support the audio tag."
+msgstr ""
+
+#: ../functions.php:3765 ../header.php:88
+msgid "Your browser does not support the video tag."
+msgstr ""
+
+#: ../functions.php:3836
+msgid "PBTheme Options"
+msgstr ""
+
+#: ../functions.php:3871
+msgid ""
+"PBTheme Grid Layout has support for colored categories. For this option you "
+"must edit each category upon creation."
+msgstr ""
+
+#: ../functions.php:3883
+msgid "Category Color"
+msgstr ""
+
+#: ../functions.php:3887
+msgid "Select category color."
+msgstr ""
+
+#: ../functions.php:3933
+msgid "Featured image"
+msgstr ""
+
+#: ../functions.php:3999 ../functions.php:4030
+msgid "sometime"
+msgstr ""
+
+#: ../functions.php:4013
+msgid "year"
+msgstr ""
+
+#: ../functions.php:4013
+msgid "years"
+msgstr ""
+
+#: ../functions.php:4014
+msgid "month"
+msgstr ""
+
+#: ../functions.php:4014
+msgid "months"
+msgstr ""
+
+#: ../functions.php:4015
+msgid "week"
+msgstr ""
+
+#: ../functions.php:4015
+msgid "weeks"
+msgstr ""
+
+#: ../functions.php:4016
+msgid "day"
+msgstr ""
+
+#: ../functions.php:4016
+msgid "days"
+msgstr ""
+
+#: ../functions.php:4017
+msgid "hour"
+msgstr ""
+
+#: ../functions.php:4017
+msgid "hours"
+msgstr ""
+
+#: ../functions.php:4018
+msgid "minute"
+msgstr ""
+
+#: ../functions.php:4018
+msgid "minutes"
+msgstr ""
+
+#: ../functions.php:4019
+msgid "second"
+msgstr ""
+
+#: ../functions.php:4019 ../functions.php:4038
+msgid "seconds"
+msgstr ""
+
+#: ../functions.php:4040
+msgid " ago"
+msgstr ""
+
+#: ../header.php:154 ../searchform.php:11
+msgid "Search the website"
+msgstr ""
+
+#: ../page.php:21
+msgid "No "
+msgstr ""
+
+#: ../search.php:59
+msgid "Search results"
+msgstr ""
+
+#: ../shortcodes.php:69 ../shortcodes.php:2483
+msgid "Flip in X"
+msgstr ""
+
+#: ../shortcodes.php:70 ../shortcodes.php:2484
+msgid "Flip in Y"
+msgstr ""
+
+#: ../shortcodes.php:71 ../shortcodes.php:2485
+msgid "Fade in"
+msgstr ""
+
+#: ../shortcodes.php:72 ../shortcodes.php:2486
+msgid "Fade in from top"
+msgstr ""
+
+#: ../shortcodes.php:73 ../shortcodes.php:2487
+msgid "Fade in from bottom"
+msgstr ""
+
+#: ../shortcodes.php:74 ../shortcodes.php:2488
+msgid "Fade in from left"
+msgstr ""
+
+#: ../shortcodes.php:75 ../shortcodes.php:2489
+msgid "Fade in from right"
+msgstr ""
+
+#: ../shortcodes.php:76 ../shortcodes.php:2490
+msgid "Slide in from top"
+msgstr ""
+
+#: ../shortcodes.php:77 ../shortcodes.php:2491
+msgid "Slide in from bottom"
+msgstr ""
+
+#: ../shortcodes.php:78 ../shortcodes.php:2492
+msgid "Slide in from left"
+msgstr ""
+
+#: ../shortcodes.php:79 ../shortcodes.php:2493
+msgid "Slide in from right"
+msgstr ""
+
+#: ../shortcodes.php:80 ../shortcodes.php:2494
+msgid "Bounce in"
+msgstr ""
+
+#: ../shortcodes.php:81 ../shortcodes.php:2495
+msgid "Bounce in from top"
+msgstr ""
+
+#: ../shortcodes.php:82 ../shortcodes.php:2496
+msgid "Bounce in from bottom"
+msgstr ""
+
+#: ../shortcodes.php:83 ../shortcodes.php:2497
+msgid "Bounce in from left"
+msgstr ""
+
+#: ../shortcodes.php:84 ../shortcodes.php:2498
+msgid "Bounce in from right"
+msgstr ""
+
+#: ../shortcodes.php:85 ../shortcodes.php:2499
+msgid "Rotate in"
+msgstr ""
+
+#: ../shortcodes.php:86 ../shortcodes.php:2500
+msgid "Rotate in from top-left"
+msgstr ""
+
+#: ../shortcodes.php:87 ../shortcodes.php:2501
+msgid "Rotate in from top-right"
+msgstr ""
+
+#: ../shortcodes.php:88 ../shortcodes.php:2502
+msgid "Rotate in from bottom-left"
+msgstr ""
+
+#: ../shortcodes.php:89 ../shortcodes.php:2503
+msgid "Rotate in from bottom-right"
+msgstr ""
+
+#: ../shortcodes.php:90 ../shortcodes.php:2504
+msgid "Lightning speed"
+msgstr ""
+
+#: ../shortcodes.php:91 ../shortcodes.php:2505
+msgid "Roll in"
+msgstr ""
+
+#: ../shortcodes.php:97 ../shortcodes.php:2511
+msgid "Animation"
+msgstr ""
+
+#: ../shortcodes.php:101 ../shortcodes.php:658 ../shortcodes.php:872
+#: ../shortcodes.php:2515
+msgid "Type:"
+msgstr ""
+
+#: ../shortcodes.php:109 ../shortcodes.php:2523
+msgid "Group:"
+msgstr ""
+
+#: ../shortcodes.php:115 ../shortcodes.php:2529
+msgid "Delay:"
+msgstr ""
+
+#: ../shortcodes.php:131 ../shortcodes.php:2545
+msgid "ID & Custom CSS"
+msgstr ""
+
+#: ../shortcodes.php:135 ../shortcodes.php:2549
+msgid "ID:"
+msgstr ""
+
+#: ../shortcodes.php:136 ../shortcodes.php:2550
+msgid "For linking via hashtags"
+msgstr ""
+
+#: ../shortcodes.php:143 ../shortcodes.php:2557
+msgid "Class:"
+msgstr ""
+
+#: ../shortcodes.php:144 ../shortcodes.php:2558
+msgid "For custom css"
+msgstr ""
+
+#: ../shortcodes.php:155 ../shortcodes.php:2569
+msgid "Tab ID:"
+msgstr ""
+
+#: ../shortcodes.php:156 ../shortcodes.php:2570
+msgid "For use of anchor in url. Make sure that this ID is unique on the page."
+msgstr ""
+
+#: ../shortcodes.php:176 ../shortcodes.php:265
+msgid "Tabs"
+msgstr ""
+
+#: ../shortcodes.php:179 ../shortcodes.php:184 ../shortcodes.php:359
+#: ../shortcodes.php:364 ../shortcodes.php:641
+msgid "Basic"
+msgstr ""
+
+#: ../shortcodes.php:189
+msgid "Style"
+msgstr ""
+
+#: ../shortcodes.php:194
+msgid "PBTheme"
+msgstr ""
+
+#: ../shortcodes.php:195
+msgid "Clean"
+msgstr ""
+
+#: ../shortcodes.php:196
+msgid "Squared"
+msgstr ""
+
+#: ../shortcodes.php:197
+msgid "Rounded"
+msgstr ""
+
+#: ../shortcodes.php:204
+msgid "Tab Colors"
+msgstr ""
+
+#: ../shortcodes.php:214
+msgid "Active title:"
+msgstr ""
+
+#: ../shortcodes.php:222 ../shortcodes.php:255 ../shortcodes.php:448
+msgid "Background:"
+msgstr ""
+
+#: ../shortcodes.php:230
+msgid "Active border:"
+msgstr ""
+
+#: ../shortcodes.php:237
+msgid "Content Colors"
+msgstr ""
+
+#: ../shortcodes.php:242 ../shortcodes.php:385
+msgid "Text:"
+msgstr ""
+
+#: ../shortcodes.php:247 ../shortcodes.php:453
+msgid "Border:"
+msgstr ""
+
+#: ../shortcodes.php:270 ../shortcodes.php:465
+msgid "Elements are sortable"
+msgstr ""
+
+#: ../shortcodes.php:271
+msgid "tab item"
+msgstr ""
+
+#: ../shortcodes.php:314 ../shortcodes.php:510
+msgid "Image:"
+msgstr ""
+
+#: ../shortcodes.php:317
+msgid "Add an image to tab content"
+msgstr ""
+
+#: ../shortcodes.php:321
+msgid "Mark as Default"
+msgstr ""
+
+#: ../shortcodes.php:322 ../shortcodes.php:516
+msgid ""
+"Only one panel can be active at a time, so be sure to uncheck the others for "
+"it to work properly"
+msgstr ""
+
+#: ../shortcodes.php:333 ../shortcodes.php:527 ../shortcodes.php:616
+#: ../shortcodes.php:690 ../shortcodes.php:819 ../shortcodes.php:923
+#: ../shortcodes.php:997 ../shortcodes.php:1098 ../shortcodes.php:1236
+#: ../shortcodes.php:1374 ../shortcodes.php:1472 ../shortcodes.php:1573
+#: ../shortcodes.php:1669 ../shortcodes.php:1756 ../shortcodes.php:1840
+#: ../shortcodes.php:1928 ../shortcodes.php:2014 ../shortcodes.php:2099
+#: ../shortcodes.php:2185 ../shortcodes.php:2255 ../shortcodes.php:2305
+#: ../shortcodes.php:2355 ../shortcodes.php:2411 ../shortcodes.php:2650
+#: ../shortcodes.php:2735 ../shortcodes.php:2820 ../shortcodes.php:2905
+#: ../shortcodes.php:2994 ../shortcodes.php:3096 ../shortcodes.php:3198
+#: ../shortcodes.php:3230 ../admin/functions/functions.options.php:1179
+msgid "General"
+msgstr ""
+
+#: ../shortcodes.php:337 ../shortcodes.php:531 ../shortcodes.php:620
+#: ../shortcodes.php:694 ../shortcodes.php:823 ../shortcodes.php:927
+#: ../shortcodes.php:1001 ../shortcodes.php:1102 ../shortcodes.php:1240
+#: ../shortcodes.php:1378 ../shortcodes.php:1476 ../shortcodes.php:1577
+#: ../shortcodes.php:1673 ../shortcodes.php:1760 ../shortcodes.php:1844
+#: ../shortcodes.php:1932 ../shortcodes.php:2018 ../shortcodes.php:2103
+#: ../shortcodes.php:2189 ../shortcodes.php:2259 ../shortcodes.php:2309
+#: ../shortcodes.php:2359 ../shortcodes.php:2415 ../shortcodes.php:2654
+#: ../shortcodes.php:2739 ../shortcodes.php:2824 ../shortcodes.php:2909
+#: ../shortcodes.php:2998 ../shortcodes.php:3100 ../shortcodes.php:3202
+#: ../shortcodes.php:3234
+msgid "Bottom margin:"
+msgstr ""
+
+#: ../shortcodes.php:356
+msgid "Accordion"
+msgstr ""
+
+#: ../shortcodes.php:369
+msgid "Style:"
+msgstr ""
+
+#: ../shortcodes.php:374
+msgid "PBTheme style"
+msgstr ""
+
+#: ../shortcodes.php:375
+msgid "Clean right"
+msgstr ""
+
+#: ../shortcodes.php:376
+msgid "Squared right"
+msgstr ""
+
+#: ../shortcodes.php:377
+msgid "Rounded right"
+msgstr ""
+
+#: ../shortcodes.php:378
+msgid "Clean left"
+msgstr ""
+
+#: ../shortcodes.php:379
+msgid "Squared left"
+msgstr ""
+
+#: ../shortcodes.php:380
+msgid "Rounded left"
+msgstr ""
+
+#: ../shortcodes.php:390
+msgid "Main:"
+msgstr ""
+
+#: ../shortcodes.php:398
+msgid "Fixed height"
+msgstr ""
+
+#: ../shortcodes.php:399
+msgid "if desabled height will vary due to content height"
+msgstr ""
+
+#: ../shortcodes.php:406
+msgid "Title Colors"
+msgstr ""
+
+#: ../shortcodes.php:416
+msgid "Active Title:"
+msgstr ""
+
+#: ../shortcodes.php:426
+msgid "Trigger Colors"
+msgstr ""
+
+#: ../shortcodes.php:431
+msgid "Trigger:"
+msgstr ""
+
+#: ../shortcodes.php:436
+msgid "Trigger active:"
+msgstr ""
+
+#: ../shortcodes.php:443
+msgid "Background Colors"
+msgstr ""
+
+#: ../shortcodes.php:460
+msgid "Accordion Elements"
+msgstr ""
+
+#: ../shortcodes.php:466
+msgid "accordion item"
+msgstr ""
+
+#: ../shortcodes.php:511
+msgid "Add an image to accordion content"
+msgstr ""
+
+#: ../shortcodes.php:515
+msgid "Active"
+msgstr ""
+
+#: ../shortcodes.php:550 ../shortcodes.php:558
+msgid "Progress Bar"
+msgstr ""
+
+#: ../shortcodes.php:553
+msgid "Charts, Bars, Counters"
+msgstr ""
+
+#: ../shortcodes.php:570
+msgid "Value:"
+msgstr ""
+
+#: ../shortcodes.php:581 ../admin/functions/functions.options.php:513
+msgid "Colors"
+msgstr ""
+
+#: ../shortcodes.php:586
+msgid "Back color:"
+msgstr ""
+
+#: ../shortcodes.php:591
+msgid "Front color:"
+msgstr ""
+
+#: ../shortcodes.php:596 ../shortcodes.php:601 ../shortcodes.php:606
+msgid "Tag color:"
+msgstr ""
+
+#: ../shortcodes.php:673
+msgid "Align:"
+msgstr ""
+
+#: ../shortcodes.php:678
+msgid "Center"
+msgstr ""
+
+#: ../shortcodes.php:679 ../shortcodes.php:979
+msgid "Left"
+msgstr ""
+
+#: ../shortcodes.php:680 ../shortcodes.php:980
+msgid "Right"
+msgstr ""
+
+#: ../shortcodes.php:712 ../shortcodes.php:720 ../shortcodes.php:1444
+msgid "Posts"
+msgstr ""
+
+#: ../shortcodes.php:715 ../shortcodes.php:845 ../shortcodes.php:949
+#: ../shortcodes.php:1023 ../shortcodes.php:1124 ../shortcodes.php:1262
+#: ../shortcodes.php:1400 ../shortcodes.php:1498 ../shortcodes.php:1599
+#: ../shortcodes.php:2211 ../shortcodes.php:2281 ../shortcodes.php:2331
+#: ../shortcodes.php:2397
+msgid "Content"
+msgstr ""
+
+#: ../shortcodes.php:725 ../shortcodes.php:855 ../shortcodes.php:1033
+#: ../shortcodes.php:1134 ../shortcodes.php:1272 ../shortcodes.php:1508
+#: ../shortcodes.php:1705 ../shortcodes.php:1877 ../shortcodes.php:2050
+#: ../shortcodes.php:2221 ../shortcodes.php:3132
+msgid "Category:"
+msgstr ""
+
+#: ../shortcodes.php:738
+msgid "Previous/Next Posts"
+msgstr ""
+
+#: ../shortcodes.php:757 ../shortcodes.php:1157 ../shortcodes.php:1295
+#: ../shortcodes.php:1518 ../shortcodes.php:1619 ../shortcodes.php:1715
+#: ../shortcodes.php:1799 ../shortcodes.php:1887 ../shortcodes.php:1973
+#: ../shortcodes.php:2058 ../shortcodes.php:2144
+msgid "Rows:"
+msgstr ""
+
+#: ../shortcodes.php:764 ../shortcodes.php:889 ../shortcodes.php:1050
+#: ../shortcodes.php:1164 ../shortcodes.php:1302 ../shortcodes.php:1420
+#: ../shortcodes.php:1525 ../shortcodes.php:1626 ../shortcodes.php:1722
+#: ../shortcodes.php:1806 ../shortcodes.php:1894 ../shortcodes.php:1980
+#: ../shortcodes.php:2065 ../shortcodes.php:2151 ../shortcodes.php:2621
+#: ../shortcodes.php:2706 ../shortcodes.php:2791 ../shortcodes.php:2876
+#: ../shortcodes.php:2965 ../shortcodes.php:3067 ../shortcodes.php:3162
+msgid "Sort by:"
+msgstr ""
+
+#: ../shortcodes.php:769 ../shortcodes.php:894 ../shortcodes.php:1169
+#: ../shortcodes.php:1307 ../shortcodes.php:1425 ../shortcodes.php:1631
+#: ../shortcodes.php:1727 ../shortcodes.php:1811 ../shortcodes.php:2626
+#: ../shortcodes.php:2711 ../shortcodes.php:2796 ../shortcodes.php:2881
+#: ../shortcodes.php:3072
+msgid "By Comment Count"
+msgstr ""
+
+#: ../shortcodes.php:770 ../shortcodes.php:895 ../shortcodes.php:1170
+#: ../shortcodes.php:1308 ../shortcodes.php:1426 ../shortcodes.php:1632
+#: ../shortcodes.php:1728 ../shortcodes.php:1812 ../shortcodes.php:2627
+#: ../shortcodes.php:2712 ../shortcodes.php:2797 ../shortcodes.php:2882
+#: ../shortcodes.php:3073
+msgid "By Date"
+msgstr ""
+
+#: ../shortcodes.php:771 ../shortcodes.php:896 ../shortcodes.php:1057
+#: ../shortcodes.php:1171 ../shortcodes.php:1309 ../shortcodes.php:1427
+#: ../shortcodes.php:1532 ../shortcodes.php:1633 ../shortcodes.php:1729
+#: ../shortcodes.php:1813 ../shortcodes.php:1901 ../shortcodes.php:1987
+#: ../shortcodes.php:2072 ../shortcodes.php:2158 ../shortcodes.php:2628
+#: ../shortcodes.php:2713 ../shortcodes.php:2798 ../shortcodes.php:2883
+#: ../shortcodes.php:2972 ../shortcodes.php:3074 ../shortcodes.php:3169
+msgid "By Title"
+msgstr ""
+
+#: ../shortcodes.php:777 ../shortcodes.php:902 ../shortcodes.php:1063
+#: ../shortcodes.php:1177 ../shortcodes.php:1315 ../shortcodes.php:1433
+#: ../shortcodes.php:1538 ../shortcodes.php:1639 ../shortcodes.php:1735
+#: ../shortcodes.php:1819 ../shortcodes.php:1907 ../shortcodes.php:1993
+#: ../shortcodes.php:2078 ../shortcodes.php:2164 ../shortcodes.php:2634
+#: ../shortcodes.php:2719 ../shortcodes.php:2804 ../shortcodes.php:2889
+#: ../shortcodes.php:2978 ../shortcodes.php:3080 ../shortcodes.php:3175
+msgid "Order:"
+msgstr ""
+
+#: ../shortcodes.php:782 ../shortcodes.php:907 ../shortcodes.php:1068
+#: ../shortcodes.php:1182 ../shortcodes.php:1320 ../shortcodes.php:1438
+#: ../shortcodes.php:1543 ../shortcodes.php:1644 ../shortcodes.php:1740
+#: ../shortcodes.php:1824 ../shortcodes.php:1912 ../shortcodes.php:1998
+#: ../shortcodes.php:2083 ../shortcodes.php:2169 ../shortcodes.php:2639
+#: ../shortcodes.php:2724 ../shortcodes.php:2809 ../shortcodes.php:2894
+#: ../shortcodes.php:2983 ../shortcodes.php:3085 ../shortcodes.php:3180
+msgid "Ascendic"
+msgstr ""
+
+#: ../shortcodes.php:783 ../shortcodes.php:908 ../shortcodes.php:1069
+#: ../shortcodes.php:1183 ../shortcodes.php:1321 ../shortcodes.php:1439
+#: ../shortcodes.php:1544 ../shortcodes.php:1645 ../shortcodes.php:1741
+#: ../shortcodes.php:1825 ../shortcodes.php:1913 ../shortcodes.php:1999
+#: ../shortcodes.php:2084 ../shortcodes.php:2170 ../shortcodes.php:2640
+#: ../shortcodes.php:2725 ../shortcodes.php:2810 ../shortcodes.php:2895
+#: ../shortcodes.php:2984 ../shortcodes.php:3086 ../shortcodes.php:3181
+msgid "Descendic"
+msgstr ""
+
+#: ../shortcodes.php:789 ../shortcodes.php:1075 ../shortcodes.php:1550
+#: ../shortcodes.php:1651
+msgid "Excerpt:"
+msgstr ""
+
+#: ../shortcodes.php:798 ../shortcodes.php:1216 ../shortcodes.php:1354
+msgid "Ajax Load"
+msgstr ""
+
+#: ../shortcodes.php:803 ../shortcodes.php:1222 ../shortcodes.php:1360
+msgid "Show Pagination"
+msgstr ""
+
+#: ../shortcodes.php:810 ../shortcodes.php:914 ../shortcodes.php:1084
+#: ../shortcodes.php:1227 ../shortcodes.php:1365 ../shortcodes.php:1463
+#: ../shortcodes.php:1747 ../shortcodes.php:1831 ../shortcodes.php:1919
+#: ../shortcodes.php:2005 ../shortcodes.php:2090 ../shortcodes.php:2176
+msgid "Ignore Sticky Posts"
+msgstr ""
+
+#: ../shortcodes.php:842 ../shortcodes.php:850
+msgid "Posts Grid"
+msgstr ""
+
+#: ../shortcodes.php:865
+msgid "Slides:"
+msgstr ""
+
+#: ../shortcodes.php:946
+msgid "Grid"
+msgstr ""
+
+#: ../shortcodes.php:954 ../shortcodes.php:1872
+msgid "Separator"
+msgstr ""
+
+#: ../shortcodes.php:959
+msgid "Image"
+msgstr ""
+
+#: ../shortcodes.php:976
+msgid "Content Alignment:"
+msgstr ""
+
+#: ../shortcodes.php:985
+msgid "Link:"
+msgstr ""
+
+#: ../shortcodes.php:1020
+msgid "Masonry Posts"
+msgstr ""
+
+#: ../shortcodes.php:1028
+msgid "Masonry posts"
+msgstr ""
+
+#: ../shortcodes.php:1043 ../shortcodes.php:3047 ../shortcodes.php:3142
+msgid "Per page:"
+msgstr ""
+
+#: ../shortcodes.php:1055 ../shortcodes.php:1530 ../shortcodes.php:1899
+#: ../shortcodes.php:1985 ../shortcodes.php:2070 ../shortcodes.php:2156
+#: ../shortcodes.php:2970 ../shortcodes.php:3167
+msgid "By comment count"
+msgstr ""
+
+#: ../shortcodes.php:1056 ../shortcodes.php:1531 ../shortcodes.php:1900
+#: ../shortcodes.php:1986 ../shortcodes.php:2071 ../shortcodes.php:2157
+#: ../shortcodes.php:2971 ../shortcodes.php:3168
+msgid "By date"
+msgstr ""
+
+#: ../shortcodes.php:1089
+msgid "Use category colors as backgrounds"
+msgstr ""
+
+#: ../shortcodes.php:1121 ../shortcodes.php:1129 ../shortcodes.php:1267
+msgid "Portfolio"
+msgstr ""
+
+#: ../shortcodes.php:1144 ../shortcodes.php:1282 ../shortcodes.php:2608
+#: ../shortcodes.php:2693 ../shortcodes.php:2778 ../shortcodes.php:2863
+#: ../shortcodes.php:2952 ../shortcodes.php:3054 ../shortcodes.php:3149
+msgid "Columns:"
+msgstr ""
+
+#: ../shortcodes.php:1188 ../shortcodes.php:1326
+msgid "Animation:"
+msgstr ""
+
+#: ../shortcodes.php:1193 ../shortcodes.php:1331
+msgid "Snake"
+msgstr ""
+
+#: ../shortcodes.php:1194 ../shortcodes.php:1332
+msgid "Rows"
+msgstr ""
+
+#: ../shortcodes.php:1200 ../shortcodes.php:1338
+msgid "Show Categories"
+msgstr ""
+
+#: ../shortcodes.php:1204 ../shortcodes.php:1342
+msgid "Categories Alignment"
+msgstr ""
+
+#: ../shortcodes.php:1207 ../shortcodes.php:1345
+msgid "left"
+msgstr ""
+
+#: ../shortcodes.php:1208 ../shortcodes.php:1346
+msgid "center"
+msgstr ""
+
+#: ../shortcodes.php:1209 ../shortcodes.php:1347
+msgid "right"
+msgstr ""
+
+#: ../shortcodes.php:1259
+msgid "Portfolio Alternative"
+msgstr ""
+
+#: ../shortcodes.php:1397 ../shortcodes.php:1405
+msgid "Post Slider"
+msgstr ""
+
+#: ../shortcodes.php:1410
+msgid "Select categories. Use CTRL+Click to select multiple categories."
+msgstr ""
+
+#: ../shortcodes.php:1453
+msgid "Per View"
+msgstr ""
+
+#: ../shortcodes.php:1495 ../shortcodes.php:1503
+msgid "Categories"
+msgstr ""
+
+#: ../shortcodes.php:1559
+msgid ""
+"Ignore Sticky Posts / Please note that sticky posts are available when "
+"displaying All categories (All categories ID / -1)."
+msgstr ""
+
+#: ../shortcodes.php:1564
+msgid "Show category colors."
+msgstr ""
+
+#: ../shortcodes.php:1596 ../shortcodes.php:1604
+msgid "Related Posts"
+msgstr ""
+
+#: ../shortcodes.php:1609 ../shortcodes.php:1792 ../shortcodes.php:1964
+msgid "Post:"
+msgstr ""
+
+#: ../shortcodes.php:1660
+msgid "Show reference post"
+msgstr ""
+
+#: ../shortcodes.php:1692 ../shortcodes.php:1700
+msgid "Link List"
+msgstr ""
+
+#: ../shortcodes.php:1695 ../shortcodes.php:1782 ../shortcodes.php:1867
+#: ../shortcodes.php:1954 ../shortcodes.php:2040 ../shortcodes.php:2125
+msgid "Link Lists"
+msgstr ""
+
+#: ../shortcodes.php:1779
+msgid "Link List Related Posts"
+msgstr ""
+
+#: ../shortcodes.php:1787
+msgid "Link List Related"
+msgstr ""
+
+#: ../shortcodes.php:1864
+msgid "Magazine Link List"
+msgstr ""
+
+#: ../shortcodes.php:1951 ../shortcodes.php:1959 ../shortcodes.php:2045
+#: ../shortcodes.php:2130
+msgid "Magazine Link List Related"
+msgstr ""
+
+#: ../shortcodes.php:2037
+msgid "Text Links"
+msgstr ""
+
+#: ../shortcodes.php:2122
+msgid "Text Links Related"
+msgstr ""
+
+#: ../shortcodes.php:2135
+msgid "Select post"
+msgstr ""
+
+#: ../shortcodes.php:2208 ../shortcodes.php:2216
+msgid "Posts Pagination"
+msgstr ""
+
+#: ../shortcodes.php:2234 ../shortcodes.php:5571
+msgid "Previous Post"
+msgstr ""
+
+#: ../shortcodes.php:2241 ../shortcodes.php:5572
+msgid "Next Post"
+msgstr ""
+
+#: ../shortcodes.php:2246
+msgid "Show Title"
+msgstr ""
+
+#: ../shortcodes.php:2278 ../shortcodes.php:2286
+msgid "Team"
+msgstr ""
+
+#: ../shortcodes.php:2293
+msgid "User:"
+msgstr ""
+
+#: ../shortcodes.php:2328 ../shortcodes.php:2336
+msgid "Contact Form"
+msgstr ""
+
+#: ../shortcodes.php:2341
+msgid "Users:"
+msgstr ""
+
+#: ../shortcodes.php:2388
+msgid "No sliders set."
+msgstr ""
+
+#: ../shortcodes.php:2394
+msgid "Revolution Slider"
+msgstr ""
+
+#: ../shortcodes.php:2401
+msgid "Select slider"
+msgstr ""
+
+#: ../shortcodes.php:2588 ../shortcodes.php:2596
+msgid "Top Rated Products"
+msgstr ""
+
+#: ../shortcodes.php:2591 ../shortcodes.php:2676 ../shortcodes.php:2761
+#: ../shortcodes.php:2846 ../shortcodes.php:2932 ../shortcodes.php:3020
+#: ../shortcodes.php:3122 ../shortcodes.php:3224
+#: ../admin/functions/functions.options.php:1198
+msgid "WooCommerce"
+msgstr ""
+
+#: ../shortcodes.php:2601 ../shortcodes.php:2686 ../shortcodes.php:2771
+#: ../shortcodes.php:2856 ../shortcodes.php:2942 ../shortcodes.php:3030
+msgid "Products:"
+msgstr ""
+
+#: ../shortcodes.php:2673 ../shortcodes.php:2681
+msgid "Sale Products"
+msgstr ""
+
+#: ../shortcodes.php:2758 ../shortcodes.php:2766
+msgid "Recent Products"
+msgstr ""
+
+#: ../shortcodes.php:2843 ../shortcodes.php:2851
+msgid "Featured Products"
+msgstr ""
+
+#: ../shortcodes.php:2929 ../shortcodes.php:2937
+msgid "Products"
+msgstr ""
+
+#: ../shortcodes.php:3017 ../shortcodes.php:3025
+msgid "Products Slider"
+msgstr ""
+
+#: ../shortcodes.php:3043 ../shortcodes.php:3189
+msgid "Previous/Next Products"
+msgstr ""
+
+#: ../shortcodes.php:3119 ../shortcodes.php:3127
+msgid "Product Categories"
+msgstr ""
+
+#: ../shortcodes.php:3221
+msgid "Cart"
+msgstr ""
+
+#: ../shortcodes.php:3348
+msgid "No categories set."
+msgstr ""
+
+#: ../shortcodes.php:4655 ../shortcodes.php:4758
+msgid "on"
+msgstr ""
+
+#: ../shortcodes.php:5008
+msgid "Please select products"
+msgstr ""
+
+#: ../shortcodes.php:5032
+msgid "Next/Prev Categories"
+msgstr ""
+
+#: ../shortcodes.php:5042 ../shortcodes.php:5139
+msgid "Please select categories"
+msgstr ""
+
+#: ../single.php:81
+msgid "Previous post"
+msgstr ""
+
+#: ../single.php:89
+msgid "Next post"
+msgstr ""
+
+#: ../single.php:139
+msgid "View"
+msgstr ""
+
+#: ../single.php:142
+msgid "Next page"
+msgstr ""
+
+#: ../single.php:143
+msgid "Previous page"
+msgstr ""
+
+#: ../single.php:163
+msgid "Share this article"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:526
+msgid "Last Backup : "
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:676
+msgid "Add New Icon"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:699
+msgid "Add New Sidebar"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:723
+msgid "Add New Contact"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:748
+msgid "Add New Language"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:773
+#: ../admin/classes/class.options_machine.php:781
+#: ../admin/classes/class.options_machine.php:789
+#: ../admin/classes/class.options_machine.php:797
+#: ../admin/classes/class.options_machine.php:805
+#: ../admin/classes/class.options_machine.php:813
+msgid "ACTIVE"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:777
+#: ../admin/classes/class.options_machine.php:785
+#: ../admin/classes/class.options_machine.php:793
+#: ../admin/classes/class.options_machine.php:801
+#: ../admin/classes/class.options_machine.php:809
+#: ../admin/classes/class.options_machine.php:817
+msgid "NOT ACTIVE"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:824
+msgid ""
+"Your plugins are not properly installed or activated. Click the Install and "
+"Activate Plugins button to install all the plugins needed for PBTheme "
+"demo installation."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:824
+msgid "Install and Activate Plugins"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:827
+#: ../admin/classes/class.options_machine.php:853
+msgid "This step has been successfully completed!"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:827
+#: ../admin/classes/class.options_machine.php:853
+#: ../admin/classes/class.options_machine.php:864
+msgid "OK"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:850
+msgid ""
+"You have not imported all the images needed for the demo. Click the Import "
+"Images XML button to import the images XML file (this file can be found in "
+"the PBTheme full archive in the /demo/ folder."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:850
+msgid "Import Images XML"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:860
+msgid ""
+"Make sure you have completed previous steps before clicking the Install Demo "
+"Content button."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:861
+msgid "Install Demo Content"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:864
+msgid "Your Demo Content has been successfully installed!"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:869
+msgid ""
+"Click the Install Templates button to import all PBTheme included "
+"templates in the Profit Builder."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:870
+msgid "Install Templates"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:949
+#: ../admin/classes/class.options_machine.php:1024
+#: ../admin/classes/class.options_machine.php:1203
+msgid "Upload"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:956
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1021
+msgid "Image URL"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1038
+msgid "Link URL (optional)"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1041
+#: ../admin/classes/class.options_machine.php:1223
+msgid "Description (optional)"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1044
+msgid "Delete"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1082
+#: ../admin/classes/class.options_machine.php:1091
+msgid "Icon"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1100
+#: ../admin/classes/class.options_machine.php:1148
+msgid "Delete Sidebar"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1188
+msgid "Team Member"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1200
+msgid "Picture"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1220
+msgid "Job"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1226
+msgid "Social Networks"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1233
+msgid "Delete Network"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1252
+msgid "Add Network"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1252
+msgid "Add Social Network"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1253
+msgid "Delete Contact"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1292
+#: ../admin/classes/class.options_machine.php:1312
+msgid "Language"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1315
+msgid "Language URL"
+msgstr ""
+
+#: ../admin/classes/class.options_machine.php:1318
+msgid "Delete Language"
+msgstr ""
+
+#: ../admin/front-end/options.php:139
+msgid "Options Updated"
+msgstr ""
+
+#: ../admin/front-end/options.php:143 ../admin/front-end/options.php:207
+msgid "Options Reset"
+msgstr ""
+
+#: ../admin/front-end/options.php:147
+msgid "Error!"
+msgstr ""
+
+#: ../admin/front-end/options.php:162
+msgid ""
+"Need support for the PBTheme? Please visit our forum at this link!"
+msgstr ""
+
+#: ../admin/front-end/options.php:164
+msgid "Warning- This options panel will not work properly without javascript!"
+msgstr ""
+
+#: ../admin/front-end/options.php:172
+msgid "Expand Options"
+msgstr ""
+
+#: ../admin/front-end/options.php:178 ../admin/front-end/options.php:206
+msgid "Save All Changes"
+msgstr ""
+
+#: ../admin/functions/functions.mediauploader.php:20
+msgid "Options"
+msgstr ""
+
+#: ../admin/functions/functions.mediauploader.php:210
+msgid "Previously Uploaded"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:99
+#: ../admin/functions/functions.options.php:104
+msgid "General Settings"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:107
+msgid "Welcome to the Theme Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:108
+msgid ""
+"Use this Theme Options page to setup your site. Save your option once you "
+"customize your PBTheme Theme."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:112
+msgid "Upload Logo"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:113
+msgid ""
+"Upload your logo using the native media uploader, or define the URL directly."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:119
+msgid "Upload Sticky Logo"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:120
+msgid ""
+"Upload your sticky logo using the native media uploader, or define the URL "
+"directly."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:126
+msgid "Logo Size"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:127
+msgid ""
+"Set your logo size. Normal real height 40px (Retina images 80px in height), "
+"Bigger real height 60px (Retina images 120px in height), Biggest real height "
+"80px (Retina images 160px in height)"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:132
+msgid "Normal"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:133
+msgid "Bigger"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:134
+msgid "Biggest"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:138
+msgid "Upload Favicon"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:139
+msgid ""
+"Upload your sites favorites icons. Please use .png transparent image files "
+"(128x128px)."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:145
+#: ../admin/functions/functions.options.php:152
+#: ../admin/functions/functions.options.php:159
+#: ../admin/functions/functions.options.php:166
+msgid "Upload Icon - iPad, iPhone"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:146
+msgid ""
+"Upload your sites iPad and iPhone icons. Please use .png transparent image "
+"files (57x57px)."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:153
+msgid ""
+"Upload your sites iPad and iPhone Retina icons. Please use .png transparent "
+"image files (72x72px)."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:160
+msgid ""
+"Upload your sites iPad and iPhone icons. Please use .png transparent image "
+"files (114x114px)."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:167
+msgid ""
+"Upload your sites iPad and iPhone Retina icons. Please use .png transparent "
+"image files (144x144px)."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:174
+#: ../admin/functions/functions.options.php:179
+#: ../admin/functions/functions.options.php:182
+msgid "Header Settings"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:183
+msgid ""
+"Set your smart header. Setup current header layout and elements that will be "
+"included in the top header. Also you can set your widgetized areas before "
+"the header."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:187
+msgid "Header Layout"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:188
+msgid "Select header layout."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:199
+msgid "Top Header Widgets"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:200
+msgid "Select number of widget areas before header."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:213
+msgid "Top Header Left"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:214
+msgid "Select top header left elements."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:219
+msgid "Top Header Right"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:220
+msgid "Select top header right elements."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:225
+msgid "Top Header Menu"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:226
+#: ../admin/functions/functions.options.php:417
+msgid "Select top header custom menu."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:233
+msgid "Top Header Networks"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:234
+#: ../admin/functions/functions.options.php:425
+msgid "Select contact option for the header network icons."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:241
+msgid "Header Tagline"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:242
+#: ../admin/functions/functions.options.php:433
+msgid "Enter header tagline text."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:248
+msgid "Header Tagline Alt"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:249
+#: ../admin/functions/functions.options.php:440
+msgid "Enter header tagline alternative text."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:255
+#: ../admin/functions/functions.options.php:260
+#: ../admin/functions/functions.options.php:263
+msgid "Breadcrumbs"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:264
+msgid "Setup basic breadcrumbs style."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:268
+msgid "Breadcrumbs Background"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:269
+msgid ""
+"Select breadcrumbs background. You can add more backgrounds to your /wp-"
+"content/themes/pbtheme/images/breadcrumbs/ folder."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:275
+msgid "Breadcrumbs Line"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:276
+msgid "Enter before breadcrumbs text line."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:282
+msgid "Single Post and Blog"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:287
+#: ../admin/functions/functions.options.php:290
+msgid "Blog Settings"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:291
+msgid "Select default blog style."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:296
+msgid "Override Blog Layout"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:297
+msgid "Override default blog layout."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:312
+#: ../admin/functions/functions.options.php:315
+msgid "Single Post Settings"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:316
+msgid "Setup your single posts."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:320
+msgid "Hide Featured Image"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:321
+msgid "Hide featured images on Single Posts."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:327
+msgid "Hide Post Title"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:328
+msgid "Hide post titles on Single Posts."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:334
+msgid "Hide Post Meta"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:335
+msgid ""
+"Hide post information on Single Posts. This info is shown just bellow "
+"Featured Image."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:341
+msgid "Hide Post Tags"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:342
+msgid "Hide post tags at the end of Single Posts."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:348
+msgid "Hide Post Share"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:349
+msgid "Hide post share bar at the end of Single Posts."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:355
+msgid "Hide Author Information"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:356
+msgid "Hide author information on Single Posts."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:362
+msgid "Hide Post Navigation"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:363
+msgid "Hide post navigation at the end of Single Posts."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:371
+#: ../admin/functions/functions.options.php:376
+#: ../admin/functions/functions.options.php:379
+msgid "Footer Settings"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:380
+msgid "Choose footer columns. Set up the copyright text."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:384
+msgid "Disable Footer Widget Areas"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:385
+msgid "This option will disable footer widget areas."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:391
+msgid "Footer Widget Areas"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:392
+msgid "Select number of footer widget areas."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:404
+msgid "Footer Left"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:405
+msgid "Select bottom footer left elements."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:410
+msgid "Footer Right"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:411
+msgid "Select bottom footer right elements."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:416
+msgid "Footer Menu"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:424
+msgid "Footer Networks"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:432
+msgid "Footer Tagline"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:439
+msgid "Footer Tagline Alt"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:446
+msgid "Footer Up Arrow"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:447
+msgid "Enter text or FontAwesome icon code for the Up Arrow."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:454
+#: ../admin/functions/functions.options.php:459
+#: ../admin/functions/functions.options.php:462
+msgid "Style Settings"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:463
+msgid "Setup your PBTheme Style. Choose colors and fonts."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:467
+msgid "Select Body Font"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:468
+msgid "Selected main font is used for text on pages and posts."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:475
+msgid "Use Google Font For Body"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:476
+msgid "Override body font with a Google font from Google Fonts Directory."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:483
+msgid "Select Body Google Font"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:484
+msgid "Selected Google font will be used for body text."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:490
+msgid "Select Header Font"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:491
+msgid "Selected font used for H1,H2,H3,H4,H5,H6 tags."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:498
+msgid "Use Google Font For Headings"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:499
+msgid "Override headings font with a Google font from Google Fonts Directory."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:506
+msgid "Select Headings Google Font"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:507
+msgid "Selected Google font will be used for H1,H2,H3,H4,H5,H6 tags."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:516
+msgid "Color Settings"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:517
+msgid ""
+"Setup the colors used with PBTheme Theme. Achieve any style which fits your "
+"style."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:521
+msgid "Theme Color"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:522
+msgid "Select Theme Color. Default color code is #82b440."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:528
+msgid "Theme Color #1"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:529
+msgid ""
+"Select Theme Color #1. This color is used for text, borders and elements. "
+"Default color code is #111111."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:535
+msgid "Theme Color #2"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:536
+msgid ""
+"Select Theme Color #2. This color is used for all the backgrounds. Default "
+"color code is #ffffff."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:542
+msgid "Pale Theme Color"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:543
+msgid ""
+"Select Pale Theme Color. This color is used for pale elements. Default color "
+"code is #cccccc."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:549
+msgid "Text Color"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:550
+msgid "Select Text Color. Default color code is #444444."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:556
+msgid "Footer Text Color"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:557
+msgid "Select footer text color. Default color code is #ffffff."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:563
+msgid "Footer Background Color"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:564
+msgid "Select footer background text color. Default color code is #222222."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:570
+#: ../admin/functions/functions.options.php:573
+msgid "Additional Style Settings"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:574
+msgid "Setup your additional pbtheme style."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:578
+msgid "Header Shadow"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:579
+msgid "Choose header style. With shadow of plain flat design."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:582
+msgid "Shadow"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:583
+msgid "Flat"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:587
+msgid "Header/Footer Borders"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:588
+msgid "Select pale or dark styled borders in header and footer."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:591
+msgid "Pale"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:592
+msgid "Dark"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:599
+msgid "Sidebar and Widgetized areas"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:604
+#: ../admin/functions/functions.options.php:607
+msgid "Sidebar Settings"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:608
+msgid ""
+"Setup default post/product archive sidebar. Create custom sidebars to use on "
+"pages."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:612
+#: ../admin/functions/functions.options.php:851
+msgid "Sidebar Width"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:613
+#: ../admin/functions/functions.options.php:852
+msgid "Choose your sidebars width."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:623
+msgid "Blog Archive Sidebar"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:624
+msgid ""
+"Enable Blog Archive sidebar. This sidebar appears on Blog Archive pages."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:630
+#: ../admin/functions/functions.options.php:646
+#: ../admin/functions/functions.options.php:869
+msgid "Sidebar Position"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:631
+#: ../admin/functions/functions.options.php:647
+#: ../admin/functions/functions.options.php:870
+#: ../admin/functions/functions.options.php:996
+#: ../admin/functions/functions.options.php:1012
+msgid "Use left or right sidebar."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:640
+msgid "Enable Single Posts sidebar. This sidebar appears on Single Posts."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:656
+#: ../admin/functions/functions.options.php:659
+#: ../admin/functions/functions.options.php:1037
+msgid "Widgetized Areas"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:660
+msgid ""
+"Use special widgetized areas. Before and after blog archives and single "
+"posts."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:665
+msgid "Before Archive"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:666
+msgid "Select number of widget areas before blog archives."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:679
+msgid "After Archive"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:680
+msgid "Select number of widget areas after blog archives."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:694
+msgid "Before Single Post"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:695
+msgid "Select number of widget areas before single post."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:708
+msgid "After Single Post"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:709
+msgid "Select number of widget areas after single post."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:723
+#: ../admin/functions/functions.options.php:731
+msgid "Sidebar Manager"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:728
+#: ../admin/functions/functions.options.php:736
+msgid "Sidebars"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:732
+msgid ""
+"Create new sidebars to use in your pages and posts. Create unlimited number "
+"of sidebars and use them in Profit Builder via Sidebar element."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:737
+#: ../admin/functions/functions.options.php:1452
+msgid "Unlimited sidebars for your pages/posts."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:749
+#: ../admin/functions/functions.options.php:768
+#: ../admin/functions/functions.options.php:771
+msgid "Contact Settings"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:754
+#: ../admin/functions/functions.options.php:757
+#: ../admin/functions/functions.options.php:762
+msgid "Contact Form Custom Message"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:758
+msgid ""
+"Set your Contact Form custom message. This message will appear once the E-"
+"Mail is sent."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:763
+msgid "Enter cutom HTML/Text."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:772
+msgid "Setup your team members."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:776
+msgid "Contact Settings / Team Members"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:777
+msgid ""
+"Add or remove contact options/team members. You can use this entries later "
+"in your content as Team element or Contact Form element."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:801
+#: ../admin/functions/functions.options.php:806
+#: ../admin/functions/functions.options.php:809
+#: ../admin/functions/functions.options.php:815
+msgid "Custom CSS"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:810
+msgid "Write some custom CSS for your site."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:816
+msgid "Quickly add some CSS to your theme by adding it to this block."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:823
+#: ../admin/functions/functions.options.php:828
+#: ../admin/functions/functions.options.php:843
+msgid "bbPress Settings"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:831
+msgid "General - <span>bbPress</span>"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:832
+msgid "Setup you bbPress Forums."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:836
+msgid "bbPress Forum Prefix"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:837
+msgid "Enter forum prefix to be used in the breadcrumbs."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:846
+msgid "Sidebars - <span>bbPress</span>"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:847
+msgid "Setup you bbPress forum sidebars."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:863
+msgid "Enable Forum sidebar. This sidebar appears on bbPress Forum pages."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:878
+msgid "bbPress Widgetized Areas"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:881
+msgid "Widgetized Areas - <span>bbPress</span>"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:882
+msgid "Setup you bbPress forum widgetized areas."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:886
+msgid "Before Forum"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:887
+msgid "Select number of widget areas before forum."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:900
+msgid "After Forum"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:901
+msgid "Select number of widget areas after forum products."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:915
+#: ../admin/functions/functions.options.php:920
+msgid "WooCommerce General"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:923
+msgid "General - <span>WooCommerce</span>"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:924
+msgid "Setup basic Woocommerce settings."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:928
+msgid "Products Per Page"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:929
+msgid "Set number of products per page for the shop and product archives."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:938
+msgid "Woocommerce Columns"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:939
+msgid "Default number of Woocommerce columns on Shop and Archive pages."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:951
+msgid "Woocommerce Related Columns"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:952
+msgid "Default number of Woocommerce columns for related and upsells."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:964
+#: ../admin/functions/functions.options.php:969
+msgid "WooCommerce Sidebars"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:972
+msgid "Sidebars - <span>WooCommerce</span>"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:973
+msgid "Setup Woocommerce sidebar settings."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:977
+msgid "Woocommerce Sidebar Width"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:978
+msgid "Choose your Woocommerce sidebars width."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:988
+msgid "Wocommerce Archive Sidebar"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:989
+msgid "Enable Wocommerce sidebar on Archive and Shop pages."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:995
+msgid "Woocommerce Archive Sidebar Position"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1004
+msgid "Wocommerce Post Sidebar"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1005
+msgid "Enable Wocommerce sidebar on Single Posts."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1011
+msgid "Woocommerce Post Sidebar Position"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1020
+#: ../admin/functions/functions.options.php:1025
+msgid "WooCommerce Widgetized Areas"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1028
+msgid "Widgetized Areas - <span>WooCommerce</span>"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1029
+msgid "Setup Woocommerce widgetized areas before and after content."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1034
+msgid "Woocommerce Widgetized Areas"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1038
+msgid ""
+"Use special widgetized areas. Before and after shop archives and single "
+"products."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1043
+msgid "Before Shop Archive"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1044
+msgid "Select number of widget areas before shop archives."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1057
+msgid "After Shop Archive"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1058
+msgid "Select number of widget areas after shop archives."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1072
+msgid "Before Product"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1073
+msgid "Select number of widget areas before single products."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1086
+msgid "After Product"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1087
+msgid "Select number of widget areas after single products."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1102
+#: ../admin/functions/functions.options.php:1108
+msgid "Demo Installation"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1111
+msgid "Install PBTheme Demo - <span>Demo</span>"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1111
+#: ../admin/functions/functions.options.php:1168
+msgid "IMPORTANT"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1112
+msgid ""
+"Demo content can only be installed on a clean Wordpress installation. If you "
+"have any posts/pages do not install demo as it will overwrite all your posts "
+"and pages. Make sure that your Wordpress version is 3.8 or newer."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1117
+msgid "Step 1"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1120
+msgid "Step 1 - Plugins"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1121
+msgid "Install and activate all the plugins used by PBTheme Theme."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1126
+msgid "Installed Plugins"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1127
+msgid ""
+"This list shows needed plugins. Please install and activate all the plugins "
+"before you continue with the demo installation."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1133
+msgid "Step 2"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1136
+msgid "Step 2 - Images"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1137
+msgid "Download images used in the demo content."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1142
+msgid "Download Images"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1143
+msgid ""
+"If you cannot see all of the images on left then your installation has "
+"failed due to an error caused by max_execution_time of your server. Either "
+"contact your service provider or try uploading the file again and again "
+"until you can see all the images."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1149
+msgid "Step 3"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1152
+msgid "Step 3 - Demo Content"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1153
+msgid ""
+"One click demo installation. Please make sure you have completed the "
+"previous two steps!"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1158
+msgid "Demo Content"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1159
+msgid ""
+"Click the Install Demo Content button to make your site look just like our "
+"PBTheme Demo"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1159
+msgid "LINK"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1159
+msgid ""
+"Please make sure you regenerate your thumbnails upon the demo installation."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1165
+msgid "Remove Demo"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1168
+msgid "Notice"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1169
+msgid ""
+"If you do not want to use the Demo Content and you wish this option to be "
+"removed from the PBTheme Theme options panel click the Remove Demo Tab "
+"button."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1169
+msgid "Remove Demo Tab"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1183
+msgid "Layout"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1187
+msgid "Advanced"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1192
+msgid "Demo"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1204
+msgid "bbPress"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1214
+#: ../admin/functions/functions.options.php:1220
+#: ../admin/functions/functions.options.php:1223
+msgid "Advanced General"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1224
+msgid "Set custom CSS classes, Google Analytics code."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1228
+msgid "Responsive / Fixed Layout"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1229
+msgid "Enable Responsive layout or use Fixed layout insted."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1237
+msgid "Disable PBTheme Mega Menu"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1238
+msgid ""
+"Activate this option to disable PBTheme Mega Menu. This option can be "
+"usefull if you want to use plugins such as UberMenu and other mega menu "
+"plugins."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1244
+msgid "Enable Comments on Pages"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1245
+msgid "If you need comments on pages please enable this switch."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1251
+msgid "Service Mode"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1252
+msgid ""
+"Enable Theme Settings Bar on site. This is used for theme displays and "
+"previews. It will enable visiting user to set custom colors, widths or "
+"layouts."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1258
+msgid "Tracking Code"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1259
+msgid ""
+"Paste your Google Analytics (or other) tracking code here. This will be "
+"added into the header of your site."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1266
+#: ../admin/functions/functions.options.php:1271
+#: ../admin/functions/functions.options.php:1274
+#: ../admin/functions/functions.options.php:1288
+#: ../admin/functions/functions.options.php:1326
+#: ../admin/functions/functions.options.php:1361
+msgid "Advanced Layout"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1275
+msgid ""
+"Set your layout. Set up your default margins used in the PBTheme Theme."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1279
+msgid "Boxed / Wide Layout"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1280
+msgid "Enable Boxed layout or use Wide layout insted."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1291
+msgid "Advanced Layout Settings - <span>High Resolution</span>"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1292
+msgid "Set your advanced layout settings for high resolution devices."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1296
+msgid "Content Width / High Resolution"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1297
+msgid "Responsive width for high resolutions. Default value 1200px."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1306
+#: ../admin/functions/functions.options.php:1344
+#: ../admin/functions/functions.options.php:1379
+msgid "Column Margins"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1307
+msgid "Column margins for high resolutions. Default value 36px."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1316
+msgid "Default Bottom Margin"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1317
+msgid "Set the default bottom margin on all elements. Default 36px."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1329
+msgid "Advanced Layout Settings - <span>Medium Resolution</span>"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1330
+msgid "Set your advanced layout settings for medium resolution devices."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1334
+msgid "Medium Resolution"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1335
+msgid "Responsive width for medium resolutions. Default value 768px."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1345
+msgid "Column margins for medium resolutions. Default value 10px."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1354
+#: ../admin/functions/functions.options.php:1389
+msgid "Hide Sidebars"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1355
+#: ../admin/functions/functions.options.php:1390
+msgid "Hide sidebars after current width."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1364
+msgid "Advanced Layout Settings - <span>Low Resolution</span>"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1365
+msgid "Set your advanced layout settings for low resolution devices."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1369
+msgid "Low Resolution"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1370
+msgid "Responsive width for low resolutions. Default value 640px."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1380
+msgid "Column margins for low resolutions. Default value 5px."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1398
+msgid "Featured Images"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1403
+#: ../admin/functions/functions.options.php:1406
+msgid "Setup Featured Images"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1407
+msgid ""
+"Set your default featured image resolution. These settings control the "
+"featured image size on fullwidth elements, fullwidth blog and single posts "
+"featured area. If you alter these default settings please regenerate your "
+"thumbnails."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1411
+msgid "Featured Image Width"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1412
+#: ../admin/functions/functions.options.php:1422
+msgid "Set fullwidth elements featured image height."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1421
+msgid "Featured Image Height"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1438
+#: ../admin/functions/functions.options.php:1443
+msgid "Language Settings"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1446
+msgid "Languags Manager"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1447
+msgid ""
+"Add languages and URLs to the translated version. You can use WPML, "
+"qTranslate or other tools to translate your site."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1451
+msgid "Languages"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1463
+#: ../admin/functions/functions.options.php:1469
+#: ../admin/functions/functions.options.php:1472
+msgid "Twitter Settings"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1473
+msgid "Set custom Twitter API keys. Go to"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1473
+msgid "Twitter Developer pages"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1473
+msgid "to get your secure keys."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1478
+msgid "Consumer Key"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1479
+msgid "Consumer key provided by dev.twitter.com"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1486
+msgid "Consumer Secret"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1487
+msgid "Consumer secret provided by dev.twitter.com"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1494
+msgid "Access token"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1495
+msgid "Access token provided by dev.twitter.com"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1502
+msgid "Access token secret"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1503
+msgid "Access token secret provided by dev.twitter.com"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1515
+msgid "Backup Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1520
+msgid "Backup and Restore Options"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1524
+msgid ""
+"You can use the two buttons below to backup your current options, and then "
+"restore it back at a later time. This is useful if you want to experiment on "
+"the options but would like to keep the old settings in case you need it back."
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1527
+msgid "Transfer Theme Options Data"
+msgstr ""
+
+#: ../admin/functions/functions.options.php:1531
+msgid ""
+"You can tranfer the saved options data between different installs by copying "
+"the text inside the text box. To import data from another install, replace "
+"the data in the text box with the one from another install and click "
+"\"Import Options\""
+msgstr ""
+
+#: ../bbpress/form-topic.php:41
+#, php-format
+msgid "Now Editing &ldquo;%s&rdquo;"
+msgstr ""
+
+#: ../bbpress/form-topic.php:43
+#, php-format
+msgid "Create New Topic in &ldquo;%s&rdquo;"
+msgstr ""
+
+#: ../bbpress/form-topic.php:43
+msgid "Create New Topic"
+msgstr ""
+
+#: ../bbpress/form-topic.php:53
+msgid ""
+"This forum is marked as closed to new topics, however your posting "
+"capabilities still allow you to do so."
+msgstr ""
+
+#: ../bbpress/form-topic.php:61
+msgid "Your account has the ability to post unrestricted HTML content."
+msgstr ""
+
+#: ../bbpress/form-topic.php:75
+#, php-format
+msgid "Topic Title (Maximum Length: %d):"
+msgstr ""
+
+#: ../bbpress/form-topic.php:90
+msgid "You may use these"
+msgstr ""
+
+#: ../bbpress/form-topic.php:90
+msgid "tags and attributes:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:101
+msgid "Topic Tags:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:114
+msgid "Forum:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:117
+msgid "(No Forum)"
+msgstr ""
+
+#: ../bbpress/form-topic.php:133
+msgid "Topic Type:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:145
+msgid "Topic Status:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:164
+msgid "Notify the author of follow-up replies via email"
+msgstr ""
+
+#: ../bbpress/form-topic.php:168
+msgid "Notify me of follow-up replies via email"
+msgstr ""
+
+#: ../bbpress/form-topic.php:184
+msgid "Keep a log of this edit:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:188
+msgid "Optional reason for editing:"
+msgstr ""
+
+#: ../bbpress/form-topic.php:203
+msgid "Submit"
+msgstr ""
+
+#: ../bbpress/form-topic.php:226
+#, php-format
+msgid "The forum &#8216;%s&#8217; is closed to new topics and replies."
+msgstr ""
+
+#: ../bbpress/form-topic.php:234
+msgid "You cannot create new topics."
+msgstr ""
+
+#: ../bbpress/form-topic.php:234
+msgid "You must be logged in to create new topics."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:180
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:517
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:2058
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:545
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:704
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1091
+msgid "External Link"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1096
+msgid "Private Repository"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1099
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1103
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1106
+msgid "Required"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1106
+msgid "Recommended"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1109
+msgid "Not Installed"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1111
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1281
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1297
+msgid "Plugin"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1298
+msgid "Source"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1299
+msgid "Type"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1300
+msgid "Status"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1318
+msgid "Install"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1319
+msgid "Activate"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1829
+msgid "Install package not available."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1830
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1831
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1832
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1833
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1834
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1845
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1955
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1956
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1956
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1965
+msgid "Show Details"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1956
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1965
+msgid "Hide Details"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1957
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1958
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1962
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1963
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1964
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1965
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1966
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../lib/tgm-plugin-activation/class-tgm-plugin-activation.php:1967
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../widgets/socialbro/socialbro.php:32
+msgid "+ PBTheme Social Icons"
+msgstr ""
+
+#: ../woocommerce/content-product_cat.php:53
+msgid "Items"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:24
+msgid "Review"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:24
+msgid "Reviews"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:41
+msgid "Add a review"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:43
+msgid "Be the first to review"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:44
+msgid "There are no reviews yet, would you like to"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:44
+msgid "submit yours"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:55
+msgid "Add a Review"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:61
+msgid "Rating"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:62
+msgid "Rate&hellip;"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:63
+msgid "Perfect"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:64
+msgid "Good"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:65
+msgid "Average"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:66
+msgid "Not that bad"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:67
+msgid "Very Poor"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:77
+msgid "Name (Required)"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:79
+msgid "Email (Required)"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:81
+msgid "Submit Review"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:86
+msgid "Your Review"
+msgstr ""
+
+#: ../woocommerce/single-product-reviews.php:93
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: ../woocommerce/cart/cart-totals.php:17
+msgid "Cart Totals"
+msgstr ""
+
+#: ../woocommerce/cart/cart-totals.php:22
+msgid "Cart Subtotal"
+msgstr ""
+
+#: ../woocommerce/cart/cart-totals.php:28
+#: ../woocommerce/cart/cart-totals.php:68
+msgid "Coupon:"
+msgstr ""
+
+#: ../woocommerce/cart/cart-totals.php:76
+msgid "Order Total"
+msgstr ""
+
+#: ../woocommerce/cart/cart-totals.php:88
+#, php-format
+msgid " (taxes estimated for %s)"
+msgstr ""
+
+#: ../woocommerce/cart/cart-totals.php:91
+#, php-format
+msgid ""
+"Note: Shipping and taxes are estimated%s and will be updated during checkout "
+"based on your billing and shipping information."
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:27
+msgid "Product"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:28
+msgid "Price"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:30
+msgid "Total"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:128
+msgid "Apply coupon"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:129
+msgid "Coupon code"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:129
+msgid "Apply Coupon"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:145
+msgid "Update Cart"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:145
+msgid "Proceed to Checkout &rarr;"
+msgstr ""
+
+#: ../woocommerce/cart/shipping-calculator.php:22
+msgid "Calculate Shipping"
+msgstr ""
+
+#: ../woocommerce/cart/shipping-calculator.php:28
+msgid "Select a country&hellip;"
+msgstr ""
+
+#: ../woocommerce/cart/shipping-calculator.php:45
+#: ../woocommerce/cart/shipping-calculator.php:51
+#: ../woocommerce/cart/shipping-calculator.php:63
+msgid "State / county"
+msgstr ""
+
+#: ../woocommerce/cart/shipping-calculator.php:52
+msgid "Select a state&hellip;"
+msgstr ""
+
+#: ../woocommerce/cart/shipping-calculator.php:72
+msgid "City"
+msgstr ""
+
+#: ../woocommerce/cart/shipping-calculator.php:80
+msgid "Postcode / Zip"
+msgstr ""
+
+#: ../woocommerce/cart/shipping-calculator.php:85
+msgid "Update Totals"
+msgstr ""
+
+#: ../woocommerce/loop/orderby.php:21
+msgid "Default sorting"
+msgstr ""
+
+#: ../woocommerce/loop/orderby.php:22
+msgid "Sort by popularity"
+msgstr ""
+
+#: ../woocommerce/loop/orderby.php:23
+msgid "Sort by average rating"
+msgstr ""
+
+#: ../woocommerce/loop/orderby.php:24
+msgid "Sort by newness"
+msgstr ""
+
+#: ../woocommerce/loop/orderby.php:25
+msgid "Sort by price: low to high"
+msgstr ""
+
+#: ../woocommerce/loop/orderby.php:26
+msgid "Sort by price: high to low"
+msgstr ""
+
+#: ../woocommerce/loop/result-count.php:28
+msgid "Showing the single result"
+msgstr ""
+
+#: ../woocommerce/loop/result-count.php:30
+#, php-format
+msgid "Showing all %d results"
+msgstr ""
+
+#: ../woocommerce/single-product/related.php:36
+msgid "Related Products"
+msgstr ""
+
+#: ../woocommerce/single-product/up-sells.php:39
+msgid "You might like these products"
+msgstr ""
